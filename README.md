@@ -40,8 +40,9 @@ threat detection, automation, and local-first / privacy-first tooling.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=MiguelGranado&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Miguel's GitHub stats" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages" height="165"/>
+![Profile Views](https://komarev.com/ghpvc/?username=MiguelGranado&label=Profile%20Views&color=0e75b6&style=flat)
+![Followers](https://img.shields.io/github/followers/MiguelGranado?label=Followers&style=flat&color=0e75b6)
+![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMiguelGranado&label=Public%20Repos&query=%24.public_repos&color=0e75b6)
 
 </div>
 
