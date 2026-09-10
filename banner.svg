@@ -1,0 +1,12 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7b2ff7"/>
+      <stop offset="55%" stop-color="#3b5bdb"/>
+      <stop offset="100%" stop-color="#0fb5ba"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <text x="600" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff" text-anchor="middle">Miguel Granados</text>
+  <text x="600" y="200" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#e9ecff" text-anchor="middle">AI Engineer &amp; Cloud Security Specialist · Founder @Ulamander</text>
+</svg>
