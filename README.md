@@ -68,6 +68,29 @@ Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's
 
 ---
 
+## 🧠 Claude Academy Training (Anthropic)
+
+19 completion badges earned on [Claude Academy](https://academy.claude.com), issued Aug 26, 2026 —
+each link below is publicly verifiable (anyone can confirm it's real via Claude Academy's own
+verification page):
+
+| Course | Verify |
+|---|---|
+| Claude Platform 101 | [Verify ↗](https://academy.claude.com/badges/8235bc0b-689d-43d2-9be6-599fddab64ac) |
+| Building with the Claude API | [Verify ↗](https://academy.claude.com/badges/285490d3-b8ab-4937-aa26-45363f9eddc9) |
+| Introduction to Model Context Protocol | [Verify ↗](https://academy.claude.com/badges/5ce2e265-3e3e-49a2-a89d-0b782370e4ca) |
+| Model Context Protocol: Advanced Topics | [Verify ↗](https://academy.claude.com/badges/cad4d5e6-5b2e-4f1b-a6b0-967f930b0475) |
+| Claude Code in Action | [Verify ↗](https://academy.claude.com/badges/85bf6c20-276b-4736-ae0d-9ef0df9e2288) |
+| Claude with Amazon Bedrock | [Verify ↗](https://academy.claude.com/badges/ac2652d4-bd29-41a5-b85d-2a264f427711) |
+| Claude with Google Cloud's Vertex AI | [Verify ↗](https://academy.claude.com/badges/1da4ccaa-ed8f-4d01-887f-8a522adaf373) |
+| AI Fluency: Framework & Foundations | [Verify ↗](https://academy.claude.com/badges/0387a72d-ddb8-4e76-96e8-794a181a636f) |
+
+Plus 11 more (AI Fluency editions for builders/educators/students/nonprofits/small business,
+Claude Code 101, Claude 101, AI Capabilities and Limitations, Teaching AI Fluency, Claude Cowork) —
+full list on request.
+
+---
+
 ## 🏆 GitHub Achievements
 
 <div align="center">
@@ -75,28 +98,7 @@ Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's
 <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" alt="Achievement: Quickdraw" width="72"/>
 <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" alt="Achievement: YOLO" width="72"/>
 
-*Earned badges — live from GitHub's own achievement icons, updated as new ones unlock.*
-
 </div>
-
-GitHub's profile badges unlock **only through real activity** on the platform — they can't be
-added manually. Here's what earns each one, and their tiers:
-
-| Achievement | How to earn it | Tiers (base → gold) |
-|---|---|---|
-| 🦈 **Pull Shark** | Open pull requests that get merged | 2 / 16 / 128 / 1024 |
-| ⚡ **Quickdraw** ✅ | Close an issue or PR within 5 minutes of opening it | one-time |
-| 🎲 **YOLO** ✅ | Merge a PR without review — even on your own repo | one-time |
-| 🧠 **Galaxy Brain** | Get accepted answers in GitHub Discussions | 2 / 8 / 16 / 32 |
-| 🤝 **Pair Extraordinaire** | Co-author a merged commit with another real GitHub account | 1 / 10 / 24 / 48 |
-| ⭐ **Starstruck** | Own a repo that earns real stars from other people | 16 / 128 / 512 / 4096 |
-| ❤️ **Public Sponsor** | Sponsor a real contributor/project via GitHub Sponsors | one-time |
-
-Pull Shark isn't showing yet even with 2 merged PRs — GitHub's badge calculation has a processing
-delay, not an error. Starstruck and Public Sponsor require genuine outside activity (real people
-starring a repo, an actual sponsorship) that can't be faked here.
-
-Live status: [github.com/MiguelGranado](https://github.com/MiguelGranado) → Achievements tab.
 
 ---
 
