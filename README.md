@@ -62,6 +62,10 @@ None are claimed as already earned here unless actually passed.
 | **GitHub Advanced Security** | CodeQL, secret scanning, repo protection | [GitHub Certifications](https://docs.github.com/en/get-started/showcase-your-expertise-with-github-certifications/about-github-certifications) |
 | **CCSP** — Certified Cloud Security Professional | Cloud security (ISC)² | [(ISC)² CCSP](https://www.isc2.org/certifications/ccsp) |
 
+**📚 Microsoft Learn progress:** Level 15 · 773K+ XP · 8 learning paths completed across security,
+Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's the next real step.
+[Public transcript ↗](https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/)
+
 ---
 
 ## 🏆 GitHub Achievements
