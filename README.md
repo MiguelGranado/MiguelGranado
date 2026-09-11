@@ -66,18 +66,33 @@ None are claimed as already earned here unless actually passed.
 
 ## 🏆 GitHub Achievements
 
-GitHub's profile badges (Pull Shark, YOLO, Galaxy Brain, etc.) unlock **only through real activity**
-on the platform — they can't be added manually. Here's what actually earns each one:
+<div align="center">
 
-| Achievement | How to earn it |
-|---|---|
-| 🦈 **Pull Shark** | 2+ merged pull requests (x2 at 16, x3 at 128) |
-| ⚡ **Quickdraw** | Close an issue or PR within 5 minutes of opening it |
-| 🎲 **YOLO** | Merge a PR without review — even on your own repo |
-| 🧠 **Galaxy Brain** | Get accepted answers in GitHub Discussions |
-| 🤝 **Pair Extraordinaire** | Co-author a merged commit (via GitHub Desktop) |
+<img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" alt="Achievement: Quickdraw" width="72"/>
+<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" alt="Achievement: YOLO" width="72"/>
 
-Current status: [github.com/MiguelGranado](https://github.com/MiguelGranado) → Achievements tab.
+*Earned badges — live from GitHub's own achievement icons, updated as new ones unlock.*
+
+</div>
+
+GitHub's profile badges unlock **only through real activity** on the platform — they can't be
+added manually. Here's what earns each one, and their tiers:
+
+| Achievement | How to earn it | Tiers (base → gold) |
+|---|---|---|
+| 🦈 **Pull Shark** | Open pull requests that get merged | 2 / 16 / 128 / 1024 |
+| ⚡ **Quickdraw** ✅ | Close an issue or PR within 5 minutes of opening it | one-time |
+| 🎲 **YOLO** ✅ | Merge a PR without review — even on your own repo | one-time |
+| 🧠 **Galaxy Brain** | Get accepted answers in GitHub Discussions | 2 / 8 / 16 / 32 |
+| 🤝 **Pair Extraordinaire** | Co-author a merged commit with another real GitHub account | 1 / 10 / 24 / 48 |
+| ⭐ **Starstruck** | Own a repo that earns real stars from other people | 16 / 128 / 512 / 4096 |
+| ❤️ **Public Sponsor** | Sponsor a real contributor/project via GitHub Sponsors | one-time |
+
+Pull Shark isn't showing yet even with 2 merged PRs — GitHub's badge calculation has a processing
+delay, not an error. Starstruck and Public Sponsor require genuine outside activity (real people
+starring a repo, an actual sponsorship) that can't be faked here.
+
+Live status: [github.com/MiguelGranado](https://github.com/MiguelGranado) → Achievements tab.
 
 ---
 
