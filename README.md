@@ -32,7 +32,7 @@ threat detection, automation, and local-first / privacy-first tooling.
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Azure](https://img.shields.io/badge/-Microsoft%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![Fortinet](https://img.shields.io/badge/-Fortinet%20NSE-EE3124?style=flat-square&logo=fortinet&logoColor=white)
-![GitHub Advanced Security](https://img.shields.io/badge/-GitHub%20Advanced%20Security-181717?style=flat-square&logo=github&logoColor=white)
+![GitHub Advanced Security](https://img.shields.io/badge/-GitHub%20Advanced%20Security-8250DF?style=flat-square&logo=github&logoColor=white)
 
 ---
 
@@ -82,6 +82,8 @@ Current status: [github.com/MiguelGranado](https://github.com/MiguelGranado) →
 ---
 
 <div align="center">
+
+💬 **Open to consulting, collaborations, and interesting problems in AI + security.**
 
 **Miguel Granados** · Founder of [Ulamander](https://ulamander.com)
 
