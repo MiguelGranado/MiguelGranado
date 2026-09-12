@@ -1,16 +1,15 @@
 # GitHub profile — MiguelGranado
 
-Local backup of https://github.com/MiguelGranado
+English README (commercial). Portfolio site can stay Italian.
 
-## Layout
-- `readme-publicado/` — README.md, dark.svg, light.svg, contrib-grid.svg
-- `scripts/hero/build_hero.py` — header SVG (must be valid XML)
-- `scripts/hero/build_contrib_grid.py` — contribution grid
-- `scripts/workflows/snake.yml` — snake GIF + SVG (GIF animates in GitHub)
+## Gusanito (full-width snake)
+- `scripts/hero/build_snake_full.py` → `snake-dark.svg` / `snake-light.svg` (1180px)
+- Travels almost the full grid; native GitHub activity stays private
+- Workflow: `.github/workflows/snake.yml` also publishes to `output` branch
 
-## Language
-README is **English** (more commercial for international clients/recruiters).
-Portfolio site can stay Italian: https://miguel.ulamander.com
+## Insignias
+- `scripts/hero/build_insignias.py` → credentials + focus cards
+- Cert shields in README (MS Learn, Fortinet NSE 3, OCI, Claude, Google, …)
 
-## Publish
-Copy `readme-publicado/*` to repo root; snake workflow → `.github/workflows/snake.yml`.
+## Header
+`scripts/hero/build_hero.py` → dark.svg / light.svg

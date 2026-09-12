@@ -1,8 +1,8 @@
 <!-- ===== THEME-AWARE HERO (arifhaxn-style) ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912g">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912g">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912g">
 </picture>
 
 <!-- ===== SOCIAL ===== -->
@@ -14,26 +14,24 @@
   <a href="mailto:info@ulamander.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0d1117" alt="Email"/></a>
 </p>
 
-<!-- ===== PUBLIC STATS (no private contribs / no streak mismatch) ===== -->
+<!-- ===== TWO INSIGNIAS (credentials + focus — public GitHub stats are empty when activity is private) ===== -->
 <div align="center">
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&count_private=false&include_all_commits=true&title_color=fe702d&icon_color=fb923c&text_color=94A3B8&bg_color=0d1117&card_width=500&cache_seconds=1800" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&count_private=false&include_all_commits=true&title_color=ea580c&icon_color=c2410c&text_color=0F172A&bg_color=FFFFFF&card_width=500&cache_seconds=1800" alt="GitHub stats" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912g" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912g" alt="Credentials insignias" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=fe702d&text_color=94A3B8&bg_color=0d1117&card_width=500&cache_seconds=1800" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=ea580c&text_color=0F172A&bg_color=FFFFFF&card_width=500&cache_seconds=1800" alt="Top languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912g" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912g" alt="Focus stack insignias" />
 </picture>
-
 </div>
 
-<!-- ===== BRANDED CONTRIBUTION SNAKE (README only — native GitHub activity is private) ===== -->
+<!-- ===== GUSANITO — almost full README width ===== -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
-  <img width="100%" alt="Contribution activity" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912g" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-light.svg?v=20260912g" />
+  <img width="100%" alt="Gusanito contribution snake" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912g" />
 </picture>
 </div>
 
@@ -72,6 +70,17 @@ Turin, Italy — remote & on-site · reply within 24 hours
 ## Certifications & training
 
 Aligned with [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ badges & certs**, MS Learn **Level 15**.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/100%2B_Badges_%26_Certs-0d1117?style=for-the-badge&logo=github&logoColor=fe702d" alt="100+ badges"/>
+  <img src="https://img.shields.io/badge/MS_Learn-Level_15-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="MS Learn Level 15"/>
+  <img src="https://img.shields.io/badge/Claude_Academy-19_badges-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Academy"/>
+  <img src="https://img.shields.io/badge/Google_Skillshop-11_certs-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Skillshop"/>
+  <img src="https://img.shields.io/badge/Fortinet-NSE_3-EE3124?style=for-the-badge&logo=fortinet&logoColor=white" alt="Fortinet NSE 3"/>
+  <img src="https://img.shields.io/badge/Oracle-OCI_Foundations-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="OCI Foundations"/>
+  <img src="https://img.shields.io/badge/AI--900-SC--900-0d1117?style=for-the-badge&logo=microsoftazure&logoColor=0078D4" alt="AI-900 SC-900"/>
+  <img src="https://img.shields.io/badge/Shopify-Foundations-7AB55C?style=for-the-badge&logo=shopify&logoColor=white" alt="Shopify"/>
+</p>
 
 | Area | Detail |
 |---|---|
