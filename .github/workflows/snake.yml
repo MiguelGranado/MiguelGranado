@@ -1,13 +1,15 @@
-name: Generate Snake Animation
+name: Generate Contribution Activity
 
 on:
   schedule:
-    - cron: "0 6 * * 1"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - "scripts/hero/build_snake_full.py"
+      - "scripts/hero/calendar.json"
+      - ".github/workflows/snake.yml"
 
 jobs:
   generate:
@@ -18,17 +20,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build full-width gusanito (1180px)
+      # Private profile → Platane public scrape is empty.
+      # Build arifhaxn-compatible calendar SVG from scripts/hero/calendar.json (real totals).
+      - name: Build contribution activity SVGs
         run: |
           python3 scripts/hero/build_snake_full.py
           mkdir -p dist
           cp snake-dark.svg snake-light.svg dist/
 
-      - name: Push SVGs to output branch
+      - name: Push to output branch (same as arifhaxn)
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "Update full-width gusanito [skip ci]"
+          commit_message: "Update contribution activity [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
