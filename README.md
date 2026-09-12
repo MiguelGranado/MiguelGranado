@@ -131,7 +131,7 @@ Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's
 | Google Ads Creative | ✅ Completed |
 | Google Ads Measurement | ✅ Completed |
 | Google Ads Shopping (AI-Powered) | ✅ Completed |
-| AI-Powered Performance Ads | ⏳ In progress |
+| AI-Powered Performance Ads | ✅ Completed |
 
 ---
 
