@@ -1,58 +1,139 @@
-"""Header SVG: solo Miguel + tagline. I bottoni clickabili stanno nel README (Portfolio/LinkedIn/Email)."""
+"""Hero SVG ricco e colorato — NO bottoni (i link clickabili sono nel README)."""
+import re
+
+ICON_FILES = {
+    "Python": ("icons/python.svg", "#3776AB"),
+    "TypeScript": ("icons/typescript.svg", "#3178C6"),
+    "React": ("icons/reactjs.svg", "#61DAFB"),
+    "PostgreSQL": ("icons/postgresql.svg", "#4169E1"),
+    "Azure": ("icons/azure.svg", "#0078D4"),
+}
+_ID_RE = re.compile(r'id="([^"]+)"')
+
+
+def load_icon_inner(name: str, path: str) -> str:
+    with open(path) as f:
+        svg = f.read()
+    inner = re.sub(r"^<svg[^>]*>|</svg>\s*$", "", svg.strip())
+    for old_id in set(_ID_RE.findall(inner)):
+        new_id = f"ic_{name.lower()}_{old_id}"
+        inner = inner.replace(f'id="{old_id}"', f'id="{new_id}"')
+        inner = inner.replace(f"url(#{old_id})", f"url(#{new_id})")
+    return inner
+
+
+def stack_chip(x, y, w, name, box, stroke, text_c) -> str:
+    path, brand = ICON_FILES[name]
+    h, icon = 36, 18
+    inner = load_icon_inner(name, path)
+    return (
+        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h}" rx="10" '
+        f'fill="{box}" stroke="{brand}" stroke-opacity="0.55" stroke-width="1.5"/>\n'
+        f'<g transform="translate({x + 12:.1f},{y + (h - icon) / 2:.1f}) scale({icon / 100:.4f})">{inner}</g>\n'
+        f'<text x="{x + 38:.1f}" y="{y + h / 2 + 5:.1f}" font-size="13" font-weight="600" fill="{text_c}">{name}</text>'
+    )
+
+
+def pill(x, y, w, label, fill, text_c) -> str:
+    return (
+        f'<rect x="{x}" y="{y}" width="{w}" height="28" rx="14" fill="{fill}"/>'
+        f'<text x="{x + w / 2}" y="{y + 18}" text-anchor="middle" font-size="11" '
+        f'font-weight="600" fill="{text_c}">{label}</text>'
+    )
+
 
 def build(theme: str) -> str:
-    is_dark = theme == "dark"
-    s = "D" if is_dark else "L"
-    accent = "#fe702d"
-    soft = "#ff8a4c" if is_dark else "#e85d1c"
-    outer = "#0B1220" if is_dark else "#FFFFFF"
-    top = "#111827" if is_dark else "#FFFBF7"
-    bot = "#0B1220" if is_dark else "#F8FAFC"
-    bar = "#0F172A" if is_dark else "#F1F5F9"
-    div = "rgba(148,163,184,0.18)" if is_dark else "rgba(15,23,42,0.10)"
-    heading = "#F8FAFC" if is_dark else "#0F172A"
-    body = "#94A3B8" if is_dark else "#64748B"
-    chip = "#1E293B" if is_dark else "#FFFFFF"
-    chip_stroke = accent
+    dark = theme == "dark"
+    s = "D" if dark else "L"
+    accent, soft = "#fe702d", "#fbbf24"
+    outer = "#070B14" if dark else "#FFFFFF"
+    panel_a = "#121A2B" if dark else "#FFF8F2"
+    panel_b = "#0B1220" if dark else "#F1F5F9"
+    heading = "#F8FAFC" if dark else "#0F172A"
+    body = "#A8B3C7" if dark else "#475569"
+    muted = "#64748B"
+    chip = "#1A2336" if dark else "#FFFFFF"
+    pill_bg = "#243049" if dark else "#FFE8D6"
+    pill_tx = "#FDE68A" if dark else "#9A3412"
 
-    # Visual button row (decorative — real links are Markdown badges under the SVG)
-    def btn(x, label, icon_color):
-        return f'''<rect x="{x}" y="168" width="200" height="44" rx="10" fill="{chip}" stroke="{chip_stroke}" stroke-opacity="0.5"/>
-<circle cx="{x + 28}" cy="190" r="10" fill="{icon_color}"/>
-<text x="{x + 48}" y="196" font-size="14" font-weight="600" fill="{heading}">{label}</text>'''
+    widths = {"Python": 102, "TypeScript": 130, "React": 96, "PostgreSQL": 138, "Azure": 98}
+    x, chips = 56.0, []
+    for name in widths:
+        w = widths[name]
+        chips.append(stack_chip(x, 248, w, name, chip, accent, heading))
+        x += w + 12
+    stack = "\n".join(chips)
 
-    buttons = "\n".join([
-        btn(56, "PORTFOLIO", accent),
-        btn(276, "LINKEDIN", "#0A66C2"),
-        btn(496, "EMAIL", "#EA4335"),
-    ])
+    # Metric pills
+    metrics = [
+        (56, "100+ Badge & Cert"),
+        (210, "MS Learn Lv.15"),
+        (348, "19 Claude Academy"),
+        (508, "11 Google"),
+        (618, "Fortinet NSE 3"),
+        (758, "OCI Foundations"),
+    ]
+    # measure approx widths
+    metric_svg = []
+    mx = 56
+    for _, label in metrics:
+        w = 18 + len(label) * 7.0
+        metric_svg.append(pill(mx, 308, w, label, pill_bg, pill_tx))
+        mx += w + 10
+    metrics_row = "\n".join(metric_svg)
 
-    H = 240
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="{H}" viewBox="0 0 1180 {H}" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif" role="img" aria-label="Miguel Granados">
+    H = 380
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="{H}" viewBox="0 0 1180 {H}" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Miguel Granados — Ulamander">
 <defs>
-<linearGradient id="a{s}" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0" stop-color="{accent}"/><stop offset="1" stop-color="{soft}"/>
+<linearGradient id="bg{s}" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="{panel_a}"/><stop offset="1" stop-color="{panel_b}"/>
 </linearGradient>
-<linearGradient id="p{s}" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bot}"/>
+<linearGradient id="name{s}" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="{heading}"/><stop offset="0.55" stop-color="{heading}"/><stop offset="1" stop-color="{accent}"/>
 </linearGradient>
-<clipPath id="w{s}"><rect x="2" y="2" width="1176" height="{H - 4}" rx="16"/></clipPath>
+<linearGradient id="bar{s}" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="{accent}"/><stop offset="0.5" stop-color="{soft}"/><stop offset="1" stop-color="#38BDF8"/>
+</linearGradient>
+<radialGradient id="glow{s}" cx="85%" cy="20%" r="45%">
+  <stop offset="0" stop-color="{accent}" stop-opacity="0.28"/><stop offset="1" stop-color="{accent}" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="glow2{s}" cx="15%" cy="80%" r="40%">
+  <stop offset="0" stop-color="#38BDF8" stop-opacity="0.18"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="win{s}"><rect x="2" y="2" width="1176" height="{H - 4}" rx="18"/></clipPath>
 </defs>
-<rect x="2" y="2" width="1176" height="{H - 4}" rx="16" fill="{outer}"/>
-<g clip-path="url(#w{s})">
-<rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#p{s})"/>
-<rect x="2" y="2" width="1176" height="40" fill="{bar}"/>
-<line x1="2" y1="42" x2="1178" y2="42" stroke="{div}"/>
-<circle cx="26" cy="21" r="5" fill="#FF5F56"/>
-<circle cx="46" cy="21" r="5" fill="#FFBD2E"/>
-<circle cx="66" cy="21" r="5" fill="#27C93F"/>
-<text x="590" y="26" text-anchor="middle" font-size="12" font-family="ui-monospace,Menlo,monospace" fill="{body}">miguel@ulamander</text>
 
-<text x="56" y="100" font-size="40" font-weight="700" fill="{heading}">Miguel Granados</text>
-<text x="56" y="132" font-size="16" fill="{body}">Tecnico in Sviluppo di Intelligenza Artificiale · Founder @ Ulamander</text>
-<text x="56" y="156" font-size="13" fill="{body}">Torino, Italia · Full Stack · AI · Cloud Security</text>
-<rect x="56" y="164" width="1068" height="2" rx="1" fill="url(#a{s})"/>
-{buttons}
+<rect x="2" y="2" width="1176" height="{H - 4}" rx="18" fill="{outer}"/>
+<g clip-path="url(#win{s})">
+<rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#bg{s})"/>
+<rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#glow{s})"/>
+<rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#glow2{s})"/>
+
+<!-- top bar -->
+<rect x="2" y="2" width="1176" height="42" fill="{'#0A1020' if dark else '#EEF2FF'}" fill-opacity="0.85"/>
+<circle cx="28" cy="23" r="5" fill="#FF5F56"/>
+<circle cx="48" cy="23" r="5" fill="#FFBD2E"/>
+<circle cx="68" cy="23" r="5" fill="#27C93F"/>
+<text x="590" y="27" text-anchor="middle" font-size="12" font-family="ui-monospace,Menlo,monospace" fill="{muted}">miguel@ulamander — production systems</text>
+
+<!-- status -->
+<rect x="56" y="64" width="210" height="26" rx="13" fill="{pill_bg}"/>
+<circle cx="74" cy="77" r="5" fill="#22C55E"/>
+<text x="88" y="81" font-size="12" font-weight="600" fill="{pill_tx}">Disponibile per progetti</text>
+
+<text x="56" y="128" font-size="42" font-weight="800" fill="url(#name{s})">Miguel Granados</text>
+<text x="56" y="160" font-size="16" fill="{body}">Tecnico in Sviluppo di Intelligenza Artificiale · Full Stack · Fondatore di Ulamander</text>
+<text x="56" y="184" font-size="14" fill="{muted}">Trasformo processi complessi in soluzioni intelligenti guidate dall'IA · Torino, Italia</text>
+
+<rect x="56" y="202" width="1068" height="3" rx="1.5" fill="url(#bar{s})"/>
+
+<text x="56" y="232" font-size="11" letter-spacing="2.5" font-weight="700" fill="{accent}">CORE STACK</text>
+{stack}
+
+<text x="56" y="300" font-size="11" letter-spacing="2.5" font-weight="700" fill="{accent}">CREDENTIALS</text>
+{metrics_row}
+
+<text x="56" y="360" font-size="12" fill="{muted}">Sistemi reali in produzione · Web · App · Neural · CRM · Automazioni · Security-first</text>
 </g>
 </svg>
 '''
