@@ -9,19 +9,23 @@
 <div align="center">
 
 <a href="https://miguel.ulamander.com">
-  <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logoColor=fe702d&labelColor=0A101F&logo=googlechrome" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio-fe702d?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
 </a>
 &nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/miguel-granados-820b15192/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A101F" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;
 <a href="https://academy.claude.com/">
-  <img src="https://img.shields.io/badge/Claude_Academy-0A101F?style=for-the-badge&logoColor=fbbf24&labelColor=0A101F&logo=anthropic" alt="Claude Academy" />
+  <img src="https://img.shields.io/badge/Claude%20Academy-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Academy" />
 </a>
 &nbsp;&nbsp;
 <a href="https://skillshop.docebosaas.com/pages/16/skillshop-home-page">
-  <img src="https://img.shields.io/badge/Google_Skillshop-0A101F?style=for-the-badge&logoColor=fbbf24&labelColor=0A101F&logo=google" alt="Google Skillshop" />
+  <img src="https://img.shields.io/badge/Google%20Skillshop-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Skillshop" />
+</a>
+&nbsp;&nbsp;
+<a href="mailto:ulamanderdesing@gmail.com">
+  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
 
 </div>
