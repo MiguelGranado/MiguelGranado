@@ -1,8 +1,9 @@
-<!-- ===== HERO ===== -->
+<!-- ===== HEADER (Miguel + bottoni: Portfolio / LinkedIn / Email) ===== -->
+<!-- Design ispirato a 21st.dev social buttons; SVG per GitHub README -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912d">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912d">
-  <img alt="Miguel Granados" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912d">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912e">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912e">
+  <img alt="Miguel Granados" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912e">
 </picture>
 
 <div align="center">
@@ -66,17 +67,21 @@ Sistemi reali in produzione — stessa lista di [miguel.ulamander.com](https://m
 <br/><br/>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MiguelGranado&label=Profile%20Views&color=fe702d&style=flat)
-![Followers](https://img.shields.io/github/followers/MiguelGranado?label=Followers&style=flat&color=fe702d)
+![Followers](https://img.shields.io/github/followers/MiguelGranado&label=Followers&style=flat&color=fe702d)
 ![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMiguelGranado&label=Public%20Repos&query=%24.public_repos&color=fe702d)
 
-</div>
+<br/><br/>
 
-<div align="center">
+<!-- Griglia contributi (cuadraditos) ben visibile -->
+<img width="100%" alt="Activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=MiguelGranado&bg_color=0b1220&color=94a3b8&line=fe702d&point=fbbf24&area=true&hide_border=true&custom_title=Contributi" />
 
+<br/><br/>
+
+<!-- Snake: celle vuote grigie visibili (non nero su nero) -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg?v=20260912d" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg?v=20260912d" />
-  <img alt="Snake contributi" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg?v=20260912d" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg?v=20260912e" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg?v=20260912e" />
+  <img alt="Snake contributi" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg?v=20260912e" />
 </picture>
 
 </div>
