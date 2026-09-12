@@ -1,8 +1,8 @@
 <!-- ===== THEME-AWARE HERO (arifhaxn-style) ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912g">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912g">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912g">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912h">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912h">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912h">
 </picture>
 
 <!-- ===== SOCIAL ===== -->
@@ -17,21 +17,21 @@
 <!-- ===== TWO INSIGNIAS (credentials + focus — public GitHub stats are empty when activity is private) ===== -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912g" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912g" alt="Credentials insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912h" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912h" alt="Credentials insignias" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912g" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912g" alt="Focus stack insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912h" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912h" alt="Focus stack insignias" />
 </picture>
 </div>
 
 <!-- ===== GUSANITO — almost full README width ===== -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912g" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-light.svg?v=20260912g" />
-  <img width="100%" alt="Gusanito contribution snake" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912g" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912h" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-light.svg?v=20260912h" />
+  <img width="100%" alt="Gusanito contribution snake" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912h" />
 </picture>
 </div>
 
