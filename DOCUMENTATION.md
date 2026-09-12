@@ -1,15 +1,14 @@
 # GitHub profile — MiguelGranado
 
-English README (commercial). Portfolio site can stay Italian.
-
-## Gusanito (full-width snake)
+## Contribution snake
+- Real calendar from profile (`scripts/hero/calendar.json`)
 - `scripts/hero/build_snake_full.py` → `snake-dark.svg` / `snake-light.svg` (1180px)
-- Travels almost the full grid; native GitHub activity stays private
-- Workflow: `.github/workflows/snake.yml` also publishes to `output` branch
+- No “Gusanito” label — clean arifhaxn-style SVG
+- Native GitHub activity stays private; README shows real days
 
 ## Insignias
-- `scripts/hero/build_insignias.py` → credentials + focus cards
-- Cert shields in README (MS Learn, Fortinet NSE 3, OCI, Claude, Google, …)
+- `scripts/hero/build_insignias.py` + `badge-icons/` (developer-icons + Fortinet/Shopify)
+- Achievements re-enabled in GitHub profile settings
 
-## Header
-`scripts/hero/build_hero.py` → dark.svg / light.svg
+## Icons
+- `icons/` for cert table logos
