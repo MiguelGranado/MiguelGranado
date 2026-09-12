@@ -1,8 +1,8 @@
 <!-- ===== HEADER ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912g">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912g">
-  <img alt="Miguel Granados" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912g">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg">
 </picture>
 
 <p align="center">
@@ -69,12 +69,12 @@ Live production systems — same list as [miguel.ulamander.com](https://miguel.u
 <br/><br/>
 
 <!-- Full-width contribution grid -->
-<img width="100%" alt="Contribution grid" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/contrib-grid.svg?v=20260912g" />
+<img width="100%" alt="Contribution grid" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/contrib-grid.svg" />
 
 <br/><br/>
 
 <!-- Animated snake (GIF works inside GitHub <img>; CSS SVG animation does not) -->
-<img width="100%" alt="Contribution snake" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake.gif?v=20260912g" />
+<img width="100%" alt="Contribution snake" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@output/snake.gif" />
 
 </div>
 
