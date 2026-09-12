@@ -1,33 +1,13 @@
+# Snake disabled on purpose: contribution calendar / snake removed from README
+# so activity is not highlighted. Re-enable only if you want the arifhaxn snake back.
 name: Generate Snake Animation
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   generate:
-    permissions:
-      contents: write
+    if: false
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     steps:
-      # Full snk (not svg-only): emit a dark GIF so the snake actually moves on GitHub.
-      # SVG CSS animation freezes mid-frame and paints the snake body orange on empty days.
-      - name: Generate dark contribution snake GIF
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake.gif?color_snake=%23fe702d&color_dots=#0d1117,#21262d,#fb923c,#fe702d,#c2410c&color_empty=#0d1117
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-          commit_message: "Update snake animation [skip ci]"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo "Snake workflow disabled — contributions kept off the README."
