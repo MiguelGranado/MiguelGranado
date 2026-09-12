@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" role="img" aria-label="Miguel Granados — profile.sh --live">
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="814" viewBox="0 0 1180 814" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" role="img" aria-label="Miguel Granados — profile.sh --live">
 <defs>
 <linearGradient id="accentD" x1="0" y1="0" x2="1" y2="0">
   <stop offset="0" stop-color="#fe702d"/>
@@ -9,13 +9,13 @@
   <stop offset="1" stop-color="#0F0B08"/>
 </linearGradient>
 <filter id="glowD" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>
-<clipPath id="winClipD"><rect x="2" y="2" width="1176" height="696" rx="18"/></clipPath>
+<clipPath id="winClipD"><rect x="2" y="2" width="1176" height="810" rx="18"/></clipPath>
 <clipPath id="photoClipD"><rect x="36" y="84" width="400" height="492" rx="10"/></clipPath>
-<clipPath id="barClipD"><rect x="500" y="649" width="632" height="10" rx="5"/></clipPath>
+<clipPath id="barClipD"><rect x="500" y="783.0" width="632" height="10" rx="5"/></clipPath>
 </defs>
-<rect x="2" y="2" width="1176" height="696" rx="18" fill="#0F0B08"/>
+<rect x="2" y="2" width="1176" height="810" rx="18" fill="#0F0B08"/>
 <g clip-path="url(#winClipD)">
-<rect x="2" y="2" width="1176" height="696" fill="url(#panelGradD)"/>
+<rect x="2" y="2" width="1176" height="810" fill="url(#panelGradD)"/>
 <rect x="2" y="2" width="1176" height="46" fill="#231b13"/>
 <line x1="2" y1="48" x2="1178" y2="48" stroke="rgba(255,220,180,0.10)"/>
 <circle cx="30" cy="25" r="5.5" fill="#ff5f56"/>
@@ -21411,44 +21411,78 @@
 <g transform="translate(966.0,218.0) scale(0.1800)"><path fill="url(#ic_azure_a)" d="M33.338 3.003h29.59L32.212 94.07a4.72 4.72 0 0 1-4.47 3.211H4.71a4.706 4.706 0 0 1-4.66-4.017 4.7 4.7 0 0 1 .196-2.204l28.62-84.85A4.72 4.72 0 0 1 33.337 3v.001z"/><path fill="#0078D4" d="M87.887 97.283h-26.57a4.72 4.72 0 0 1-3.235-1.274l-30.153-28.16a2.18 2.18 0 0 1-.54-2.386 2.17 2.17 0 0 1 2.023-1.376h46.923l11.55 33.197z"/><path fill="url(#ic_azure_b)" d="m63.035 3.003-20.714 61.09 33.845-.008 11.61 33.198H61.304a4.9 4.9 0 0 1-1.61-.292 4.8 4.8 0 0 1-1.42-.814L37.92 77.181l-5.698 16.804a5.06 5.06 0 0 1-3.875 3.298H4.725a4.708 4.708 0 0 1-4.44-6.298l28.573-84.71a4.69 4.69 0 0 1 3.02-3.045c.471-.153.965-.23 1.461-.228h29.697z"/><path fill="url(#ic_azure_c)" d="M99.752 91.06a4.73 4.73 0 0 1-.635 4.257 4.71 4.71 0 0 1-3.826 1.966H62.31a4.72 4.72 0 0 0 3.828-1.966 4.72 4.72 0 0 0 .638-4.256L38.156 6.209a4.71 4.71 0 0 0-4.463-3.206h32.979a4.72 4.72 0 0 1 2.748.883 4.74 4.74 0 0 1 1.717 2.323l28.62 84.852z"/><defs><linearGradient id="ic_azure_a" x1="44.138" x2="13.386" y1="9.99" y2="100.834" gradientUnits="userSpaceOnUse"><stop stop-color="#114A8B"/><stop offset="1" stop-color="#0669BC"/></linearGradient><linearGradient id="ic_azure_b" x1="53.726" x2="46.613" y1="52.318" y2="54.731" gradientUnits="userSpaceOnUse"><stop stop-opacity=".3"/><stop offset=".1" stop-opacity=".2"/><stop offset=".3" stop-opacity=".1"/><stop offset=".6" stop-opacity=".1"/><stop offset="1" stop-opacity="0"/></linearGradient><linearGradient id="ic_azure_c" x1="49.8" x2="83.553" y1="7.34" y2="97.259" gradientUnits="userSpaceOnUse"><stop stop-color="#3CCBF4"/><stop offset="1" stop-color="#2892DF"/></linearGradient></defs></g>
 <text x="992.0" y="232.0" font-size="13" fill="#FBF3E9">Azure</text>
 </g>
+<rect x="500.0" y="250.0" width="91.0" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="545.5" y="267.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Full Stack</text>
+<rect x="599.0" y="250.0" width="70.9" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="634.5" y="267.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Node.js</text>
+<rect x="677.9" y="250.0" width="64.2" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="710.0" y="267.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Docker</text>
+<rect x="750.1" y="250.0" width="44.1" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="772.1" y="267.5" text-anchor="middle" font-size="12" fill="#FBF3E9">n8n</text>
+<rect x="802.2" y="250.0" width="104.4" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="854.4" y="267.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Ollama / LLM</text>
+<rect x="914.6" y="250.0" width="144.6" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="986.9" y="267.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Microsoft Sentinel</text>
+<rect x="500.0" y="284.0" width="104.4" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="552.2" y="301.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Defender XDR</text>
+<rect x="612.4" y="284.0" width="117.8" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="671.3" y="301.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Fortinet NSE 3</text>
+<rect x="738.2" y="284.0" width="104.4" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="790.4" y="301.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Oracle Cloud</text>
+<rect x="850.6" y="284.0" width="64.2" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="882.7" y="301.5" text-anchor="middle" font-size="12" fill="#FBF3E9">SC-900</text>
+<rect x="922.8" y="284.0" width="64.2" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="954.9" y="301.5" text-anchor="middle" font-size="12" fill="#FBF3E9">AI-900</text>
+<rect x="995.0" y="284.0" width="50.8" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="1020.4" y="301.5" text-anchor="middle" font-size="12" fill="#FBF3E9">GDPR</text>
+<rect x="500.0" y="318.0" width="84.3" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="542.1" y="335.5" text-anchor="middle" font-size="12" fill="#FBF3E9">EU AI Act</text>
+<rect x="592.3" y="318.0" width="97.7" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="641.1" y="335.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Claude Code</text>
+<rect x="698.0" y="318.0" width="70.9" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="733.5" y="335.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Shopify</text>
+<rect x="776.9" y="318.0" width="84.3" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="819.0" y="335.5" text-anchor="middle" font-size="12" fill="#FBF3E9">WordPress</text>
+<rect x="869.2" y="318.0" width="137.9" height="26" rx="7" fill="#2A1E12" stroke="#fe702d" stroke-opacity="0.4"/>
+<text x="938.2" y="335.5" text-anchor="middle" font-size="12" fill="#FBF3E9">Cloudflare Tunnel</text>
 
-<text x="500" y="280" font-size="13" letter-spacing="2" fill="#e0a066">NOW BUILDING</text>
-<text x="500" y="304" font-size="15" fill="#FBF3E9">Ulamander-Neural — local AI chat, fine-tuning/</text>
-<text x="500" y="324" font-size="15" fill="#FBF3E9">distillation panel, multi-board exporter</text>
+<text x="500" y="394.0" font-size="13" letter-spacing="2" fill="#e0a066">NOW BUILDING</text>
+<text x="500" y="418.0" font-size="15" fill="#FBF3E9">Ulamander-Neural — local AI chat, fine-tuning/</text>
+<text x="500" y="438.0" font-size="15" fill="#FBF3E9">distillation panel, multi-board exporter</text>
 
-<text x="500" y="365" font-size="13" letter-spacing="2" fill="#e0a066">CONTACT</text>
-<text x="620" y="389" font-size="14" fill="#FBF3E9">miguel.ulamander.com</text>
-<text x="620" y="409" font-size="14" fill="#FBF3E9">linkedin.com/in/miguel-granados-820b15192</text>
-<text x="620" y="429" font-size="14" fill="#FBF3E9">academy.claude.com (Claude Academy)</text>
-<text x="620" y="449" font-size="14" fill="#FBF3E9">Google Skillshop — 6x Ads Certified</text>
-<text x="620" y="469" font-size="14" fill="#FBF3E9">ulamanderdesing@gmail.com</text>
-<text x="500" y="389" font-size="12" fill="#e0a066">Grid.Portfolio</text>
-<text x="500" y="409" font-size="12" fill="#e0a066">Grid.LinkedIn</text>
-<text x="500" y="429" font-size="12" fill="#e0a066">Grid.Claude</text>
-<text x="500" y="449" font-size="12" fill="#e0a066">Grid.Google</text>
-<text x="500" y="469" font-size="12" fill="#e0a066">Grid.Mail</text>
+<text x="500" y="479.0" font-size="13" letter-spacing="2" fill="#e0a066">CONTACT</text>
+<text x="620" y="503.0" font-size="14" fill="#FBF3E9">miguel.ulamander.com</text>
+<text x="620" y="523.0" font-size="14" fill="#FBF3E9">linkedin.com/in/miguel-granados-820b15192</text>
+<text x="620" y="543.0" font-size="14" fill="#FBF3E9">academy.claude.com (Claude Academy)</text>
+<text x="620" y="563.0" font-size="14" fill="#FBF3E9">Google Skillshop — 6x Ads Certified</text>
+<text x="620" y="583.0" font-size="14" fill="#FBF3E9">ulamanderdesing@gmail.com</text>
+<text x="500" y="503.0" font-size="12" fill="#e0a066">Grid.Portfolio</text>
+<text x="500" y="523.0" font-size="12" fill="#e0a066">Grid.LinkedIn</text>
+<text x="500" y="543.0" font-size="12" fill="#e0a066">Grid.Claude</text>
+<text x="500" y="563.0" font-size="12" fill="#e0a066">Grid.Google</text>
+<text x="500" y="583.0" font-size="12" fill="#e0a066">Grid.Mail</text>
 
-<text x="500" y="510" font-size="13" letter-spacing="2" fill="#e0a066">CREDENTIALS</text>
-<text x="500" y="534" font-size="14" fill="#FBF3E9">6x Google Ads Certified · 19x Claude Academy · MS Learn Lv.15</text>
+<text x="500" y="624.0" font-size="13" letter-spacing="2" fill="#e0a066">CREDENTIALS</text>
+<text x="500" y="648.0" font-size="14" fill="#FBF3E9">6x Google Ads Certified · 19x Claude Academy · MS Learn Lv.15</text>
 
-<text x="500" y="575" font-size="13" letter-spacing="2" fill="#e0a066">GITHUB STATS</text>
-<text x="500" y="599" font-size="14" fill="#FBF3E9">52 commits · 11 pull requests authored</text>
+<text x="500" y="689.0" font-size="13" letter-spacing="2" fill="#e0a066">GITHUB STATS</text>
+<text x="500" y="713.0" font-size="14" fill="#FBF3E9">52 commits · 11 pull requests authored</text>
 
-<text x="500" y="640" font-size="13" letter-spacing="2" fill="#e0a066">MOST USED LANGUAGES</text>
-<rect x="500" y="669" width="632" height="10" rx="5" fill="#2A1E12"/>
+<text x="500" y="754.0" font-size="13" letter-spacing="2" fill="#e0a066">MOST USED LANGUAGES</text>
+<rect x="500" y="783.0" width="632" height="10" rx="5" fill="#2A1E12"/>
 <g clip-path="url(#barClipD)">
-<rect x="500.0" y="649.0" width="410.8" height="10" fill="#3776AB"/>
-<rect x="910.8" y="649.0" width="145.4" height="10" fill="#3178C6"/>
-<rect x="1056.2" y="649.0" width="69.5" height="10" fill="#F7DF1E"/>
-<rect x="1125.7" y="649.0" width="6.3" height="10" fill="#8b8b8b"/>
+<rect x="500.0" y="783.0" width="410.8" height="10" fill="#3776AB"/>
+<rect x="910.8" y="783.0" width="145.4" height="10" fill="#3178C6"/>
+<rect x="1056.2" y="783.0" width="69.5" height="10" fill="#F7DF1E"/>
+<rect x="1125.7" y="783.0" width="6.3" height="10" fill="#8b8b8b"/>
 </g>
-<circle cx="500.0" cy="674.0" r="4" fill="#3776AB"/>
-<text x="510.0" y="678.0" font-size="12" fill="#c9b79b">Python 65%</text>
-<circle cx="588.0" cy="674.0" r="4" fill="#3178C6"/>
-<text x="598.0" y="678.0" font-size="12" fill="#c9b79b">TypeScript 23%</text>
-<circle cx="702.4" cy="674.0" r="4" fill="#F7DF1E"/>
-<text x="712.4" y="678.0" font-size="12" fill="#c9b79b">JavaScript 11%</text>
-<circle cx="816.8" cy="674.0" r="4" fill="#8b8b8b"/>
-<text x="826.8" y="678.0" font-size="12" fill="#c9b79b">Other 1%</text>
+<circle cx="500.0" cy="808.0" r="4" fill="#3776AB"/>
+<text x="510.0" y="812.0" font-size="12" fill="#c9b79b">Python 65%</text>
+<circle cx="588.0" cy="808.0" r="4" fill="#3178C6"/>
+<text x="598.0" y="812.0" font-size="12" fill="#c9b79b">TypeScript 23%</text>
+<circle cx="702.4" cy="808.0" r="4" fill="#F7DF1E"/>
+<text x="712.4" y="812.0" font-size="12" fill="#c9b79b">JavaScript 11%</text>
+<circle cx="816.8" cy="808.0" r="4" fill="#8b8b8b"/>
+<text x="826.8" y="812.0" font-size="12" fill="#c9b79b">Other 1%</text>
 </g>
 </svg>
