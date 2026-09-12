@@ -87,8 +87,8 @@ Real systems in production — same list as on [my portfolio](https://miguel.ula
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=0F0B08&stroke=fe702d&ring=fbbf24&fire=fe702d&currStreakLabel=fe702d&sideLabels=c9b79b&currStreakNum=FBF3E9&sideNums=FBF3E9&dates=c9b79b&titleColor=fe702d&card_width=1180" />
-  <img width="100%" src="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=FFFFFF&stroke=fe702d&ring=fbbf24&fire=fe702d&currStreakLabel=fe702d&sideLabels=7A6A55&currStreakNum=241a10&sideNums=241a10&dates=7A6A55&titleColor=fe702d&card_width=1180" alt="Racha de contribuciones" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=0F0B08&stroke=fe702d&ring=fbbf24&fire=fe702d&currStreakLabel=fe702d&sideLabels=c9b79b&currStreakNum=FBF3E9&sideNums=FBF3E9&dates=c9b79b&titleColor=fe702d&card_width=1180&disable_animations=true" />
+  <img width="100%" src="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=FFFFFF&stroke=fe702d&ring=fbbf24&fire=fe702d&currStreakLabel=fe702d&sideLabels=7A6A55&currStreakNum=241a10&sideNums=241a10&dates=7A6A55&titleColor=fe702d&card_width=1180&disable_animations=true" alt="Racha de contribuciones" />
 </picture>
 
 <br/><br/>
