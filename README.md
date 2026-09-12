@@ -1,8 +1,8 @@
 <!-- ===== THEME-AWARE HERO BANNER ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg">
-  <img alt="Miguel Granados" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912b">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912b">
+  <img alt="Miguel Granados" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912b">
 </picture>
 
 <!-- ===== LINKS — same base tone for a clean strip ===== -->
@@ -109,9 +109,9 @@ Plus dashboards, e-commerce, WordPress and automation builds for clients across 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
-  <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg?v=20260912b" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg?v=20260912b" />
+  <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg?v=20260912b" />
 </picture>
 
 </div>
