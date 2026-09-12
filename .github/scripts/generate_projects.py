@@ -53,9 +53,15 @@ set_theme("dark")
 # ---------------- layout ----------------
 W        = 1180
 CARD_W   = 578
-CARD_H   = 184
-GAP      = 18
+CARD_H   = 192
+GAP      = 20
 MARGIN   = 8
+# left content must end before language legend
+DESC_MAX_CHARS = 34
+LEGEND_LEFT = 400   # language dots column
+DONUT_CX = 526
+DONUT_R = 24
+
 FONT     = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
 
 def esc(s): return html.escape(str(s), quote=True)
@@ -187,54 +193,58 @@ def card(p, x, y, idx):
       f'<tspan fill="{CYAN}">_<animate attributeName="opacity" values="1;0;1" dur="1.2s" '
       f'begin="{b+0.4:.2f}s" repeatCount="indefinite"/></tspan></text>')
 
-    # description, wrapped to 2 lines
-    for i, line in enumerate(wrap_text(p.get("description", ""), 52)):
-        a(f'<text x="68" y="{80 + i * 16}" font-size="11" fill="{MUTED}">{esc(line)}</text>')
+    # description — hard-clipped so it never reaches the language column
+    for i, line in enumerate(wrap_text(p.get("description", ""), DESC_MAX_CHARS)):
+        a(f'<text x="68" y="{80 + i * 15}" font-size="11" fill="{MUTED}">{esc(line)}</text>')
 
-    # tech icons (developer-icons SVGs) + optional text pills
+    # tech icons + pills (also stay left of legend)
     ix = 68
     icon_tags = p.get("icon_tags") or []
-    for ipath in icon_tags[:5]:
+    for ipath in icon_tags[:4]:
         ib64 = load_logo_b64(ipath)
         if not ib64:
             continue
-        a(f'<image x="{ix}" y="112" width="22" height="22" href="{ib64}" preserveAspectRatio="xMidYMid meet"/>')
-        ix += 28
-    tx = ix + (6 if icon_tags else 0)
-    for tag in (p.get("tags") or [])[: (2 if icon_tags else 3)]:
+        if ix + 24 > LEGEND_LEFT - 12:
+            break
+        a(f'<image x="{ix}" y="118" width="20" height="20" href="{ib64}" preserveAspectRatio="xMidYMid meet"/>')
+        ix += 26
+    tx = ix + (4 if icon_tags else 0)
+    for tag in (p.get("tags") or [])[:2]:
         tw = len(tag) * 6.6 + 14
-        a(f'<rect x="{tx}" y="118" width="{tw:.0f}" height="17" rx="8.5" fill="{PILL_BG}" stroke="{PILL_STROKE}"/>')
-        a(f'<text x="{tx + tw/2:.0f}" y="130" text-anchor="middle" font-size="9.5" fill="{VIOLET}">{esc(tag)}</text>')
-        tx += tw + 7
+        if tx + tw > LEGEND_LEFT - 8:
+            break
+        a(f'<rect x="{tx}" y="122" width="{tw:.0f}" height="16" rx="8" fill="{PILL_BG}" stroke="{PILL_STROKE}"/>')
+        a(f'<text x="{tx + tw/2:.0f}" y="133" text-anchor="middle" font-size="9.5" fill="{VIOLET}">{esc(tag)}</text>')
+        tx += tw + 6
 
-    # bottom row: badge / stars + updated
+    # bottom row: badge
     badge = (p.get("badge") or "").strip()
     stars = p.get("stars", 0)
     if badge:
-        a(f'<text x="68" y="155" font-size="11" fill="{MUTED}">'
+        a(f'<text x="68" y="168" font-size="11" fill="{MUTED}">'
           f'<tspan fill="{CYAN}">{esc(badge)}</tspan>'
           f'<tspan fill="{DIM}" dx="14">{esc(rel_time(p.get("pushed_at")) if p.get("pushed_at") else "")}</tspan></text>')
     else:
-        a(f'<text x="68" y="155" font-size="11" fill="{MUTED}">'
+        a(f'<text x="68" y="168" font-size="11" fill="{MUTED}">'
           f'<tspan fill="{CYAN}">&#9733;</tspan> {stars}'
           f'<tspan fill="{DIM}" dx="14">updated {rel_time(p.get("pushed_at"))}</tspan></text>')
 
-    # language donut — more gap so labels never sit on the ring (zoom-safe)
+    # language donut + legend — dedicated right column (no overlap with description)
     langs = p.get("languages") or {}
     if langs:
-        cx, cy, r = CARD_W - 52, CARD_H // 2 + 8, 26
+        cx, cy, r = DONUT_CX, CARD_H // 2 + 10, DONUT_R
         segs, legend = donut_segments(langs, cx, cy, r, b + 0.3)
         a(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{RING_BG}" stroke-width="8"/>')
         a(segs)
         top = legend[0]
         a(f'<text x="{cx}" y="{cy+4}" text-anchor="middle" font-size="11" font-weight="700" fill="{TEXT}">{top[1]*100:.0f}%</text>')
-        # legend column ends ≥14px before the ring
-        dot_x = cx - r - 108
-        text_x = dot_x + 10
-        ly = cy - 24
+        dot_x = LEGEND_LEFT
+        text_x = LEGEND_LEFT + 10
+        ly = cy - 26
         for lang, frac, col in legend[:3]:
             a(f'<circle cx="{dot_x}" cy="{ly}" r="3.5" fill="{col}"/>')
-            a(f'<text x="{text_x}" y="{ly+4}" font-size="10" fill="{MUTED}">{esc(lang)} {frac*100:.0f}%</text>')
+            short = lang if len(lang) <= 12 else lang[:11] + "…"
+            a(f'<text x="{text_x}" y="{ly+4}" font-size="10" fill="{MUTED}">{esc(short)} {frac*100:.0f}%</text>')
             ly += 20
     a('</g>')
     a('</a>')
