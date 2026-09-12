@@ -1,11 +1,10 @@
-<!-- ===== HEADER (solo presentazione — i bottoni clickabili sono sotto) ===== -->
+<!-- ===== HEADER ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912f">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912f">
-  <img alt="Miguel Granados" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912f">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912g">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912g">
+  <img alt="Miguel Granados" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912g">
 </picture>
 
-<!-- Unici bottoni cliccabili (SVG non supporta link quando è <img>) -->
 <p align="center">
   <a href="https://miguel.ulamander.com"><img src="https://img.shields.io/badge/Portfolio-fe702d?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
   &nbsp;
@@ -16,39 +15,39 @@
 
 ---
 
-## Chi sono
+## About Me
 
-Fondatore di **[Ulamander](https://ulamander.com)** — Tecnico in Sviluppo di Intelligenza Artificiale.
-Allineato a [miguel.ulamander.com](https://miguel.ulamander.com):
+Founder of **[Ulamander](https://ulamander.com)** — AI Development Technician & Full Stack Engineer.
+Same profile as [miguel.ulamander.com](https://miguel.ulamander.com):
 
-> Trasformo processi complessi in soluzioni intelligenti guidate dall'IA.
-> Progetto e metto in produzione frontend, backend, cloud, automazioni e sistemi AI.
+> I turn complex processes into intelligent AI-driven systems.
+> I design and ship frontend, backend, cloud, automations and AI systems to production.
 
-**Come consegno valore**
+**How I deliver**
 
-- **Sistemi reali** — non solo prototipi: Web, App, Neural, CRM e mail corporate già in produzione
-- **Full Stack + IA** — React/TypeScript, Node, Postgres, LLM locali (Ollama) e agenti n8n nello stesso flusso
-- **Security-first** — Azure/Sentinel, Fortinet, DNS/SPF/DKIM e hardening operativo
-- **End-to-end** — dall'idea al deploy (UI, API, cloud, mail, tunnel) senza frammentare il progetto
+- **Real systems** — not just prototypes: Web, App, Neural, CRM and corporate mail already in production
+- **Full Stack + AI** — React/TypeScript, Node, Postgres, local LLMs (Ollama) and n8n agents in one flow
+- **Security-first** — Azure/Sentinel, Fortinet, DNS/SPF/DKIM and operational hardening
+- **End-to-end** — from idea to deploy (UI, API, cloud, mail, tunnel) without splitting the project
 
-Torino, Italia — remoto e on-site · risposta entro 24 ore
+Turin, Italy — remote & on-site · reply within 24 hours
 
 ---
 
-## Progetti in evidenza
+## Featured Projects
 
-Sistemi in produzione — stessa lista di [miguel.ulamander.com](https://miguel.ulamander.com/#progetti):
+Live production systems — same list as [miguel.ulamander.com](https://miguel.ulamander.com/#proyectos):
 
-| Progetto | Descrizione | Stack | Live |
+| Project | Description | Stack | Live |
 |---|---|---|---|
-| **ULAMANDER — SaaS per Agenzie** | Auth, dashboard, progetti, fatturazione, sync NAS | React · Vite · Docker · Postgres | [app.ulamander.com](https://app.ulamander.com) |
-| **ULAMANDER — Sistema Operativo Immobiliare** | CRM, Rewards, agenti IA, marketing white-label | CRM · AI Agents · Rewards | [inmobiliaria.ulamander.com](https://inmobiliaria.ulamander.com) |
-| **CRM Immobiliare** | Pipeline lead, nurturing, reporting | CRM · Automazione · NAS | [crm-davidevicenzi.ulamander.com](https://crm-davidevicenzi.ulamander.com) |
-| **Valutazioni Immobiliari** | Funnel valutazione + routing CRM | Lead · Funnel · GDPR | [valutazioni.davidevicenzi.it](https://valutazioni.davidevicenzi.it) |
-| **Ulamander.com** | Sito marketing, CMS, tunnel Cloudflare | React · CMS · NAS | [ulamander.com](https://ulamander.com) |
-| **CuraDomus** | Piattaforma assistenza domiciliare | React · Node.js · Postgres | Cliente privato |
-| **Café Manager** | Ordini, inventario, staff | POS · Inventario · Report | Cliente privato |
-| **Hotel 5 Stelle** | Sito multilingua con booking | React · Booking · CMS | Cliente privato |
+| **ULAMANDER — SaaS for Agencies** | Auth, dashboard, projects, billing, NAS sync | React · Vite · Docker · Postgres | [app.ulamander.com](https://app.ulamander.com) |
+| **ULAMANDER — Real Estate OS** | CRM, Rewards, AI agents, white-label marketing | CRM · AI Agents · Rewards | [inmobiliaria.ulamander.com](https://inmobiliaria.ulamander.com) |
+| **Real Estate CRM** | Lead pipeline, nurturing, reporting | CRM · Automation · NAS | [crm-davidevicenzi.ulamander.com](https://crm-davidevicenzi.ulamander.com) |
+| **Property Valuations** | Valuation funnel + CRM routing | Lead · Funnel · GDPR | [valutazioni.davidevicenzi.it](https://valutazioni.davidevicenzi.it) |
+| **Ulamander.com** | Marketing site, CMS, Cloudflare tunnel | React · CMS · NAS | [ulamander.com](https://ulamander.com) |
+| **CuraDomus** | Home-care matching platform | React · Node.js · Postgres | Private client |
+| **Café Manager** | Orders, inventory, staff | POS · Inventory · Reports | Private client |
+| **5-Star Hotel Site** | Multilingual booking showcase | React · Booking · CMS | Private client |
 
 ---
 
@@ -58,7 +57,7 @@ Sistemi in produzione — stessa lista di [miguel.ulamander.com](https://miguel.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=0B1220&stroke=fe702d&ring=fe702d&fire=fe702d&currStreakLabel=fe702d&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=fe702d&card_width=1180&disable_animations=true" />
-  <img width="100%" src="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=FFFFFF&stroke=fe702d&ring=fe702d&fire=fe702d&currStreakLabel=fe702d&sideLabels=64748B&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=fe702d&card_width=1180&disable_animations=true" alt="Streak contributi" />
+  <img width="100%" src="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=FFFFFF&stroke=fe702d&ring=fe702d&fire=fe702d&currStreakLabel=fe702d&sideLabels=64748B&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=fe702d&card_width=1180&disable_animations=true" alt="Contribution streak" />
 </picture>
 
 <br/><br/>
@@ -69,28 +68,33 @@ Sistemi in produzione — stessa lista di [miguel.ulamander.com](https://miguel.
 
 <br/><br/>
 
-<!-- Una sola griglia contributi (celle grigie visibili) -->
-<img width="100%" alt="Griglia contributi" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/contrib-grid.svg?v=20260912f" />
+<!-- Full-width contribution grid -->
+<img width="100%" alt="Contribution grid" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/contrib-grid.svg?v=20260912g" />
+
+<br/><br/>
+
+<!-- Animated snake (GIF works inside GitHub <img>; CSS SVG animation does not) -->
+<img width="100%" alt="Contribution snake" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake.gif?v=20260912g" />
 
 </div>
 
 ---
 
-## Certificazioni & formazione
+## Certifications & training
 
-Allineato a [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ badge & cert**, MS Learn **Livello 15**.
+Aligned with [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ badges & certs**, MS Learn **Level 15**.
 
-| Area | Dettaglio |
+| Area | Detail |
 |---|---|
-| **Google Skillshop** | 11 cert: Ads Display · Search · Apps · Creative · Measurement · Shopping · Video · AI-Powered Performance Ads · Campaign Manager 360 · Analytics · Grow Offline Sales |
-| **Claude Academy** | 19 badge (verifica su [academy.claude.com](https://academy.claude.com)) |
-| **Microsoft Learn** | Livello 15 · AI-900 · SC-900 · path security/cloud — [transcript](https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/) |
+| **Google Skillshop** | 11 certs: Ads Display · Search · Apps · Creative · Measurement · Shopping · Video · AI-Powered Performance Ads · Campaign Manager 360 · Analytics · Grow Offline Sales |
+| **Claude Academy** | 19 badges (verify on [academy.claude.com](https://academy.claude.com)) |
+| **Microsoft Learn** | Level 15 · AI-900 · SC-900 · security/cloud paths — [transcript](https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/) |
 | **Oracle** | OCI 2025 Certified Foundations Associate |
 | **Fortinet** | NSE 3 · Certified Associate Cybersecurity · Certified Fundamentals Cybersecurity |
 | **Shopify** | Foundations · E-commerce Fundamentals · Store Setup & Customization |
 | **AWS** | Cloud Practitioner Essentials · Technical Essentials · Architecting on AWS · Cloud Foundations |
 
-**Roadmap 2026:** SC-200 · AZ-500 · AI-102 · Fortinet NSE 4 · GitHub Advanced Security
+**2026 roadmap:** SC-200 · AZ-500 · AI-102 · Fortinet NSE 4 · GitHub Advanced Security
 
 ---
 
@@ -139,6 +143,6 @@ Allineato a [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ badg
 ---
 
 <p align="center">
-  <b>Disponibile per consulenze e collaborazioni in AI + security.</b><br/>
+  <b>Open to consulting and collaborations in AI + security.</b><br/>
   <b>Miguel Granados</b> · <a href="https://ulamander.com">Ulamander</a> · <a href="https://miguel.ulamander.com">miguel.ulamander.com</a> · <a href="mailto:info@ulamander.com">info@ulamander.com</a>
 </p>

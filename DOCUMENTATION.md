@@ -1,32 +1,16 @@
-# Profilo GitHub — MiguelGranado
+# GitHub profile — MiguelGranado
 
-Respaldo locale del README di profilo pubblicato su
-https://github.com/MiguelGranado
+Local backup of https://github.com/MiguelGranado
 
-## Contenuto
+## Layout
+- `readme-publicado/` — README.md, dark.svg, light.svg, contrib-grid.svg
+- `scripts/hero/build_hero.py` — header SVG (must be valid XML)
+- `scripts/hero/build_contrib_grid.py` — contribution grid
+- `scripts/workflows/snake.yml` — snake GIF + SVG (GIF animates in GitHub)
 
-| Percorso | Ruolo |
-|---|---|
-| `readme-publicado/` | `README.md`, `dark.svg`, `light.svg` da pubblicare |
-| `scripts/hero/build_hero.py` | Genera gli SVG del header |
-| `scripts/hero/icons/` | Loghi stack (MIT) |
-| `scripts/workflows/snake.yml` | Action della snake contributi |
+## Language
+README is **English** (more commercial for international clients/recruiters).
+Portfolio site can stay Italian: https://miguel.ulamander.com
 
-## Pubblicare
-
-1. Copiare `readme-publicado/*` nella root del repo `MiguelGranado/MiguelGranado`
-2. Copiare `scripts/workflows/snake.yml` → `.github/workflows/snake.yml`
-3. Commit + push su `main`
-
-## Rigenerare l’header
-
-```bash
-cd scripts/hero
-python3 build_hero.py
-cp dark.svg light.svg ../../readme-publicado/
-```
-
-## Fonte dati
-
-Profilo e certificazioni allineati a https://miguel.ulamander.com  
-Lingua del README: **italiano** (come il portfolio).
+## Publish
+Copy `readme-publicado/*` to repo root; snake workflow → `.github/workflows/snake.yml`.
