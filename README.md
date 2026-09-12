@@ -156,24 +156,38 @@ Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's
 
 ## 🧠 Claude Academy Training (Anthropic)
 
-19 completion badges earned on [Claude Academy](https://academy.claude.com), issued Aug 26, 2026 —
-each link below is publicly verifiable (anyone can confirm it's real via Claude Academy's own
+All 19 completion badges earned on [Claude Academy](https://academy.claude.com), issued Aug 26, 2026 —
+every link below is publicly verifiable (anyone can confirm it's real via Claude Academy's own
 verification page):
+
+**Platform & product**
 
 | Course | Verify |
 |---|---|
 | Claude Platform 101 | [Verify ↗](https://academy.claude.com/badges/8235bc0b-689d-43d2-9be6-599fddab64ac) |
 | Building with the Claude API | [Verify ↗](https://academy.claude.com/badges/285490d3-b8ab-4937-aa26-45363f9eddc9) |
+| Claude Code 101 | [Verify ↗](https://academy.claude.com/badges/e440ad2f-4ff5-4874-8545-16f0c1fe8306) |
+| Claude Code in Action | [Verify ↗](https://academy.claude.com/badges/85bf6c20-276b-4736-ae0d-9ef0df9e2288) |
+| Claude 101 | [Verify ↗](https://academy.claude.com/badges/7f7a1376-c0a7-4d07-abb5-69b90fe446a0) |
+| Introduction to Claude Cowork | [Verify ↗](https://academy.claude.com/badges/20d939d8-7258-41cd-866d-ff46c40a92d5) |
 | Introduction to Model Context Protocol | [Verify ↗](https://academy.claude.com/badges/5ce2e265-3e3e-49a2-a89d-0b782370e4ca) |
 | Model Context Protocol: Advanced Topics | [Verify ↗](https://academy.claude.com/badges/cad4d5e6-5b2e-4f1b-a6b0-967f930b0475) |
-| Claude Code in Action | [Verify ↗](https://academy.claude.com/badges/85bf6c20-276b-4736-ae0d-9ef0df9e2288) |
 | Claude with Amazon Bedrock | [Verify ↗](https://academy.claude.com/badges/ac2652d4-bd29-41a5-b85d-2a264f427711) |
 | Claude with Google Cloud's Vertex AI | [Verify ↗](https://academy.claude.com/badges/1da4ccaa-ed8f-4d01-887f-8a522adaf373) |
-| AI Fluency: Framework & Foundations | [Verify ↗](https://academy.claude.com/badges/0387a72d-ddb8-4e76-96e8-794a181a636f) |
 
-Plus 11 more (AI Fluency editions for builders/educators/students/nonprofits/small business,
-Claude Code 101, Claude 101, AI Capabilities and Limitations, Teaching AI Fluency, Claude Cowork) —
-full list on request.
+**AI Fluency**
+
+| Course | Verify |
+|---|---|
+| AI Fluency: Framework & Foundations | [Verify ↗](https://academy.claude.com/badges/0387a72d-ddb8-4e76-96e8-794a181a636f) |
+| AI Capabilities and Limitations | [Verify ↗](https://academy.claude.com/badges/5fd9c900-21f2-4c83-b443-45e0caf08e0f) |
+| Teaching AI Fluency | [Verify ↗](https://academy.claude.com/badges/4ff1d949-20f0-4556-97fc-990e1ee6d1d9) |
+| AI Fluency for Builders | [Verify ↗](https://academy.claude.com/badges/ef70cbac-bb9a-4212-bf8a-a56b7bd4b467) |
+| AI Fluency for educators | [Verify ↗](https://academy.claude.com/badges/74cf4c42-4005-438f-b424-09302e2d33e5) |
+| AI Fluency for pK–12 Educators | [Verify ↗](https://academy.claude.com/badges/e60e2109-6a72-4da9-9ecb-d5a74b44840c) |
+| AI Fluency for students | [Verify ↗](https://academy.claude.com/badges/7dedd196-0cf2-4216-b2eb-32149ba3fab5) |
+| AI Fluency for Small Businesses | [Verify ↗](https://academy.claude.com/badges/97eb5eca-98a8-40ec-aa8b-88c154248759) |
+| AI Fluency for nonprofits | [Verify ↗](https://academy.claude.com/badges/88f92a33-e456-4804-923b-c56fd816adb7) |
 
 ---
 
