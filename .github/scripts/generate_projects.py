@@ -53,9 +53,9 @@ set_theme("dark")
 # ---------------- layout ----------------
 W        = 1180
 CARD_W   = 578
-CARD_H   = 168
-GAP      = 14
-MARGIN   = 5
+CARD_H   = 184
+GAP      = 18
+MARGIN   = 8
 FONT     = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
 
 def esc(s): return html.escape(str(s), quote=True)
@@ -219,23 +219,23 @@ def card(p, x, y, idx):
           f'<tspan fill="{CYAN}">&#9733;</tspan> {stars}'
           f'<tspan fill="{DIM}" dx="14">updated {rel_time(p.get("pushed_at"))}</tspan></text>')
 
-    # language donut, animated draw-in — vertically centered in the card body
+    # language donut — more gap so labels never sit on the ring (zoom-safe)
     langs = p.get("languages") or {}
     if langs:
-        cx, cy, r = CARD_W - 58, CARD_H // 2 + 6, 27
+        cx, cy, r = CARD_W - 52, CARD_H // 2 + 8, 26
         segs, legend = donut_segments(langs, cx, cy, r, b + 0.3)
-        a(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{RING_BG}" stroke-width="9"/>')
+        a(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{RING_BG}" stroke-width="8"/>')
         a(segs)
         top = legend[0]
         a(f'<text x="{cx}" y="{cy+4}" text-anchor="middle" font-size="11" font-weight="700" fill="{TEXT}">{top[1]*100:.0f}%</text>')
-        # legend: fixed left column, dot then left-aligned text; ends well before the ring
-        dot_x = cx - r - 92
-        text_x = dot_x + 9
-        ly = cy - 22
+        # legend column ends ≥14px before the ring
+        dot_x = cx - r - 108
+        text_x = dot_x + 10
+        ly = cy - 24
         for lang, frac, col in legend[:3]:
             a(f'<circle cx="{dot_x}" cy="{ly}" r="3.5" fill="{col}"/>')
             a(f'<text x="{text_x}" y="{ly+4}" font-size="10" fill="{MUTED}">{esc(lang)} {frac*100:.0f}%</text>')
-            ly += 18
+            ly += 20
     a('</g>')
     a('</a>')
     return "".join(e)
