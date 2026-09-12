@@ -48,13 +48,13 @@ recursos, firmware ESP32/Arduino).
 
 ## 🛠️ Tech Stack
 
-![Python](https://img.shields.io/badge/-Python-fe702d?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-fe702d?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/-React-fe702d?style=flat-square&logo=react&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-fe702d?style=flat-square&logo=postgresql&logoColor=white)
-![FastAPI](https://img.shields.io/badge/-FastAPI-fe702d?style=flat-square&logo=fastapi&logoColor=white)
-![Azure](https://img.shields.io/badge/-Microsoft%20Azure-fe702d?style=flat-square&logo=microsoftazure&logoColor=white)
-![Fortinet](https://img.shields.io/badge/-Fortinet%20NSE-fe702d?style=flat-square&logo=fortinet&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Azure](https://img.shields.io/badge/-Microsoft%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Fortinet](https://img.shields.io/badge/-Fortinet%20NSE-EE3124?style=flat-square&logo=fortinet&logoColor=white)
 ![GitHub Advanced Security](https://img.shields.io/badge/-GitHub%20Advanced%20Security-8250DF?style=flat-square&logo=github&logoColor=white)
 
 ---
@@ -121,7 +121,7 @@ Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's
 
 | Certification | Status |
 |---|---|
-| Google Ads Display | ✅ Completed — 88.5%, expires 05/21/2027 |
+| Google Ads Display | ✅ Completed |
 | Google Ads Search | ✅ Completed |
 | Google Ads Apps | ✅ Completed |
 | Google Ads Creative | ✅ Completed |
