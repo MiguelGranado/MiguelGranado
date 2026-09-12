@@ -36,22 +36,29 @@ Turin, Italy — remote & on-site · reply within 24 hours
 
 ## Featured Projects
 
-Live production systems — same list as [miguel.ulamander.com](https://miguel.ulamander.com/#proyectos):
+Cards aligned with [miguel.ulamander.com](https://miguel.ulamander.com/#proyectos) — **Ulamander products first**, private client work at the bottom.
+
+### Ulamander products
 
 | Project | Description | Stack | Live |
 |---|---|---|---|
 | **ULAMANDER — SaaS for Agencies** | Auth, dashboard, projects, billing, NAS sync | React · Vite · Docker · Postgres | [app.ulamander.com](https://app.ulamander.com) |
 | **ULAMANDER — Real Estate OS** | CRM, Rewards, AI agents, white-label marketing | CRM · AI Agents · Rewards | [inmobiliaria.ulamander.com](https://inmobiliaria.ulamander.com) |
-| **Real Estate CRM** | Lead pipeline, nurturing, reporting | CRM · Automation · NAS | [crm-davidevicenzi.ulamander.com](https://crm-davidevicenzi.ulamander.com) |
-| **Property Valuations** | Valuation funnel + CRM routing | Lead · Funnel · GDPR | [valutazioni.davidevicenzi.it](https://valutazioni.davidevicenzi.it) |
 | **Ulamander.com** | Marketing site, CMS, Cloudflare tunnel | React · CMS · NAS | [ulamander.com](https://ulamander.com) |
+| **Ulamander-Neural** | Local AI chat, fine-tuning & teacher→student distillation (QLoRA) | Ollama · QLoRA · On-prem | Product |
+| **Edge Deploy (Pi / ESP32)** | Model/agent export to Raspberry Pi, ESP32, USB edge setups | Raspberry Pi · ESP32 · Firmware | Product |
+
+### Private client
+
+| Project | Description | Stack | Live |
+|---|---|---|---|
+| **Real Estate CRM** | Lead pipeline, nurturing, reporting, white-label stack | CRM · Automation · NAS | Private client |
+| **Property Valuations** | Valuation funnel + CRM routing (GDPR) | Lead · Funnel · GDPR | Private client |
+| **Business Automations** | n8n workflows: lead routing, CRM sync, mail, alerts | n8n · Webhook · API | Private client |
 | **CuraDomus** | Home-care matching platform | React · Node.js · Postgres | Private client |
 | **Café Manager** | Orders, inventory, staff | POS · Inventory · Reports | Private client |
 | **5-Star Hotel Site** | Multilingual booking showcase | React · Booking · CMS | Private client |
-| **Ulamander-Neural** | Local AI chat, fine-tuning & teacher→student distillation (QLoRA) | Ollama · QLoRA · On-prem | Private / product |
-| **Business Automations** | n8n workflows: lead routing, CRM sync, mail, alerts | n8n · Webhook · API | Private clients |
-| **Edge Deploy (Pi / ESP32)** | Model/agent export to Raspberry Pi, ESP32, USB edge setups | Raspberry Pi · ESP32 · Firmware | Private / product |
-| **Private enterprise apps** | Closed dashboards, Shopify/WordPress, multilingual UI, custom graphics | React · Shopify · WordPress · NDA | Private clients |
+| **Private enterprise apps** | Closed dashboards, Shopify/WordPress, multilingual UI, custom graphics | React · Shopify · WordPress · NDA | Private client |
 
 ---
 
@@ -59,27 +66,15 @@ Live production systems — same list as [miguel.ulamander.com](https://miguel.u
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=0B1220&stroke=fe702d&ring=fe702d&fire=fe702d&currStreakLabel=fe702d&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=fe702d&card_width=1180&disable_animations=true" />
-  <img width="100%" src="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=FFFFFF&stroke=fe702d&ring=fe702d&fire=fe702d&currStreakLabel=fe702d&sideLabels=64748B&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=fe702d&card_width=1180&disable_animations=true" alt="Contribution streak" />
-</picture>
-
-<br/><br/>
-
 ![Profile Views](https://komarev.com/ghpvc/?username=MiguelGranado&label=Profile%20Views&color=fe702d&style=flat)
 ![Followers](https://img.shields.io/github/followers/MiguelGranado?label=Followers&style=flat&color=fe702d)
 ![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMiguelGranado&label=Public%20Repos&query=%24.public_repos&color=fe702d)
 
-</div>
+<br/><br/>
 
-<!-- ===== CONTRIBUTION SNAKE (same pattern as arifhaxn: theme-aware SVG, no GIF) ===== -->
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
-  <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
-</picture>
+<!-- Dark GIF only: SVG freeze-frame paints the snake body orange on empty days.
+     GIF animates correctly and only lights real contribution cells under the snake. -->
+<img width="100%" alt="Contribution snake" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake.gif" />
 
 </div>
 
