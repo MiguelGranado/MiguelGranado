@@ -1,46 +1,43 @@
-<!-- ===== HEADER (Miguel + bottoni: Portfolio / LinkedIn / Email) ===== -->
-<!-- Design ispirato a 21st.dev social buttons; SVG per GitHub README -->
+<!-- ===== HEADER (solo presentazione — i bottoni clickabili sono sotto) ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912e">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912e">
-  <img alt="Miguel Granados" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912e">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg?v=20260912f">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912f">
+  <img alt="Miguel Granados" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg?v=20260912f">
 </picture>
 
-<div align="center">
-
-<a href="https://miguel.ulamander.com">
-  <img src="https://img.shields.io/badge/Portfolio-0F172A?style=for-the-badge&logo=googlechrome&logoColor=fe702d" alt="Portfolio" />
-</a>
-&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/miguel-granados-820b15192/">
-  <img src="https://img.shields.io/badge/LinkedIn-0F172A?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" />
-</a>
-&nbsp;&nbsp;
-<a href="mailto:info@ulamander.com">
-  <img src="https://img.shields.io/badge/Email-0F172A?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" />
-</a>
-
-</div>
+<!-- Unici bottoni cliccabili (SVG non supporta link quando è <img>) -->
+<p align="center">
+  <a href="https://miguel.ulamander.com"><img src="https://img.shields.io/badge/Portfolio-fe702d?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/miguel-granados-820b15192/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  &nbsp;
+  <a href="mailto:info@ulamander.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
 
 ---
 
 ## Chi sono
 
 Fondatore di **[Ulamander](https://ulamander.com)** — Tecnico in Sviluppo di Intelligenza Artificiale.
-Progetto e metto in produzione frontend, backend, cloud, automazioni e sistemi AI con mentalità security-first.
+Allineato a [miguel.ulamander.com](https://miguel.ulamander.com):
 
-Stesso profilo di [miguel.ulamander.com](https://miguel.ulamander.com):
+> Trasformo processi complessi in soluzioni intelligenti guidate dall'IA.
+> Progetto e metto in produzione frontend, backend, cloud, automazioni e sistemi AI.
 
-- Focus: Microsoft Sentinel, Defender XDR, GitHub Advanced Security
-- Sicurezza: Fortinet NSE 3 (verso NSE 4)
-- AI: app local-first, agenti n8n, Ollama / LLM
-- Torino, Italia — remoto e on-site
+**Come consegno valore**
+
+- **Sistemi reali** — non solo prototipi: Web, App, Neural, CRM e mail corporate già in produzione
+- **Full Stack + IA** — React/TypeScript, Node, Postgres, LLM locali (Ollama) e agenti n8n nello stesso flusso
+- **Security-first** — Azure/Sentinel, Fortinet, DNS/SPF/DKIM e hardening operativo
+- **End-to-end** — dall'idea al deploy (UI, API, cloud, mail, tunnel) senza frammentare il progetto
+
+Torino, Italia — remoto e on-site · risposta entro 24 ore
 
 ---
 
 ## Progetti in evidenza
 
-Sistemi reali in produzione — stessa lista di [miguel.ulamander.com](https://miguel.ulamander.com/#progetti):
+Sistemi in produzione — stessa lista di [miguel.ulamander.com](https://miguel.ulamander.com/#progetti):
 
 | Progetto | Descrizione | Stack | Live |
 |---|---|---|---|
@@ -67,22 +64,13 @@ Sistemi reali in produzione — stessa lista di [miguel.ulamander.com](https://m
 <br/><br/>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MiguelGranado&label=Profile%20Views&color=fe702d&style=flat)
-![Followers](https://img.shields.io/github/followers/MiguelGranado&label=Followers&style=flat&color=fe702d)
+![Followers](https://img.shields.io/github/followers/MiguelGranado?label=Followers&style=flat&color=fe702d)
 ![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMiguelGranado&label=Public%20Repos&query=%24.public_repos&color=fe702d)
 
 <br/><br/>
 
-<!-- Griglia contributi locale (cuadraditos visibili) -->
-<img width="100%" alt="Griglia contributi" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/contrib-grid.svg?v=20260912e" />
-
-<br/><br/>
-
-<!-- Snake con celle vuote grigie (non nero su nero) -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@output/snake-light.svg" />
-  <img alt="Snake contributi" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@output/snake-light.svg" />
-</picture>
+<!-- Una sola griglia contributi (celle grigie visibili) -->
+<img width="100%" alt="Griglia contributi" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/contrib-grid.svg?v=20260912f" />
 
 </div>
 
@@ -143,19 +131,14 @@ Allineato a [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ badg
 
 ## GitHub Achievements
 
-<div align="center">
-
-<img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" alt="Quickdraw" width="72"/>
-<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" alt="YOLO" width="72"/>
-
-</div>
+<p align="center">
+  <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" alt="Quickdraw" width="72"/>
+  <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" alt="YOLO" width="72"/>
+</p>
 
 ---
 
-<div align="center">
-
-**Disponibile per consulenze e collaborazioni in AI + security.**
-
-**Miguel Granados** · [Ulamander](https://ulamander.com) · [miguel.ulamander.com](https://miguel.ulamander.com) · [info@ulamander.com](mailto:info@ulamander.com)
-
-</div>
+<p align="center">
+  <b>Disponibile per consulenze e collaborazioni in AI + security.</b><br/>
+  <b>Miguel Granados</b> · <a href="https://ulamander.com">Ulamander</a> · <a href="https://miguel.ulamander.com">miguel.ulamander.com</a> · <a href="mailto:info@ulamander.com">info@ulamander.com</a>
+</p>
