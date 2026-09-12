@@ -100,7 +100,7 @@ Cuentas reales, cambios reales. Gracias.
 - [x] Show Achievements = ON  
 - [ ] 2+ PRs mergeados → Pull Shark  
 - [ ] Quickdraw (issue cerrado &lt; 5 min)  
-- [ ] YOLO (self-merge sin review)  
+- [x] YOLO (self-merge sin review)  
 - [ ] 1 PR co-authored mergeado → Pair  
 - [ ] Repo público ≥ 16 stars → Starstruck  
 - [ ] (Opcional) Discussions aceptadas → Galaxy Brain  
