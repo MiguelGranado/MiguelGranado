@@ -13,15 +13,16 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
-      - name: Generate snake SVGs
-        uses: Platane/snk/svg-only@v3
+      # Full snk (not svg-only): emit a dark GIF so the snake actually moves on GitHub.
+      # SVG CSS animation freezes mid-frame and paints the snake body orange on empty days.
+      - name: Generate dark contribution snake GIF
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake-light.svg?color_snake=%23fe702d&color_dots=#ebedf0,#fed7aa,#fb923c,#fe702d,#c2410c
-            dist/snake-dark.svg?color_snake=%23fe702d&color_dots=#161b22,#3d4450,#fb923c,#fe702d,#c2410c
+            dist/snake.gif?color_snake=%23fe702d&color_dots=#0d1117,#21262d,#fb923c,#fe702d,#c2410c&color_empty=#0d1117
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
