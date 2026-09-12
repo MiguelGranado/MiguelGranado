@@ -2,11 +2,12 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 6 * * 1"
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      - "scripts/hero/build_snake_full.py"
 
 jobs:
   generate:
@@ -15,20 +16,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      # SVG pair like arifhaxn — Ulamander orange. Shown only inside README.
-      # Native GitHub contribution/activity graph stays private via profile settings.
-      - name: Generate contribution snake SVGs
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake-light.svg?color_snake=%23ea580c&color_dots=#ebedf0,#fed7aa,#fb923c,#fe702d,#c2410c
-            dist/snake-dark.svg?color_snake=%23fe702d&color_dots=#161b22,#21262d,#fb923c,#fe702d,#c2410c
-      - name: Push to output branch
+      - uses: actions/checkout@v4
+
+      - name: Build full-width gusanito (1180px)
+        run: |
+          python3 scripts/hero/build_snake_full.py
+          mkdir -p dist
+          cp snake-dark.svg snake-light.svg dist/
+
+      - name: Push SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "Update snake animation [skip ci]"
+          commit_message: "Update full-width gusanito [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
