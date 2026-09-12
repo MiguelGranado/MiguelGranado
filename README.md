@@ -1,17 +1,11 @@
 <!-- ===== THEME-AWARE HERO (arifhaxn-style) ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912q">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912q">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912q">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912r">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912r">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912r">
 </picture>
 
 
-<!-- ===== ULAMANDER BRAND ===== -->
-<p align="center">
-  <a href="https://ulamander.com">
-    <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/logos/ulamander.png" width="56" height="64" alt="Ulamander"/>
-  </a>
-</p>
 
 <!-- ===== SOCIAL ===== -->
 <p align="center">
@@ -23,26 +17,33 @@
 </p>
 
 
-<!-- ===== GITHUB ACHIEVEMENTS (Quickdraw · YOLO — visible to visitors in README) ===== -->
+<!-- ===== ULAMANDER SAAS + ACHIEVEMENT MODS ===== -->
 <p align="center">
-  <a href="https://github.com/MiguelGranado?achievement=quickdraw&tab=achievements">
-    <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="72" height="72" alt="Achievement: Quickdraw"/>
+  <a href="https://app.ulamander.com"><b>Ulamander SaaS</b></a>
+</p>
+<p align="center">
+  <a href="https://app.ulamander.com" title="Ulamander SaaS">
+    <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/logos/ulamander-favicon.png?v=20260912r" width="72" height="84" alt="Ulamander SaaS"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/MiguelGranado?achievement=yolo&tab=achievements">
-    <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="72" height="72" alt="Achievement: YOLO"/>
+  <a href="https://github.com/MiguelGranado" title="Quickdraw">
+    <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="72" height="72" alt="Quickdraw"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/MiguelGranado" title="YOLO">
+    <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="72" height="72" alt="YOLO"/>
   </a>
 </p>
 
 <!-- ===== TWO INSIGNIAS (credentials + focus — public GitHub stats are empty when activity is private) ===== -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912q" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912q" alt="Credentials insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912r" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912r" alt="Credentials insignias" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912q" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912q" alt="Focus stack insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912r" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912r" alt="Focus stack insignias" />
 </picture>
 </div>
 
@@ -51,7 +52,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
-  <img width="100%" alt="1,287 contributions in the last year" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912q" />
+  <img width="100%" alt="1,287 contributions in the last year" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912r" />
 </picture>
 </div>
 
