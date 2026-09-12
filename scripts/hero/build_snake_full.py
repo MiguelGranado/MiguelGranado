@@ -4,9 +4,9 @@ from __future__ import annotations
 
 WEEKS = 53
 DAYS = 7
-CELL = 16
-GAP = 4
-PAD_X = 24
+CELL = 19
+GAP = 3
+PAD_X = 12
 PAD_Y = 40
 SNAKE_LEN = 8
 FRAME_W = 1180
