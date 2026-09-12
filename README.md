@@ -63,6 +63,25 @@ recursos, firmware ESP32/Arduino).
 
 ---
 
+## 🚀 Featured Projects
+
+Real systems in production — same list as on [my portfolio](https://miguel.ulamander.com/#proyectos):
+
+| Project | Description | Stack | Live |
+|---|---|---|---|
+| **ULAMANDER — SaaS Platform for Agencies** | Client platform: auth, dashboard, projects, billing and NAS sync — one operating system for the agency | React · Vite · Docker · Postgres | [app.ulamander.com](https://app.ulamander.com) |
+| **ULAMANDER — Real Estate Operating System** | Live ecosystem: CRM, Rewards, AI agents and marketing in one product for real estate agencies | CRM · AI Agents · Rewards · White-label | [inmobiliaria.ulamander.com](https://inmobiliaria.ulamander.com) |
+| **CRM Immobiliare** | Vertical CRM in production: lead pipeline, states, nurturing, reporting, white-label stack for agencies | CRM · Automazione · Report · NAS | [crm-davidevicenzi.ulamander.com](https://crm-davidevicenzi.ulamander.com) |
+| **Valutazioni Immobiliari** | Public property-valuation funnel with psychographic profiles, lead capture and CRM-connected routing | Lead · Funnel · CRM · GDPR | [valutazioni.davidevicenzi.it](https://valutazioni.davidevicenzi.it) |
+| **Ulamander.com** | Premium marketing site: CMS, pricing, branding, NAS deploy, Cloudflare tunnel | React · CMS · Tunnel · NAS | [ulamander.com](https://ulamander.com) |
+| **CuraDomus** | Platform for professional home care — connects families with verified professionals | React · Node.js · PostgreSQL · Auth | Private client project |
+| **Café Manager** | Management system for bars/cafés: orders, inventory and staff in one dashboard | POS · Inventario · Staff · Report | Private client project |
+| **Sito Web Hotel 5 Stelle** | Multilingual showcase site with room booking, gallery and content management | React · Booking · Multilingua · CMS | Private client project |
+
+📌 Plus dashboards, e-commerce, WordPress and automation builds for clients across several industries.
+
+---
+
 ## 📊 GitHub Stats
 
 <div align="center">
