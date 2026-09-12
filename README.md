@@ -1,111 +1,61 @@
+<!-- ===== THEME-AWARE HERO BANNER ===== -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg">
+  <img alt="Miguel Granados" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg">
+</picture>
+
+<!-- ===== STACK BADGES ===== -->
+<div align="center">
+<img src="https://img.shields.io/badge/Python-fe702d?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/TypeScript-fe702d?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/React-fe702d?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+<img src="https://img.shields.io/badge/PostgreSQL-fe702d?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+</div>
+
+<!-- ===== GITHUB STATS (incluye actividad en repos privados) ===== -->
 <div align="center">
 
-<img src="./banner.svg" alt="Miguel Granados" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=0F0B08&stroke=fe702d&ring=fbbf24&fire=fe702d&currStreakLabel=fe702d&sideLabels=c9b79b&currStreakNum=FBF3E9&sideNums=FBF3E9&dates=c9b79b&titleColor=fe702d&card_width=1180" />
+  <img width="100%" src="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=FFFFFF&stroke=fe702d&ring=fbbf24&fire=fe702d&currStreakLabel=fe702d&sideLabels=7A6A55&currStreakNum=241a10&sideNums=241a10&dates=7A6A55&titleColor=fe702d&card_width=1180" alt="Racha de contribuciones" />
+</picture>
 
-### 👋 Hi, I'm Miguel — AI Engineer & Cloud Security Specialist
+<br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-MiguelGranado-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MiguelGranado)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguel-granados-820b15192/)
-[![Website](https://img.shields.io/badge/Website-ulamander.com-000000?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ulamander.com)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=MiguelGranado&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=fe702d&icon_color=fbbf24&text_color=c9b79b&bg_color=0F0B08&card_width=500" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=MiguelGranado&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=fe702d&icon_color=fe702d&text_color=241a10&bg_color=FFFFFF&card_width=500" alt="Stats de GitHub" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=fe702d&text_color=c9b79b&bg_color=0F0B08&card_width=500" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=fe702d&text_color=241a10&bg_color=FFFFFF&card_width=500" alt="Top lenguajes" />
+</picture>
 
 </div>
 
----
+<!-- ===== NOW BUILDING ===== -->
+### Ahora mismo construyendo
 
-## 👤 About Me
+**Ulamander-Neural** — chat con IA 100% local, panel de fine-tuning/destilación de modelos (maestro→alumno vía QLoRA), y un exportador multi-placa (Raspberry Pi, compute de bajos recursos, firmware ESP32/Arduino).
 
-Founder of **Ulamander** — I work on applied AI and cloud security, focused on
-threat detection, automation, and local-first / privacy-first tooling.
-
-- 🔭 **Currently focused on:** Microsoft Sentinel, Defender XDR, GitHub Advanced Security
-- 🛡️ **Security:** Fortinet NSE 3 (working toward NSE 4)
-- 🤖 **AI Engineering:** local-first apps, automation, AI-driven matching
-- 📍 Turin, Italy
-
----
-
-## 🛠️ Tech Stack
-
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Azure](https://img.shields.io/badge/-Microsoft%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Fortinet](https://img.shields.io/badge/-Fortinet%20NSE-EE3124?style=flat-square&logo=fortinet&logoColor=white)
-![GitHub Advanced Security](https://img.shields.io/badge/-GitHub%20Advanced%20Security-8250DF?style=flat-square&logo=github&logoColor=white)
-
----
-
-## 📊 GitHub Stats
-
+<!-- ===== LINKS ===== -->
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=MiguelGranado&label=Profile%20Views&color=0e75b6&style=flat)
-![Followers](https://img.shields.io/github/followers/MiguelGranado?label=Followers&style=flat&color=0e75b6)
-![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMiguelGranado&label=Public%20Repos&query=%24.public_repos&color=0e75b6)
-
-</div>
-
----
-
-## 🎯 Certification roadmap (2026)
-
-Real certifications relevant to my Sentinel / Defender / Fortinet / GHAS work.
-None are claimed as already earned here unless actually passed.
-
-| Certification | Focus | Official link |
-|---|---|---|
-| **SC-200** — Security Operations Analyst Associate | Microsoft Sentinel + Defender XDR | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/) |
-| **AZ-500** — Azure Security Engineer Associate | Azure infrastructure security | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/) |
-| **AI-102** — Azure AI Engineer Associate | Enterprise AI solutions on Azure | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/) |
-| **Fortinet NSE 4** | Network Security Professional (next step after NSE 3) | [Fortinet Training](https://www.fortinet.com/training-certification) |
-| **GitHub Advanced Security** | CodeQL, secret scanning, repo protection | [GitHub Certifications](https://docs.github.com/en/get-started/showcase-your-expertise-with-github-certifications/about-github-certifications) |
-| **CCSP** — Certified Cloud Security Professional | Cloud security (ISC)² | [(ISC)² CCSP](https://www.isc2.org/certifications/ccsp) |
-
-**📚 Microsoft Learn progress:** Level 15 · 773K+ XP · 8 learning paths completed across security,
-Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's the next real step.
-[Public transcript ↗](https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/)
-
----
-
-## 🧠 Claude Academy Training (Anthropic)
-
-19 completion badges earned on [Claude Academy](https://academy.claude.com), issued Aug 26, 2026 —
-each link below is publicly verifiable (anyone can confirm it's real via Claude Academy's own
-verification page):
-
-| Course | Verify |
-|---|---|
-| Claude Platform 101 | [Verify ↗](https://academy.claude.com/badges/8235bc0b-689d-43d2-9be6-599fddab64ac) |
-| Building with the Claude API | [Verify ↗](https://academy.claude.com/badges/285490d3-b8ab-4937-aa26-45363f9eddc9) |
-| Introduction to Model Context Protocol | [Verify ↗](https://academy.claude.com/badges/5ce2e265-3e3e-49a2-a89d-0b782370e4ca) |
-| Model Context Protocol: Advanced Topics | [Verify ↗](https://academy.claude.com/badges/cad4d5e6-5b2e-4f1b-a6b0-967f930b0475) |
-| Claude Code in Action | [Verify ↗](https://academy.claude.com/badges/85bf6c20-276b-4736-ae0d-9ef0df9e2288) |
-| Claude with Amazon Bedrock | [Verify ↗](https://academy.claude.com/badges/ac2652d4-bd29-41a5-b85d-2a264f427711) |
-| Claude with Google Cloud's Vertex AI | [Verify ↗](https://academy.claude.com/badges/1da4ccaa-ed8f-4d01-887f-8a522adaf373) |
-| AI Fluency: Framework & Foundations | [Verify ↗](https://academy.claude.com/badges/0387a72d-ddb8-4e76-96e8-794a181a636f) |
-
-Plus 11 more (AI Fluency editions for builders/educators/students/nonprofits/small business,
-Claude Code 101, Claude 101, AI Capabilities and Limitations, Teaching AI Fluency, Claude Cowork) —
-full list on request.
-
----
-
-## 🏆 GitHub Achievements
-
-<div align="center">
-
-<img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" alt="Achievement: Quickdraw" width="72"/>
-<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" alt="Achievement: YOLO" width="72"/>
-
-</div>
-
----
-
-<div align="center">
-
-💬 **Open to consulting, collaborations, and interesting problems in AI + security.**
-
-**Miguel Granados** · Founder of [Ulamander](https://ulamander.com)
+<a href="https://miguel.ulamander.com">
+  <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logoColor=fe702d&labelColor=0A101F&logo=googlechrome" alt="Portfolio" />
+</a>
+&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/miguel-granados-820b15192/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A101F" alt="LinkedIn" />
+</a>
+&nbsp;&nbsp;
+<a href="https://academy.claude.com/">
+  <img src="https://img.shields.io/badge/Claude_Academy-0A101F?style=for-the-badge&logoColor=fbbf24&labelColor=0A101F&logo=anthropic" alt="Claude Academy" />
+</a>
+&nbsp;&nbsp;
+<a href="https://skillshop.docebosaas.com/pages/16/skillshop-home-page">
+  <img src="https://img.shields.io/badge/Google_Skillshop-0A101F?style=for-the-badge&logoColor=fbbf24&labelColor=0A101F&logo=google" alt="Google Skillshop" />
+</a>
 
 </div>
