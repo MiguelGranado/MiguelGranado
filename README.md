@@ -48,6 +48,10 @@ Live production systems — same list as [miguel.ulamander.com](https://miguel.u
 | **CuraDomus** | Home-care matching platform | React · Node.js · Postgres | Private client |
 | **Café Manager** | Orders, inventory, staff | POS · Inventory · Reports | Private client |
 | **5-Star Hotel Site** | Multilingual booking showcase | React · Booking · CMS | Private client |
+| **Ulamander-Neural** | Local AI chat, fine-tuning & teacher→student distillation (QLoRA) | Ollama · QLoRA · On-prem | Private / product |
+| **Business Automations** | n8n workflows: lead routing, CRM sync, mail, alerts | n8n · Webhook · API | Private clients |
+| **Edge Deploy (Pi / ESP32)** | Model/agent export to Raspberry Pi, ESP32, USB edge setups | Raspberry Pi · ESP32 · Firmware | Private / product |
+| **Private enterprise apps** | Closed dashboards, Shopify/WordPress, multilingual UI, custom graphics | React · Shopify · WordPress · NDA | Private clients |
 
 ---
 
