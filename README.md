@@ -18,12 +18,12 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&title_color=fe702d&icon_color=fb923c&text_color=94A3B8&bg_color=0d1117&card_width=500" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&title_color=ea580c&icon_color=c2410c&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="GitHub stats" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&title_color=fe702d&icon_color=fb923c&text_color=94A3B8&bg_color=0d1117&card_width=500" />
+  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&title_color=ea580c&icon_color=c2410c&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="GitHub stats" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=fe702d&text_color=94A3B8&bg_color=0d1117&card_width=500" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=ea580c&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=fe702d&text_color=94A3B8&bg_color=0d1117&card_width=500" />
+  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=ea580c&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
 </picture>
 
 </div>
