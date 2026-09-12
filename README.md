@@ -72,16 +72,16 @@ Sistemi reali in produzione — stessa lista di [miguel.ulamander.com](https://m
 
 <br/><br/>
 
-<!-- Griglia contributi (cuadraditos) ben visibile -->
-<img width="100%" alt="Activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=MiguelGranado&bg_color=0b1220&color=94a3b8&line=fe702d&point=fbbf24&area=true&hide_border=true&custom_title=Contributi" />
+<!-- Griglia contributi locale (cuadraditos visibili) -->
+<img width="100%" alt="Griglia contributi" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/contrib-grid.svg?v=20260912e" />
 
 <br/><br/>
 
-<!-- Snake: celle vuote grigie visibili (non nero su nero) -->
+<!-- Snake con celle vuote grigie (non nero su nero) -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg?v=20260912e" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg?v=20260912e" />
-  <img alt="Snake contributi" width="100%" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg?v=20260912e" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@output/snake-light.svg" />
+  <img alt="Snake contributi" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@output/snake-light.svg" />
 </picture>
 
 </div>
