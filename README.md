@@ -138,9 +138,10 @@ Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's
 
 ---
 
-## 📣 Google Ads Certifications (Skillshop)
+## 📣 Google Certifications (Skillshop)
 
-6 real, passed certifications (each requires an 80%+ score, renewable every ~1-2 years):
+11 real, passed certifications (each requires an 80%+ score, renewable every ~1-2 years),
+verified against the account's own LinkedIn certification records:
 
 | Certification | Status |
 |---|---|
@@ -150,7 +151,11 @@ Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's
 | Google Ads Creative | ✅ Completed |
 | Google Ads Measurement | ✅ Completed |
 | Google Ads Shopping (AI-Powered) | ✅ Completed |
+| Google Ads Video | ✅ Completed |
 | AI-Powered Performance Ads | ✅ Completed |
+| Campaign Manager 360 | ✅ Completed |
+| Google Analytics | ✅ Completed |
+| Grow Offline Sales | ✅ Completed |
 
 ---
 
