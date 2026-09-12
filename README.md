@@ -5,42 +5,44 @@
   <img alt="Miguel Granados" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/light.svg">
 </picture>
 
-<!-- ===== LINKS ===== -->
+<!-- ===== LINKS — same base tone for a clean strip ===== -->
 <div align="center">
 
 <a href="https://miguel.ulamander.com">
-  <img src="https://img.shields.io/badge/Portfolio-fe702d?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio-0F172A?style=for-the-badge&logo=googlechrome&logoColor=fe702d" alt="Portfolio" />
 </a>
 &nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/miguel-granados-820b15192/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-0F172A?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;
 <a href="https://academy.claude.com/">
-  <img src="https://img.shields.io/badge/Claude%20Academy-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Academy" />
+  <img src="https://img.shields.io/badge/Claude%20Academy-0F172A?style=for-the-badge&logo=anthropic&logoColor=D97757" alt="Claude Academy" />
 </a>
 &nbsp;&nbsp;
 <a href="https://skillshop.docebosaas.com/pages/16/skillshop-home-page">
-  <img src="https://img.shields.io/badge/Google%20Skillshop-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Skillshop" />
+  <img src="https://img.shields.io/badge/Google%20Skillshop-0F172A?style=for-the-badge&logo=google&logoColor=4285F4" alt="Google Skillshop" />
 </a>
 &nbsp;&nbsp;
-<a href="mailto:ulamanderdesing@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+<a href="mailto:info@ulamander.com">
+  <img src="https://img.shields.io/badge/Email-0F172A?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" />
 </a>
 
 </div>
 
 ---
 
-## 👤 About Me
+## About Me
 
-Founder of **Ulamander** — I work on applied AI and cloud security, focused on
-threat detection, automation, and local-first / privacy-first tooling.
+Founder of **[Ulamander](https://ulamander.com)** — Tecnico in Sviluppo di Intelligenza Artificiale.
+I ship applied AI, cloud, and security systems: threat detection, automation, and local-first / privacy-first tooling.
 
-- 🔭 **Currently focused on:** Microsoft Sentinel, Defender XDR, GitHub Advanced Security
-- 🛡️ **Security:** Fortinet NSE 3 (working toward NSE 4)
-- 🤖 **AI Engineering:** local-first apps, automation, AI-driven matching
-- 📍 Turin, Italy
+Aligned with [miguel.ulamander.com](https://miguel.ulamander.com):
+
+- Currently focused on: Microsoft Sentinel, Defender XDR, GitHub Advanced Security
+- Security: Fortinet NSE 3 (working toward NSE 4)
+- AI Engineering: local-first apps, n8n agents, Ollama / LLM workflows
+- Location: Torino, Italy — remote & on-site
 
 ### Ahora mismo construyendo
 
@@ -50,7 +52,7 @@ recursos, firmware ESP32/Arduino).
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -58,12 +60,14 @@ recursos, firmware ESP32/Arduino).
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Azure](https://img.shields.io/badge/-Microsoft%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![n8n](https://img.shields.io/badge/-n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 ![Fortinet](https://img.shields.io/badge/-Fortinet%20NSE-EE3124?style=flat-square&logo=fortinet&logoColor=white)
 ![GitHub Advanced Security](https://img.shields.io/badge/-GitHub%20Advanced%20Security-8250DF?style=flat-square&logo=github&logoColor=white)
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 Real systems in production — same list as on [my portfolio](https://miguel.ulamander.com/#proyectos):
 
@@ -78,17 +82,17 @@ Real systems in production — same list as on [my portfolio](https://miguel.ula
 | **Café Manager** | Management system for bars/cafés: orders, inventory and staff in one dashboard | POS · Inventario · Staff · Report | Private client project |
 | **Sito Web Hotel 5 Stelle** | Multilingual showcase site with room booking, gallery and content management | React · Booking · Multilingua · CMS | Private client project |
 
-📌 Plus dashboards, e-commerce, WordPress and automation builds for clients across several industries.
+Plus dashboards, e-commerce, WordPress and automation builds for clients across several industries.
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=0F0B08&stroke=fe702d&ring=fbbf24&fire=fe702d&currStreakLabel=fe702d&sideLabels=c9b79b&currStreakNum=FBF3E9&sideNums=FBF3E9&dates=c9b79b&titleColor=fe702d&card_width=1180&disable_animations=true" />
-  <img width="100%" src="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=FFFFFF&stroke=fe702d&ring=fbbf24&fire=fe702d&currStreakLabel=fe702d&sideLabels=7A6A55&currStreakNum=241a10&sideNums=241a10&dates=7A6A55&titleColor=fe702d&card_width=1180&disable_animations=true" alt="Racha de contribuciones" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=0B1220&stroke=fe702d&ring=fe702d&fire=fe702d&currStreakLabel=fe702d&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=fe702d&card_width=1180&disable_animations=true" />
+  <img width="100%" src="https://streak-stats.demolab.com/?user=MiguelGranado&hide_border=true&background=FFFFFF&stroke=fe702d&ring=fe702d&fire=fe702d&currStreakLabel=fe702d&sideLabels=64748B&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=fe702d&card_width=1180&disable_animations=true" alt="Contribution streak" />
 </picture>
 
 <br/><br/>
@@ -98,10 +102,6 @@ Real systems in production — same list as on [my portfolio](https://miguel.ula
 ![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMiguelGranado&label=Public%20Repos&query=%24.public_repos&color=fe702d)
 
 </div>
-
-> `github-readme-stats.vercel.app` (stats + top-langs cards) is down upstream — the maintainer's
-> demo deployment is paused. Using reliable alternatives (streak-stats, shields.io, komarev)
-> instead of a broken widget.
 
 ---
 
@@ -118,9 +118,9 @@ Real systems in production — same list as on [my portfolio](https://miguel.ula
 
 ---
 
-## 🎯 Certification roadmap (2026)
+## Certification roadmap (2026)
 
-Real certifications relevant to my Sentinel / Defender / Fortinet / GHAS work.
+Real certifications relevant to Sentinel / Defender / Fortinet / GHAS work.
 None are claimed as already earned here unless actually passed.
 
 | Certification | Focus | Official link |
@@ -132,38 +132,37 @@ None are claimed as already earned here unless actually passed.
 | **GitHub Advanced Security** | CodeQL, secret scanning, repo protection | [GitHub Certifications](https://docs.github.com/en/get-started/showcase-your-expertise-with-github-certifications/about-github-certifications) |
 | **CCSP** — Certified Cloud Security Professional | Cloud security (ISC)² | [(ISC)² CCSP](https://www.isc2.org/certifications/ccsp) |
 
-**📚 Microsoft Learn progress:** Level 15 · 773K+ XP · 8 learning paths completed across security,
+**Microsoft Learn progress:** Level 15 · 773K+ XP · 8 learning paths completed across security,
 Entra, cloud, and M365 fundamentals — no certification exam passed yet, that's the next real step.
 [Public transcript ↗](https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/)
 
 ---
 
-## 📣 Google Certifications (Skillshop)
+## Google Certifications (Skillshop)
 
 11 real, passed certifications (each requires an 80%+ score, renewable every ~1-2 years),
-verified against the account's own LinkedIn certification records:
+verified against the account's LinkedIn certification records:
 
 | Certification | Status |
 |---|---|
-| Google Ads Display | ✅ Completed |
-| Google Ads Search | ✅ Completed |
-| Google Ads Apps | ✅ Completed |
-| Google Ads Creative | ✅ Completed |
-| Google Ads Measurement | ✅ Completed |
-| Google Ads Shopping (AI-Powered) | ✅ Completed |
-| Google Ads Video | ✅ Completed |
-| AI-Powered Performance Ads | ✅ Completed |
-| Campaign Manager 360 | ✅ Completed |
-| Google Analytics | ✅ Completed |
-| Grow Offline Sales | ✅ Completed |
+| Google Ads Display | Completed |
+| Google Ads Search | Completed |
+| Google Ads Apps | Completed |
+| Google Ads Creative | Completed |
+| Google Ads Measurement | Completed |
+| Google Ads Shopping (AI-Powered) | Completed |
+| Google Ads Video | Completed |
+| AI-Powered Performance Ads | Completed |
+| Campaign Manager 360 | Completed |
+| Google Analytics | Completed |
+| Grow Offline Sales | Completed |
 
 ---
 
-## 🧠 Claude Academy Training (Anthropic)
+## Claude Academy Training (Anthropic)
 
 All 19 completion badges earned on [Claude Academy](https://academy.claude.com), issued Aug 26, 2026 —
-every link below is publicly verifiable (anyone can confirm it's real via Claude Academy's own
-verification page):
+every link below is publicly verifiable:
 
 **Platform & product**
 
@@ -196,7 +195,20 @@ verification page):
 
 ---
 
-## 🏆 GitHub Achievements
+## Also on the portfolio
+
+Credentials already listed on [miguel.ulamander.com](https://miguel.ulamander.com) and reflected here where verified:
+
+- **Oracle** — OCI 2025 Certified Foundations Associate
+- **Fortinet** — NSE 3 · Certified Associate Cybersecurity · Certified Fundamentals Cybersecurity
+- **Shopify** — Foundations · E-commerce Fundamentals · Store Setup & Customization
+- **AWS learning paths** — Cloud Practitioner Essentials · Technical Essentials · Architecting on AWS · Cloud Foundations
+
+---
+
+## GitHub Achievements
+
+Only achievements actually earned on this account (not decorative placeholders):
 
 <div align="center">
 
@@ -209,8 +221,8 @@ verification page):
 
 <div align="center">
 
-💬 **Open to consulting, collaborations, and interesting problems in AI + security.**
+**Open to consulting, collaborations, and interesting problems in AI + security.**
 
-**Miguel Granados** · Founder of [Ulamander](https://ulamander.com)
+**Miguel Granados** · Founder of [Ulamander](https://ulamander.com) · [miguel.ulamander.com](https://miguel.ulamander.com) · [info@ulamander.com](mailto:info@ulamander.com)
 
 </div>
