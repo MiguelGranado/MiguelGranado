@@ -1,8 +1,8 @@
 <!-- ===== THEME-AWARE HERO (arifhaxn-style) ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912h">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912h">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912h">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912i">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912i">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912i">
 </picture>
 
 <!-- ===== SOCIAL ===== -->
@@ -17,21 +17,21 @@
 <!-- ===== TWO INSIGNIAS (credentials + focus — public GitHub stats are empty when activity is private) ===== -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912h" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912h" alt="Credentials insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912i" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912i" alt="Credentials insignias" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912h" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912h" alt="Focus stack insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912i" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912i" alt="Focus stack insignias" />
 </picture>
 </div>
 
-<!-- ===== GUSANITO — almost full README width ===== -->
+<!-- ===== CONTRIBUTION SNAKE (real calendar · full width) ===== -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912h" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-light.svg?v=20260912h" />
-  <img width="100%" alt="Gusanito contribution snake" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912h" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912i" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-light.svg?v=20260912i" />
+  <img width="100%" alt="Contribution snake" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912i" />
 </picture>
 </div>
 
@@ -84,13 +84,13 @@ Aligned with [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ bad
 
 | Area | Detail |
 |---|---|
-| **Google Skillshop** | 11 certs: Ads Display · Search · Apps · Creative · Measurement · Shopping · Video · AI-Powered Performance Ads · Campaign Manager 360 · Analytics · Grow Offline Sales |
-| **Claude Academy** | 19 badges (verify on [academy.claude.com](https://academy.claude.com)) |
-| **Microsoft Learn** | Level 15 · AI-900 · SC-900 · security/cloud paths — [transcript](https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/) |
-| **Oracle** | OCI 2025 Certified Foundations Associate |
-| **Fortinet** | NSE 3 · Certified Associate Cybersecurity · Certified Fundamentals Cybersecurity |
-| **Shopify** | Foundations · E-commerce Fundamentals · Store Setup & Customization |
-| **AWS** | Cloud Practitioner Essentials · Technical Essentials · Architecting on AWS · Cloud Foundations |
+| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/google.svg" width="16" height="16" alt=""/> **Google Skillshop** | 11 certs: Ads Display · Search · Apps · Creative · Measurement · Shopping · Video · AI-Powered Performance Ads · Campaign Manager 360 · Analytics · Grow Offline Sales |
+| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/claude-ai.svg" width="16" height="16" alt=""/> **Claude Academy** | 19 badges (verify on [academy.claude.com](https://academy.claude.com)) |
+| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/microsoft.svg" width="16" height="16" alt=""/> **Microsoft Learn** | Level 15 · AI-900 · SC-900 · security/cloud paths — [transcript](https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/) |
+| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/oracle.svg" width="16" height="16" alt=""/> **Oracle** | OCI 2025 Certified Foundations Associate |
+| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/fortinet.svg" width="16" height="16" alt=""/> **Fortinet** | NSE 3 · Certified Associate Cybersecurity · Certified Fundamentals Cybersecurity |
+| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/shopify.svg" width="16" height="16" alt=""/> **Shopify** | Foundations · E-commerce Fundamentals · Store Setup & Customization |
+| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/aws.svg" width="16" height="16" alt=""/> **AWS** | Cloud Practitioner Essentials · Technical Essentials · Architecting on AWS · Cloud Foundations |
 
 **2026 roadmap:** SC-200 · AZ-500 · AI-102 · Fortinet NSE 4 · GitHub Advanced Security
 
@@ -119,15 +119,15 @@ Aligned with [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ bad
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 
-![Full Stack](https://img.shields.io/badge/-Full%20Stack-0F172A?style=flat-square)
-![Ollama](https://img.shields.io/badge/-Ollama%20%2F%20LLM-0F172A?style=flat-square)
-![Sentinel](https://img.shields.io/badge/-Microsoft%20Sentinel-0F172A?style=flat-square)
-![Defender](https://img.shields.io/badge/-Defender%20XDR-0F172A?style=flat-square)
-![SC-900](https://img.shields.io/badge/-SC--900-0F172A?style=flat-square)
-![AI-900](https://img.shields.io/badge/-AI--900-0F172A?style=flat-square)
-![GDPR](https://img.shields.io/badge/-GDPR-0F172A?style=flat-square)
-![EU AI Act](https://img.shields.io/badge/-EU%20AI%20Act-0F172A?style=flat-square)
-![Tunnel](https://img.shields.io/badge/-Cloudflare%20Tunnel-0F172A?style=flat-square)
+![Full Stack](https://img.shields.io/badge/-Full%20Stack-0F172A?style=flat-square&logo=stackblitz&logoColor=white)
+![Ollama](https://img.shields.io/badge/-Ollama%20%2F%20LLM-0F172A?style=flat-square&logo=ollama&logoColor=white)
+![Sentinel](https://img.shields.io/badge/-Microsoft%20Sentinel-0F172A?style=flat-square&logo=microsoftazure&logoColor=0078D4)
+![Defender](https://img.shields.io/badge/-Defender%20XDR-0F172A?style=flat-square&logo=microsoftdefender&logoColor=0078D4)
+![SC-900](https://img.shields.io/badge/-SC--900-0F172A?style=flat-square&logo=microsoft&logoColor=00A4EF)
+![AI-900](https://img.shields.io/badge/-AI--900-0F172A?style=flat-square&logo=microsoftazure&logoColor=0078D4)
+![GDPR](https://img.shields.io/badge/-GDPR-0F172A?style=flat-square&logo=europeancentralbank&logoColor=white)
+![EU AI Act](https://img.shields.io/badge/-EU%20AI%20Act-0F172A?style=flat-square&logo=europeanunion&logoColor=white)
+![Tunnel](https://img.shields.io/badge/-Cloudflare%20Tunnel-0F172A?style=flat-square&logo=cloudflare&logoColor=F38020)
 
 ---
 
