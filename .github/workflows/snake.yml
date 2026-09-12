@@ -13,15 +13,16 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
-      - name: Generate snake SVGs
-        uses: Platane/snk/svg-only@v3
+      - name: Generate snake (SVG + GIF so animation works in README img tags)
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/snake-light.svg?color_snake=%23fe702d&color_dots=#d0d7de,#ffd8a8,#fb923c,#fe702d,#c2410c
             dist/snake-dark.svg?color_snake=%23fe702d&color_dots=#30363d,#6e7681,#fb923c,#fe702d,#c2410c
+            dist/snake.gif?color_snake=%23fe702d&color_dots=#30363d,#6e7681,#fb923c,#fe702d,#c2410c
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
