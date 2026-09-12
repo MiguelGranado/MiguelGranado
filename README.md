@@ -66,15 +66,16 @@ Live production systems — same list as [miguel.ulamander.com](https://miguel.u
 ![Followers](https://img.shields.io/github/followers/MiguelGranado?label=Followers&style=flat&color=fe702d)
 ![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMiguelGranado&label=Public%20Repos&query=%24.public_repos&color=fe702d)
 
-<br/><br/>
+</div>
 
-<!-- Full-width contribution grid -->
-<img width="100%" alt="Contribution grid" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/contrib-grid.svg" />
+<!-- ===== CONTRIBUTION SNAKE (same pattern as arifhaxn: theme-aware SVG, no GIF) ===== -->
+<div align="center">
 
-<br/><br/>
-
-<!-- Animated snake (GIF works inside GitHub <img>; CSS SVG animation does not) -->
-<img width="100%" alt="Contribution snake" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@output/snake.gif" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
+  <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
+</picture>
 
 </div>
 
