@@ -1,8 +1,8 @@
 <!-- ===== THEME-AWARE HERO (arifhaxn-style) ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912x">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912x">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912x">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912y">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912y">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912y">
 </picture>
 
 
@@ -25,16 +25,25 @@
     <img src="https://img.shields.io/badge/Ulamander_Voice_Lab-AI_voice_cloning_stack-fe702d?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="Ulamander Voice Lab"/>
   </a>
 </p>
+<p align="center">
+  <a href="https://github.com/MiguelGranado/voicebox"><img src="https://img.shields.io/badge/voicebox-studio-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="voicebox"/></a>
+  &nbsp;
+  <a href="https://github.com/MiguelGranado/OpenVoice"><img src="https://img.shields.io/badge/OpenVoice-clone-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="OpenVoice"/></a>
+  &nbsp;
+  <a href="https://github.com/MiguelGranado/VoiceStudio"><img src="https://img.shields.io/badge/VoiceStudio-local-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="VoiceStudio"/></a>
+  &nbsp;
+  <a href="https://github.com/MiguelGranado/ebook2audiobook"><img src="https://img.shields.io/badge/ebook2audiobook-TTS-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="ebook2audiobook"/></a>
+</p>
 
 <!-- ===== TWO INSIGNIAS (credentials + focus — public GitHub stats are empty when activity is private) ===== -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912x" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912x" alt="Credentials insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912y" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912y" alt="Credentials insignias" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912x" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912x" alt="Focus stack insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912y" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912y" alt="Focus stack insignias" />
 </picture>
 </div>
 
@@ -43,7 +52,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
-  <img width="100%" alt="1,287 contributions in the last year" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912x" />
+  <img width="100%" alt="1,287 contributions in the last year" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912y" />
 </picture>
 </div>
 
@@ -148,24 +157,24 @@ Aligned with [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ bad
 ## Earned achievements
 
 <p align="center">
-  <a href="https://github.com/MiguelGranado?tab=achievements" title="Quickdraw">
+  <a href="https://github.com/MiguelGranado" title="Quickdraw">
     <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="84" height="84" alt="Quickdraw"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/MiguelGranado?tab=achievements" title="YOLO">
+  <a href="https://github.com/MiguelGranado" title="YOLO">
     <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="84" height="84" alt="YOLO"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/MiguelGranado?tab=achievements" title="Pair Extraordinaire">
+  <a href="https://github.com/MiguelGranado" title="Pair Extraordinaire">
     <img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="84" height="84" alt="Pair Extraordinaire"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/MiguelGranado?tab=achievements" title="Pull Shark">
+  <a href="https://github.com/MiguelGranado" title="Pull Shark">
     <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="84" height="84" alt="Pull Shark"/>
   </a>
 </p>
 <p align="center">
-  <sub>Quickdraw · YOLO · Pair Extraordinaire · Pull Shark</sub>
+  <sub>Quickdraw · YOLO · Pair Extraordinaire · Pull Shark · <a href="https://github.com/MiguelGranado/ulamander-voice-lab">⭐ Voice Lab</a></sub>
 </p>
 
 <p align="center">
