@@ -98,7 +98,7 @@ Cuentas reales, cambios reales. Gracias.
 ## Checklist Miguel
 
 - [x] Show Achievements = ON  
-- [ ] 2+ PRs mergeados → Pull Shark  # Miguel: many self-PRs; teammate PR #53 merged (need +1 more from alpaca)  
+- [x] 2+ PRs mergeados → Pull Shark  
 - [x] Quickdraw (issue cerrado &lt; 5 min)  
 - [x] YOLO (self-merge sin review)  
 - [x] 1 PR co-authored mergeado → Pair  
