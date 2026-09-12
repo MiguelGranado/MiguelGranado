@@ -191,9 +191,17 @@ def card(p, x, y, idx):
     for i, line in enumerate(wrap_text(p.get("description", ""), 52)):
         a(f'<text x="68" y="{80 + i * 16}" font-size="11" fill="{MUTED}">{esc(line)}</text>')
 
-    # tag pills
-    tx = 68
-    for tag in (p.get("tags") or [])[:3]:
+    # tech icons (developer-icons SVGs) + optional text pills
+    ix = 68
+    icon_tags = p.get("icon_tags") or []
+    for ipath in icon_tags[:5]:
+        ib64 = load_logo_b64(ipath)
+        if not ib64:
+            continue
+        a(f'<image x="{ix}" y="112" width="22" height="22" href="{ib64}" preserveAspectRatio="xMidYMid meet"/>')
+        ix += 28
+    tx = ix + (6 if icon_tags else 0)
+    for tag in (p.get("tags") or [])[: (2 if icon_tags else 3)]:
         tw = len(tag) * 6.6 + 14
         a(f'<rect x="{tx}" y="118" width="{tw:.0f}" height="17" rx="8.5" fill="{PILL_BG}" stroke="{PILL_STROKE}"/>')
         a(f'<text x="{tx + tw/2:.0f}" y="130" text-anchor="middle" font-size="9.5" fill="{VIOLET}">{esc(tag)}</text>')
