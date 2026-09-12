@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 ICON_DIR = Path(__file__).resolve().parent / "badge-icons"
-W, H = 560, 178
+W, H = 560, 196
 
 
 def esc(s: str) -> str:
@@ -91,13 +91,13 @@ def card(theme: str, kind: str) -> str:
         ]
         footer = "Full Stack · Cloud Security · AI systems · Turin"
 
-    pills, x, y = [], 16.0, 58.0
+    pills, x, y = [], 16.0, 60.0
     for label, pw, icon in items:
         if x + pw > W - 16:
             x = 16.0
-            y += 36
+            y += 42  # more vertical gap between pill rows
         pills.append(pill_with_icon(x, y, pw, label, icon, soft, pill_bg, stroke))
-        x += pw + 8
+        x += pw + 10
 
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(title)}">
