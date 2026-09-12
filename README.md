@@ -14,23 +14,32 @@
   <a href="mailto:info@ulamander.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0d1117" alt="Email"/></a>
 </p>
 
-<!-- ===== GITHUB STATS (no streak / no contribution snake — activity kept private) ===== -->
+<!-- ===== PUBLIC STATS (no private contribs / no streak mismatch) ===== -->
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&title_color=fe702d&icon_color=fb923c&text_color=94A3B8&bg_color=0d1117&card_width=500" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&title_color=ea580c&icon_color=c2410c&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="GitHub stats" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&count_private=false&include_all_commits=true&title_color=fe702d&icon_color=fb923c&text_color=94A3B8&bg_color=0d1117&card_width=500&cache_seconds=1800" />
+  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&count_private=false&include_all_commits=true&title_color=ea580c&icon_color=c2410c&text_color=0F172A&bg_color=FFFFFF&card_width=500&cache_seconds=1800" alt="GitHub stats" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=fe702d&text_color=94A3B8&bg_color=0d1117&card_width=500" />
-  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=ea580c&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=fe702d&text_color=94A3B8&bg_color=0d1117&card_width=500&cache_seconds=1800" />
+  <img width="49%" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=ea580c&text_color=0F172A&bg_color=FFFFFF&card_width=500&cache_seconds=1800" alt="Top languages" />
 </picture>
 
 </div>
 
+<!-- ===== BRANDED CONTRIBUTION SNAKE (README only — native GitHub activity is private) ===== -->
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
+  <img width="100%" alt="Contribution activity" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
+</picture>
+</div>
+
 <br/>
 
-<!-- ===== PROJECTS PANEL (arifhaxn-style cards) — Ulamander products first ===== -->
+<!-- ===== PROJECTS PANEL — developer-icons logos, Ulamander products first ===== -->
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg" />
@@ -110,15 +119,6 @@ Aligned with [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ bad
 ![GDPR](https://img.shields.io/badge/-GDPR-0F172A?style=flat-square)
 ![EU AI Act](https://img.shields.io/badge/-EU%20AI%20Act-0F172A?style=flat-square)
 ![Tunnel](https://img.shields.io/badge/-Cloudflare%20Tunnel-0F172A?style=flat-square)
-
----
-
-## GitHub Achievements
-
-<p align="center">
-  <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" alt="Quickdraw" width="72"/>
-  <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" alt="YOLO" width="72"/>
-</p>
 
 ---
 
