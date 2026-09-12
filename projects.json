@@ -1,0 +1,110 @@
+[
+  {
+    "name": "ULAMANDER — SaaS Agencies",
+    "subtitle": "app.ulamander.com",
+    "url": "https://app.ulamander.com",
+    "description": "Auth, dashboard, projects, billing, NAS sync for agencies",
+    "tags": ["React", "Docker", "Postgres"],
+    "badge": "Product",
+    "languages": { "TypeScript": 55, "CSS": 25, "HTML": 20 }
+  },
+  {
+    "name": "ULAMANDER — Real Estate OS",
+    "subtitle": "inmobiliaria.ulamander.com",
+    "url": "https://inmobiliaria.ulamander.com",
+    "description": "CRM, Rewards, AI agents, white-label marketing OS",
+    "tags": ["CRM", "AI Agents", "Rewards"],
+    "badge": "Product",
+    "languages": { "TypeScript": 50, "JavaScript": 30, "CSS": 20 }
+  },
+  {
+    "name": "Ulamander.com",
+    "subtitle": "ulamander.com",
+    "url": "https://ulamander.com",
+    "description": "Marketing site, CMS, Cloudflare tunnel to NAS",
+    "tags": ["React", "CMS", "Tunnel"],
+    "badge": "Product",
+    "languages": { "TypeScript": 45, "CSS": 35, "HTML": 20 }
+  },
+  {
+    "name": "Ulamander-Neural",
+    "subtitle": "local AI · QLoRA",
+    "url": "https://miguel.ulamander.com/#proyectos",
+    "description": "Local AI chat, fine-tuning & teacher→student distillation",
+    "tags": ["Ollama", "QLoRA", "On-prem"],
+    "badge": "Product",
+    "languages": { "Python": 70, "TypeScript": 20, "Shell": 10 }
+  },
+  {
+    "name": "Edge Deploy (Pi / ESP32)",
+    "subtitle": "edge · firmware",
+    "url": "https://miguel.ulamander.com/#proyectos",
+    "description": "Model/agent export to Raspberry Pi, ESP32, USB edge",
+    "tags": ["Raspberry Pi", "ESP32", "Firmware"],
+    "badge": "Product",
+    "languages": { "C++": 40, "Python": 35, "TypeScript": 25 }
+  },
+  {
+    "name": "Real Estate CRM",
+    "subtitle": "private client",
+    "url": "https://miguel.ulamander.com/#proyectos",
+    "description": "Lead pipeline, nurturing, reporting, white-label stack",
+    "tags": ["CRM", "Automation", "NAS"],
+    "badge": "Private client",
+    "languages": { "TypeScript": 55, "JavaScript": 25, "CSS": 20 }
+  },
+  {
+    "name": "Property Valuations",
+    "subtitle": "lead funnel · GDPR",
+    "url": "https://miguel.ulamander.com/#proyectos",
+    "description": "Valuation funnel + CRM routing with GDPR controls",
+    "tags": ["Lead", "Funnel", "GDPR"],
+    "badge": "Private client",
+    "languages": { "TypeScript": 50, "JavaScript": 30, "CSS": 20 }
+  },
+  {
+    "name": "Business Automations",
+    "subtitle": "n8n · webhooks",
+    "url": "https://miguel.ulamander.com/#proyectos",
+    "description": "Lead routing, CRM sync, mail and alerts via n8n",
+    "tags": ["n8n", "Webhook", "API"],
+    "badge": "Private client",
+    "languages": { "JavaScript": 60, "TypeScript": 25, "JSON": 15 }
+  },
+  {
+    "name": "CuraDomus",
+    "subtitle": "private client",
+    "url": "https://miguel.ulamander.com/#proyectos",
+    "description": "Home-care matching platform",
+    "tags": ["React", "Node.js", "Postgres"],
+    "badge": "Private client",
+    "languages": { "TypeScript": 50, "JavaScript": 30, "CSS": 20 }
+  },
+  {
+    "name": "Café Manager",
+    "subtitle": "private client",
+    "url": "https://miguel.ulamander.com/#proyectos",
+    "description": "Orders, inventory and staff operations",
+    "tags": ["POS", "Inventory", "Reports"],
+    "badge": "Private client",
+    "languages": { "TypeScript": 45, "JavaScript": 35, "CSS": 20 }
+  },
+  {
+    "name": "5-Star Hotel Site",
+    "subtitle": "private client",
+    "url": "https://miguel.ulamander.com/#proyectos",
+    "description": "Multilingual booking showcase",
+    "tags": ["React", "Booking", "CMS"],
+    "badge": "Private client",
+    "languages": { "TypeScript": 50, "CSS": 30, "HTML": 20 }
+  },
+  {
+    "name": "Private enterprise apps",
+    "subtitle": "NDA",
+    "url": "https://miguel.ulamander.com/#proyectos",
+    "description": "Closed dashboards, Shopify/WordPress, multilingual UI",
+    "tags": ["Shopify", "WordPress", "NDA"],
+    "badge": "Private client",
+    "languages": { "JavaScript": 40, "PHP": 30, "CSS": 30 }
+  }
+]
