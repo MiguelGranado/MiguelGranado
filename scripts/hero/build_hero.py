@@ -1,4 +1,5 @@
-"""Hero SVG ricco e colorato — NO bottoni (i link clickabili sono nel README)."""
+"""Hero SVG — valid XML only (escape & < > '). No fake buttons."""
+import html
 import re
 
 ICON_FILES = {
@@ -9,6 +10,10 @@ ICON_FILES = {
     "Azure": ("icons/azure.svg", "#0078D4"),
 }
 _ID_RE = re.compile(r'id="([^"]+)"')
+
+
+def esc(s: str) -> str:
+    return html.escape(s, quote=True)
 
 
 def load_icon_inner(name: str, path: str) -> str:
@@ -22,7 +27,7 @@ def load_icon_inner(name: str, path: str) -> str:
     return inner
 
 
-def stack_chip(x, y, w, name, box, stroke, text_c) -> str:
+def stack_chip(x, y, w, name, box, text_c) -> str:
     path, brand = ICON_FILES[name]
     h, icon = 36, 18
     inner = load_icon_inner(name, path)
@@ -30,15 +35,15 @@ def stack_chip(x, y, w, name, box, stroke, text_c) -> str:
         f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h}" rx="10" '
         f'fill="{box}" stroke="{brand}" stroke-opacity="0.55" stroke-width="1.5"/>\n'
         f'<g transform="translate({x + 12:.1f},{y + (h - icon) / 2:.1f}) scale({icon / 100:.4f})">{inner}</g>\n'
-        f'<text x="{x + 38:.1f}" y="{y + h / 2 + 5:.1f}" font-size="13" font-weight="600" fill="{text_c}">{name}</text>'
+        f'<text x="{x + 38:.1f}" y="{y + h / 2 + 5:.1f}" font-size="13" font-weight="600" fill="{text_c}">{esc(name)}</text>'
     )
 
 
 def pill(x, y, w, label, fill, text_c) -> str:
     return (
-        f'<rect x="{x}" y="{y}" width="{w}" height="28" rx="14" fill="{fill}"/>'
-        f'<text x="{x + w / 2}" y="{y + 18}" text-anchor="middle" font-size="11" '
-        f'font-weight="600" fill="{text_c}">{label}</text>'
+        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="28" rx="14" fill="{fill}"/>'
+        f'<text x="{x + w / 2:.1f}" y="{y + 18:.1f}" text-anchor="middle" font-size="11" '
+        f'font-weight="600" fill="{text_c}">{esc(label)}</text>'
     )
 
 
@@ -58,32 +63,32 @@ def build(theme: str) -> str:
 
     widths = {"Python": 102, "TypeScript": 130, "React": 96, "PostgreSQL": 138, "Azure": 98}
     x, chips = 56.0, []
-    for name in widths:
-        w = widths[name]
-        chips.append(stack_chip(x, 248, w, name, chip, accent, heading))
+    for name, w in widths.items():
+        chips.append(stack_chip(x, 248, w, name, chip, heading))
         x += w + 12
     stack = "\n".join(chips)
 
-    # Metric pills
     metrics = [
-        (56, "100+ Badge & Cert"),
-        (210, "MS Learn Lv.15"),
-        (348, "19 Claude Academy"),
-        (508, "11 Google"),
-        (618, "Fortinet NSE 3"),
-        (758, "OCI Foundations"),
+        "100+ Badges & Certs",
+        "MS Learn Lv.15",
+        "19 Claude Academy",
+        "11 Google",
+        "Fortinet NSE 3",
+        "OCI Foundations",
     ]
-    # measure approx widths
-    metric_svg = []
-    mx = 56
-    for _, label in metrics:
+    metric_svg, mx = [], 56.0
+    for label in metrics:
         w = 18 + len(label) * 7.0
         metric_svg.append(pill(mx, 308, w, label, pill_bg, pill_tx))
         mx += w + 10
-    metrics_row = "\n".join(metric_svg)
 
     H = 380
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="{H}" viewBox="0 0 1180 {H}" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Miguel Granados — Ulamander">
+    line1 = esc("AI Development Technician · Full Stack · Founder of Ulamander")
+    line2 = esc("I turn complex processes into intelligent AI-driven systems · Turin, Italy")
+    footer = esc("Real production systems · Web · App · Neural · CRM · Automation · Security-first")
+
+    return f'''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="{H}" viewBox="0 0 1180 {H}" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Miguel Granados">
 <defs>
 <linearGradient id="bg{s}" x1="0" y1="0" x2="1" y2="1">
   <stop offset="0" stop-color="{panel_a}"/><stop offset="1" stop-color="{panel_b}"/>
@@ -102,38 +107,28 @@ def build(theme: str) -> str:
 </radialGradient>
 <clipPath id="win{s}"><rect x="2" y="2" width="1176" height="{H - 4}" rx="18"/></clipPath>
 </defs>
-
 <rect x="2" y="2" width="1176" height="{H - 4}" rx="18" fill="{outer}"/>
 <g clip-path="url(#win{s})">
 <rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#bg{s})"/>
 <rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#glow{s})"/>
 <rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#glow2{s})"/>
-
-<!-- top bar -->
 <rect x="2" y="2" width="1176" height="42" fill="{'#0A1020' if dark else '#EEF2FF'}" fill-opacity="0.85"/>
 <circle cx="28" cy="23" r="5" fill="#FF5F56"/>
 <circle cx="48" cy="23" r="5" fill="#FFBD2E"/>
 <circle cx="68" cy="23" r="5" fill="#27C93F"/>
 <text x="590" y="27" text-anchor="middle" font-size="12" font-family="ui-monospace,Menlo,monospace" fill="{muted}">miguel@ulamander — production systems</text>
-
-<!-- status -->
-<rect x="56" y="64" width="210" height="26" rx="13" fill="{pill_bg}"/>
+<rect x="56" y="64" width="188" height="26" rx="13" fill="{pill_bg}"/>
 <circle cx="74" cy="77" r="5" fill="#22C55E"/>
-<text x="88" y="81" font-size="12" font-weight="600" fill="{pill_tx}">Disponibile per progetti</text>
-
+<text x="88" y="81" font-size="12" font-weight="600" fill="{pill_tx}">Available for projects</text>
 <text x="56" y="128" font-size="42" font-weight="800" fill="url(#name{s})">Miguel Granados</text>
-<text x="56" y="160" font-size="16" fill="{body}">Tecnico in Sviluppo di Intelligenza Artificiale · Full Stack · Fondatore di Ulamander</text>
-<text x="56" y="184" font-size="14" fill="{muted}">Trasformo processi complessi in soluzioni intelligenti guidate dall'IA · Torino, Italia</text>
-
+<text x="56" y="160" font-size="16" fill="{body}">{line1}</text>
+<text x="56" y="184" font-size="14" fill="{muted}">{line2}</text>
 <rect x="56" y="202" width="1068" height="3" rx="1.5" fill="url(#bar{s})"/>
-
 <text x="56" y="232" font-size="11" letter-spacing="2.5" font-weight="700" fill="{accent}">CORE STACK</text>
 {stack}
-
 <text x="56" y="300" font-size="11" letter-spacing="2.5" font-weight="700" fill="{accent}">CREDENTIALS</text>
-{metrics_row}
-
-<text x="56" y="360" font-size="12" fill="{muted}">Sistemi reali in produzione · Web · App · Neural · CRM · Automazioni · Security-first</text>
+{chr(10).join(metric_svg)}
+<text x="56" y="360" font-size="12" fill="{muted}">{footer}</text>
 </g>
 </svg>
 '''
@@ -142,4 +137,7 @@ def build(theme: str) -> str:
 if __name__ == "__main__":
     open("dark.svg", "w").write(build("dark"))
     open("light.svg", "w").write(build("light"))
-    print("wrote dark.svg and light.svg")
+    from xml.etree import ElementTree as ET
+    ET.parse("dark.svg")
+    ET.parse("light.svg")
+    print("wrote + validated dark.svg and light.svg")
