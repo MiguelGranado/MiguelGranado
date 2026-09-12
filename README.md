@@ -1,8 +1,8 @@
 <!-- ===== THEME-AWARE HERO (arifhaxn-style) ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912i">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912i">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912i">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912j">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912j">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912j">
 </picture>
 
 <!-- ===== SOCIAL ===== -->
@@ -17,21 +17,21 @@
 <!-- ===== TWO INSIGNIAS (credentials + focus — public GitHub stats are empty when activity is private) ===== -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912i" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912i" alt="Credentials insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912j" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912j" alt="Credentials insignias" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912i" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912i" alt="Focus stack insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912j" />
+  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912j" alt="Focus stack insignias" />
 </picture>
 </div>
 
-<!-- ===== CONTRIBUTION SNAKE (real calendar · full width) ===== -->
+<!-- ===== CONTRIBUTION SNAKE + yearly total (real calendar · full width) ===== -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912i" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-light.svg?v=20260912i" />
-  <img width="100%" alt="Contribution snake" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912i" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912j" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-light.svg?v=20260912j" />
+  <img width="100%" alt="Contribution snake" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912j" />
 </picture>
 </div>
 
