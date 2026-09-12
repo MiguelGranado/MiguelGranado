@@ -1,17 +1,43 @@
-<!-- ===== HEADER ===== -->
+<!-- ===== THEME-AWARE HERO (arifhaxn-style) ===== -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg">
   <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg">
 </picture>
 
+<!-- ===== SOCIAL ===== -->
 <p align="center">
-  <a href="https://miguel.ulamander.com"><img src="https://img.shields.io/badge/Portfolio-fe702d?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://miguel.ulamander.com"><img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=googlechrome&logoColor=fe702d&labelColor=0d1117" alt="Portfolio"/></a>
   &nbsp;
-  <a href="https://www.linkedin.com/in/miguel-granados-820b15192/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.linkedin.com/in/miguel-granados-820b15192/"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=0d1117" alt="LinkedIn"/></a>
   &nbsp;
-  <a href="mailto:info@ulamander.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="mailto:info@ulamander.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0d1117" alt="Email"/></a>
 </p>
+
+<!-- ===== GITHUB STATS (no streak / no contribution snake — activity kept private) ===== -->
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&title_color=fe702d&icon_color=fb923c&text_color=94A3B8&bg_color=0d1117&card_width=500" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=MiguelGranado&show_icons=true&hide_rank=true&hide_border=true&title_color=ea580c&icon_color=c2410c&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="GitHub stats" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=fe702d&text_color=94A3B8&bg_color=0d1117&card_width=500" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MiguelGranado&layout=compact&langs_count=8&hide_border=true&title_color=ea580c&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
+</picture>
+
+</div>
+
+<br/>
+
+<!-- ===== PROJECTS PANEL (arifhaxn-style cards) — Ulamander products first ===== -->
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects-light.svg" />
+  <img width="100%" alt="Projects" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg" />
+</picture>
+</div>
 
 ---
 
@@ -25,58 +51,12 @@ Same profile as [miguel.ulamander.com](https://miguel.ulamander.com):
 
 **How I deliver**
 
-- **Real systems** — not just prototypes: Web, App, Neural, CRM and corporate mail already in production
-- **Full Stack + AI** — React/TypeScript, Node, Postgres, local LLMs (Ollama) and n8n agents in one flow
+- **Real systems** — Web, App, Neural, CRM and corporate mail already in production
+- **Full Stack + AI** — React/TypeScript, Node, Postgres, local LLMs (Ollama) and n8n agents
 - **Security-first** — Azure/Sentinel, Fortinet, DNS/SPF/DKIM and operational hardening
-- **End-to-end** — from idea to deploy (UI, API, cloud, mail, tunnel) without splitting the project
+- **End-to-end** — from idea to deploy without splitting the project
 
 Turin, Italy — remote & on-site · reply within 24 hours
-
----
-
-## Featured Projects
-
-Cards aligned with [miguel.ulamander.com](https://miguel.ulamander.com/#proyectos) — **Ulamander products first**, private client work at the bottom.
-
-### Ulamander products
-
-| Project | Description | Stack | Live |
-|---|---|---|---|
-| **ULAMANDER — SaaS for Agencies** | Auth, dashboard, projects, billing, NAS sync | React · Vite · Docker · Postgres | [app.ulamander.com](https://app.ulamander.com) |
-| **ULAMANDER — Real Estate OS** | CRM, Rewards, AI agents, white-label marketing | CRM · AI Agents · Rewards | [inmobiliaria.ulamander.com](https://inmobiliaria.ulamander.com) |
-| **Ulamander.com** | Marketing site, CMS, Cloudflare tunnel | React · CMS · NAS | [ulamander.com](https://ulamander.com) |
-| **Ulamander-Neural** | Local AI chat, fine-tuning & teacher→student distillation (QLoRA) | Ollama · QLoRA · On-prem | Product |
-| **Edge Deploy (Pi / ESP32)** | Model/agent export to Raspberry Pi, ESP32, USB edge setups | Raspberry Pi · ESP32 · Firmware | Product |
-
-### Private client
-
-| Project | Description | Stack | Live |
-|---|---|---|---|
-| **Real Estate CRM** | Lead pipeline, nurturing, reporting, white-label stack | CRM · Automation · NAS | Private client |
-| **Property Valuations** | Valuation funnel + CRM routing (GDPR) | Lead · Funnel · GDPR | Private client |
-| **Business Automations** | n8n workflows: lead routing, CRM sync, mail, alerts | n8n · Webhook · API | Private client |
-| **CuraDomus** | Home-care matching platform | React · Node.js · Postgres | Private client |
-| **Café Manager** | Orders, inventory, staff | POS · Inventory · Reports | Private client |
-| **5-Star Hotel Site** | Multilingual booking showcase | React · Booking · CMS | Private client |
-| **Private enterprise apps** | Closed dashboards, Shopify/WordPress, multilingual UI, custom graphics | React · Shopify · WordPress · NDA | Private client |
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-![Profile Views](https://komarev.com/ghpvc/?username=MiguelGranado&label=Profile%20Views&color=fe702d&style=flat)
-![Followers](https://img.shields.io/github/followers/MiguelGranado?label=Followers&style=flat&color=fe702d)
-![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMiguelGranado&label=Public%20Repos&query=%24.public_repos&color=fe702d)
-
-<br/><br/>
-
-<!-- Dark GIF only: SVG freeze-frame paints the snake body orange on empty days.
-     GIF animates correctly and only lights real contribution cells under the snake. -->
-<img width="100%" alt="Contribution snake" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake.gif" />
-
-</div>
 
 ---
 
