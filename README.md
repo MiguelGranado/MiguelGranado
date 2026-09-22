@@ -1,8 +1,8 @@
 <!-- ===== THEME-AWARE HERO (arifhaxn-style) ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912y">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260912y">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260912y">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260923a">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260923a">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260923a">
 </picture>
 
 
@@ -35,15 +35,18 @@
   <a href="https://github.com/MiguelGranado/ebook2audiobook"><img src="https://img.shields.io/badge/ebook2audiobook-TTS-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="ebook2audiobook"/></a>
 </p>
 
-<!-- ===== TWO INSIGNIAS (credentials + focus — public GitHub stats are empty when activity is private) ===== -->
+<!-- ===== TWO INSIGNIAS (credentials + focus — public GitHub stats are empty when activity is private) =====
+     Stacked full-width (not side-by-side) so each card stays legible on mobile, where
+     GitHub renders this column at ~375-430px instead of the ~830px+ desktop width. -->
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260912y" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260912y" alt="Credentials insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260923a" />
+  <img width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260923a" alt="Credentials insignias" />
 </picture>
+<br/>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260912y" />
-  <img width="49%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260912y" alt="Focus stack insignias" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260923a" />
+  <img width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260923a" alt="Focus stack insignias" />
 </picture>
 </div>
 
@@ -52,7 +55,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
-  <img width="100%" alt="1,287 contributions in the last year" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260912y" />
+  <img width="100%" alt="1,287 contributions in the last year" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260923a" />
 </picture>
 </div>
 

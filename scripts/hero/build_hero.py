@@ -87,8 +87,29 @@ def build(theme: str) -> str:
     line2 = esc("I turn complex processes into intelligent AI-driven systems · Turin, Italy")
     footer = esc("Real production systems · Web · App · Neural · CRM · Automation · Security-first")
 
+    # Mobile (<=480 CSS px render width): this banner is always width=100%, so on a
+    # phone it renders at ~1/3 of its desktop width — anything below hides the
+    # secondary rows (terminal bar, stack chips, credential pills, footer) instead of
+    # just shrinking them illegibly, and enlarges + recenters the core identity text
+    # (name, role, tagline, availability badge) in the freed vertical space.
+    style = f'''<style>
+  .m-hide {{ }}
+  .m-shift {{ }}
+  @media (max-width: 480px) {{
+    .m-hide {{ display: none; }}
+    .m-shift {{ transform: translateY(70px); }}
+    .m-name {{ font-size: 64px; }}
+    .m-line1 {{ font-size: 26px; }}
+    .m-line2 {{ font-size: 21px; }}
+    .m-badge-text {{ font-size: 18px; }}
+    .m-badge-bg {{ width: 280px; height: 38px; }}
+    .m-badge-dot {{ r: 7px; }}
+  }}
+</style>'''
+
     return f'''<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="{H}" viewBox="0 0 1180 {H}" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Miguel Granados">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 {H}" preserveAspectRatio="xMidYMid meet" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Miguel Granados">
+{style}
 <defs>
 <linearGradient id="bg{s}" x1="0" y1="0" x2="1" y2="1">
   <stop offset="0" stop-color="{panel_a}"/><stop offset="1" stop-color="{panel_b}"/>
@@ -112,23 +133,29 @@ def build(theme: str) -> str:
 <rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#bg{s})"/>
 <rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#glow{s})"/>
 <rect x="2" y="2" width="1176" height="{H - 4}" fill="url(#glow2{s})"/>
+<g class="m-hide">
 <rect x="2" y="2" width="1176" height="42" fill="{'#0A1020' if dark else '#EEF2FF'}" fill-opacity="0.85"/>
 <circle cx="28" cy="23" r="5" fill="#FF5F56"/>
 <circle cx="48" cy="23" r="5" fill="#FFBD2E"/>
 <circle cx="68" cy="23" r="5" fill="#27C93F"/>
 <text x="590" y="27" text-anchor="middle" font-size="12" font-family="ui-monospace,Menlo,monospace" fill="{muted}">miguel@ulamander — production systems</text>
-<rect x="56" y="64" width="188" height="26" rx="13" fill="{pill_bg}"/>
-<circle cx="74" cy="77" r="5" fill="#22C55E"/>
-<text x="88" y="81" font-size="12" font-weight="600" fill="{pill_tx}">Available for projects</text>
-<text x="56" y="128" font-size="42" font-weight="800" fill="url(#name{s})">Miguel Granados</text>
-<text x="56" y="160" font-size="16" fill="{body}">{line1}</text>
-<text x="56" y="184" font-size="14" fill="{muted}">{line2}</text>
+</g>
+<g class="m-shift">
+<rect class="m-badge-bg" x="56" y="64" width="188" height="26" rx="13" fill="{pill_bg}"/>
+<circle class="m-badge-dot" cx="74" cy="77" r="5" fill="#22C55E"/>
+<text class="m-badge-text" x="88" y="81" font-size="12" font-weight="600" fill="{pill_tx}">Available for projects</text>
+<text class="m-name" x="56" y="128" font-size="42" font-weight="800" fill="url(#name{s})">Miguel Granados</text>
+<text class="m-line1" x="56" y="160" font-size="16" fill="{body}">{line1}</text>
+<text class="m-line2" x="56" y="184" font-size="14" fill="{muted}">{line2}</text>
+</g>
+<g class="m-hide">
 <rect x="56" y="202" width="1068" height="3" rx="1.5" fill="url(#bar{s})"/>
 <text x="56" y="232" font-size="11" letter-spacing="2.5" font-weight="700" fill="{accent}">CORE STACK</text>
 {stack}
 <text x="56" y="300" font-size="11" letter-spacing="2.5" font-weight="700" fill="{accent}">CREDENTIALS</text>
 {chr(10).join(metric_svg)}
 <text x="56" y="360" font-size="12" fill="{muted}">{footer}</text>
+</g>
 </g>
 </svg>
 '''
