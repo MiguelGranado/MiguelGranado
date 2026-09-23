@@ -19,6 +19,13 @@
 
 
 
+<!-- ===== FLAGSHIP PROJECT — Real Estate CRM (public showcase) ===== -->
+<p align="center">
+  <a href="https://github.com/MiguelGranado/ulamander-real-estate-crm">
+    <img src="https://img.shields.io/badge/Ulamander_Real_Estate_CRM-AI--native_%C2%B7_live_in_production-fe702d?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="Ulamander Real Estate CRM"/>
+  </a>
+</p>
+
 <!-- ===== ULAMANDER VOICE LAB ===== -->
 <p align="center">
   <a href="https://github.com/MiguelGranado/ulamander-voice-lab">
@@ -61,12 +68,15 @@
 
 <br/>
 
-<!-- ===== PROJECTS PANEL — developer-icons logos, Ulamander products first ===== -->
+<!-- ===== PROJECTS PANEL — single column (one card per row), curated to the 6 strongest
+     projects, CRM first. Fixed width (not 100%): at 594 viewBox units this matches the
+     insignia cards above, so GitHub's own max-width:100% shrinks it correctly on mobile
+     instead of stretching a narrow column to the full README width on desktop. ===== -->
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects-light.svg" />
-  <img width="100%" alt="Projects" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg" />
+  <img width="600" alt="Projects" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg" />
 </picture>
 </div>
 
@@ -120,38 +130,20 @@ Aligned with [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ bad
 
 ---
 
-## Tech Stack
+## Infra & Security
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+<!-- Core language/framework stack already shown above in Core Stack / Focus Stack —
+     not repeated here. This row is just the infra/security signal that isn't. -->
+
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Azure](https://img.shields.io/badge/-Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![n8n](https://img.shields.io/badge/-n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![Anthropic](https://img.shields.io/badge/-Anthropic-D97757?style=flat-square&logo=anthropic&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![Oracle](https://img.shields.io/badge/-Oracle%20Cloud-F80000?style=flat-square&logo=oracle&logoColor=white)
-![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
-![Shopify](https://img.shields.io/badge/-Shopify-7AB55C?style=flat-square&logo=shopify&logoColor=white)
-![WordPress](https://img.shields.io/badge/-WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
-![Fortinet](https://img.shields.io/badge/-Fortinet-EE3124?style=flat-square&logo=fortinet&logoColor=white)
-![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-
-![Full Stack](https://img.shields.io/badge/-Full%20Stack-0F172A?style=flat-square&logo=stackblitz&logoColor=white)
-![Ollama](https://img.shields.io/badge/-Ollama%20%2F%20LLM-0F172A?style=flat-square&logo=ollama&logoColor=white)
-![Sentinel](https://img.shields.io/badge/-Microsoft%20Sentinel-0F172A?style=flat-square&logo=microsoftazure&logoColor=0078D4)
-![Defender](https://img.shields.io/badge/-Defender%20XDR-0F172A?style=flat-square&logo=microsoftdefender&logoColor=0078D4)
-![SC-900](https://img.shields.io/badge/-SC--900-0F172A?style=flat-square&logo=microsoft&logoColor=00A4EF)
-![AI-900](https://img.shields.io/badge/-AI--900-0F172A?style=flat-square&logo=microsoftazure&logoColor=0078D4)
-![GDPR](https://img.shields.io/badge/-GDPR-0F172A?style=flat-square&logo=europeancentralbank&logoColor=white)
-![EU AI Act](https://img.shields.io/badge/-EU%20AI%20Act-0F172A?style=flat-square&logo=europeanunion&logoColor=white)
-![Tunnel](https://img.shields.io/badge/-Cloudflare%20Tunnel-0F172A?style=flat-square&logo=cloudflare&logoColor=F38020)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Cloudflare Tunnel](https://img.shields.io/badge/-Cloudflare%20Tunnel-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Sentinel](https://img.shields.io/badge/-Microsoft%20Sentinel-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Defender XDR](https://img.shields.io/badge/-Defender%20XDR-0078D4?style=flat-square&logo=microsoftdefender&logoColor=white)
+![Fortinet](https://img.shields.io/badge/-Fortinet-EE3124?style=flat-square&logo=fortinet&logoColor=white)
+![GDPR](https://img.shields.io/badge/-GDPR-2E7D32?style=flat-square&logo=europeancentralbank&logoColor=white)
+![EU AI Act](https://img.shields.io/badge/-EU%20AI%20Act-2E7D32?style=flat-square&logo=europeanunion&logoColor=white)
 
 ---
 

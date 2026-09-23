@@ -51,7 +51,10 @@ set_theme("dark")
 
 
 # ---------------- layout ----------------
-W        = 1180
+# Single column (one card per row) instead of a 2-column grid: at CARD_W~578 this
+# matches the insignia panels' proven-responsive width, so it scales cleanly as one
+# image on mobile instead of shrinking two side-by-side columns into illegible text.
+W        = 578 + 2 * 8
 CARD_W   = 578
 CARD_H   = 192
 GAP      = 20
@@ -251,12 +254,11 @@ def card(p, x, y, idx):
     return "".join(e)
 
 def build(projects, theme="dark"):
-    rows = math.ceil(len(projects) / 2)
-    H = 56 + rows * (CARD_H + GAP) + MARGIN
+    H = 56 + len(projects) * (CARD_H + GAP) + MARGIN
     gid = f"acc_{theme}"
     s = []
     a = s.append
-    a(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
+    a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
       f'font-family="{FONT}" role="img" aria-label="Projects">')
     a(f'<rect width="{W}" height="{H}" fill="{BG}"/>')
     # animated accent gradient (same as banner)
@@ -269,8 +271,8 @@ def build(projects, theme="dark"):
     a(f'<text x="{MARGIN+130}" y="18" font-size="10" fill="{DIM}">./projects.sh --all</text>')
     a(f'<line x1="{MARGIN}" y1="28" x2="{W-MARGIN}" y2="28" stroke="url(#{gid})" stroke-width="1.5" opacity="0.7"/>')
     for i, p in enumerate(projects):
-        x = MARGIN + (i % 2) * (CARD_W + GAP + 4)
-        y = 42 + (i // 2) * (CARD_H + GAP)
+        x = MARGIN
+        y = 42 + i * (CARD_H + GAP)
         a(card(p, x, y, i))
     a('</svg>')
     return "".join(s)

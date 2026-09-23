@@ -1,5 +1,16 @@
 [
   {
+    "name": "Ulamander Real Estate CRM",
+    "subtitle": "public showcase · live in production",
+    "url": "https://github.com/MiguelGranado/ulamander-real-estate-crm",
+    "logo": "typescript.svg",
+    "icon_tags": ["typescript.svg", "react.svg", "nodejs.svg", "postgresql.svg"],
+    "description": "Vertical AI-native CRM for real estate agencies — multi-agent chatbot, multi-tenant",
+    "tags": ["CRM", "AI Agents", "Multi-tenant"],
+    "badge": "Flagship · Public repo",
+    "languages": { "TypeScript": 50, "JavaScript": 30, "CSS": 20 }
+  },
+  {
     "name": "ULAMANDER — SaaS Agencies",
     "subtitle": "app.ulamander.com",
     "url": "https://app.ulamander.com",
@@ -9,28 +20,6 @@
     "tags": ["React", "Docker", "Postgres"],
     "badge": "Product",
     "languages": { "TypeScript": 55, "CSS": 25, "HTML": 20 }
-  },
-  {
-    "name": "ULAMANDER — Real Estate OS",
-    "subtitle": "inmobiliaria.ulamander.com",
-    "url": "https://inmobiliaria.ulamander.com",
-    "logo": "typescript.svg",
-    "icon_tags": ["typescript.svg", "react.svg", "nodejs.svg", "postgresql.svg"],
-    "description": "CRM, Rewards, AI agents, white-label marketing OS",
-    "tags": ["CRM", "AI Agents", "Rewards"],
-    "badge": "Product",
-    "languages": { "TypeScript": 50, "JavaScript": 30, "CSS": 20 }
-  },
-  {
-    "name": "Ulamander.com",
-    "subtitle": "ulamander.com",
-    "url": "https://ulamander.com",
-    "logo": "cloudflare.svg",
-    "icon_tags": ["react.svg", "cloudflare.svg", "vite.svg"],
-    "description": "Marketing site, CMS, Cloudflare tunnel to NAS",
-    "tags": ["React", "CMS", "Tunnel"],
-    "badge": "Product",
-    "languages": { "TypeScript": 45, "CSS": 35, "HTML": 20 }
   },
   {
     "name": "Ulamander Voice Lab",
@@ -44,6 +33,17 @@
     "languages": { "Python": 75, "TypeScript": 15, "Shell": 10 }
   },
   {
+    "name": "Ulamander.com",
+    "subtitle": "ulamander.com",
+    "url": "https://ulamander.com",
+    "logo": "cloudflare.svg",
+    "icon_tags": ["react.svg", "cloudflare.svg", "vite.svg"],
+    "description": "Marketing site, CMS, Cloudflare tunnel to NAS",
+    "tags": ["React", "CMS", "Tunnel"],
+    "badge": "Product",
+    "languages": { "TypeScript": 45, "CSS": 35, "HTML": 20 }
+  },
+  {
     "name": "Ulamander-Neural",
     "subtitle": "local AI · QLoRA",
     "url": "https://miguel.ulamander.com/#proyectos",
@@ -55,39 +55,6 @@
     "languages": { "Python": 70, "TypeScript": 20, "Shell": 10 }
   },
   {
-    "name": "Edge Deploy (Pi / ESP32)",
-    "subtitle": "edge · firmware",
-    "url": "https://miguel.ulamander.com/#proyectos",
-    "logo": "linux.svg",
-    "icon_tags": ["linux.svg", "python.svg", "nvidia.svg", "edge.svg"],
-    "description": "Model/agent export to Raspberry Pi, ESP32, USB edge",
-    "tags": ["Raspberry Pi", "ESP32", "Firmware"],
-    "badge": "Product",
-    "languages": { "C++": 40, "Python": 35, "TypeScript": 25 }
-  },
-  {
-    "name": "Real Estate CRM",
-    "subtitle": "private client",
-    "url": "https://miguel.ulamander.com/#proyectos",
-    "logo": "nodejs.svg",
-    "icon_tags": ["nodejs.svg", "react.svg", "postgresql.svg", "typescript.svg"],
-    "description": "Lead pipeline, nurturing, reporting, white-label stack",
-    "tags": ["CRM", "Automation", "NAS"],
-    "badge": "Private client",
-    "languages": { "TypeScript": 55, "JavaScript": 25, "CSS": 20 }
-  },
-  {
-    "name": "Property Valuations",
-    "subtitle": "lead funnel · GDPR",
-    "url": "https://miguel.ulamander.com/#proyectos",
-    "logo": "javascript.svg",
-    "icon_tags": ["javascript.svg", "react.svg", "nodejs.svg"],
-    "description": "Valuation funnel + CRM routing with GDPR controls",
-    "tags": ["Lead", "Funnel", "GDPR"],
-    "badge": "Private client",
-    "languages": { "TypeScript": 50, "JavaScript": 30, "CSS": 20 }
-  },
-  {
     "name": "Business Automations",
     "subtitle": "n8n · webhooks",
     "url": "https://miguel.ulamander.com/#proyectos",
@@ -97,49 +64,5 @@
     "tags": ["n8n", "Webhook", "API"],
     "badge": "Private client",
     "languages": { "JavaScript": 60, "TypeScript": 25, "JSON": 15 }
-  },
-  {
-    "name": "CuraDomus",
-    "subtitle": "private client",
-    "url": "https://miguel.ulamander.com/#proyectos",
-    "logo": "react.svg",
-    "icon_tags": ["react.svg", "nodejs.svg", "postgresql.svg"],
-    "description": "Home-care matching platform",
-    "tags": ["React", "Node.js", "Postgres"],
-    "badge": "Private client",
-    "languages": { "TypeScript": 50, "JavaScript": 30, "CSS": 20 }
-  },
-  {
-    "name": "Café Manager",
-    "subtitle": "private client",
-    "url": "https://miguel.ulamander.com/#proyectos",
-    "logo": "javascript.svg",
-    "icon_tags": ["javascript.svg", "react.svg", "nodejs.svg"],
-    "description": "Orders, inventory and staff operations",
-    "tags": ["POS", "Inventory", "Reports"],
-    "badge": "Private client",
-    "languages": { "TypeScript": 45, "JavaScript": 35, "CSS": 20 }
-  },
-  {
-    "name": "5-Star Hotel Site",
-    "subtitle": "private client",
-    "url": "https://miguel.ulamander.com/#proyectos",
-    "logo": "html5.svg",
-    "icon_tags": ["react.svg", "html5.svg", "css3.svg"],
-    "description": "Multilingual booking showcase",
-    "tags": ["React", "Booking", "CMS"],
-    "badge": "Private client",
-    "languages": { "TypeScript": 50, "CSS": 30, "HTML": 20 }
-  },
-  {
-    "name": "Private enterprise apps",
-    "subtitle": "NDA",
-    "url": "https://miguel.ulamander.com/#proyectos",
-    "logo": "wordpress.svg",
-    "icon_tags": ["wordpress.svg", "php.svg", "react.svg", "javascript.svg"],
-    "description": "Closed dashboards, Shopify/WordPress, multilingual UI",
-    "tags": ["Shopify", "WordPress", "NDA"],
-    "badge": "Private client",
-    "languages": { "JavaScript": 40, "PHP": 30, "CSS": 30 }
   }
 ]
