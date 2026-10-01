@@ -1,8 +1,18 @@
-<!-- ===== THEME-AWARE HERO (arifhaxn-style) ===== -->
+<!-- ===== THEME-AWARE HERO (arifhaxn-style), with a portrait (dot-cloud reveal,
+     matching arifhaxn's own VISUAL.MAP technique) and CREDENTIALS merged in —
+     this one card is now the only "window" at the top instead of three
+     separate ones stacked below it.
+     Mobile: a real, separately-rendered compact SVG (dark-mobile/light-mobile),
+     selected via <source media="(max-width:480px)">, not a CSS rule hidden
+     inside the desktop SVG — media queries on <picture><source> are evaluated
+     reliably by the browser; media queries inside an SVG loaded via <img> are
+     not, across browsers. ===== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260923a">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20260923a">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20260923a">
+  <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark-mobile.svg?v=20261001a">
+  <source media="(max-width: 480px)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light-mobile.svg?v=20261001a">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20261001a">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20261001a">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20261001a">
 </picture>
 
 
@@ -42,36 +52,21 @@
   <a href="https://github.com/MiguelGranado/ebook2audiobook"><img src="https://img.shields.io/badge/ebook2audiobook-TTS-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="ebook2audiobook"/></a>
 </p>
 
-<!-- ===== TWO INSIGNIAS (credentials + focus — public GitHub stats are empty when activity is private) =====
-     Stacked full-width (not side-by-side) so each card stays legible on mobile, where
-     GitHub renders this column at ~375-430px instead of the ~830px+ desktop width. -->
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-dark.svg?v=20260923a" />
-  <img width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-credentials-light.svg?v=20260923a" alt="Credentials insignias" />
-</picture>
-<br/>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-dark.svg?v=20260923a" />
-  <img width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/insignia-focus-light.svg?v=20260923a" alt="Focus stack insignias" />
-</picture>
-</div>
-
 <!-- ===== CONTRIBUTION ACTIVITY (arifhaxn / Platane-style calendar + real totals) ===== -->
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
-  <img width="100%" alt="1,287 contributions in the last year" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/snake-dark.svg?v=20260923a" />
+  <img width="100%" alt="Contribution activity" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
 </picture>
 </div>
 
 <br/>
 
 <!-- ===== PROJECTS PANEL — single column (one card per row), curated to the 6 strongest
-     projects, CRM first. Fixed width (not 100%): at 594 viewBox units this matches the
-     insignia cards above, so GitHub's own max-width:100% shrinks it correctly on mobile
-     instead of stretching a narrow column to the full README width on desktop. ===== -->
+     projects, CRM first. Fixed width (not 100%): GitHub's own max-width:100% shrinks it
+     correctly on mobile instead of stretching a narrow column to the full README width
+     on desktop. ===== -->
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg" />

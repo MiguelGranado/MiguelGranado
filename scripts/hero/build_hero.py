@@ -1,49 +1,73 @@
-"""Hero SVG — valid XML only (escape & < > '). No fake buttons."""
+"""Hero SVG — valid XML only (escape & < > '). No fake buttons.
+
+Single unified card: terminal window chrome (traffic lights + topbar) exists
+ONCE, at the very top. Stack and credentials are sections within this same
+card (previously two separate "insignia" SVGs with their own window chrome —
+merged here so the profile reads as one continuous surface instead of
+several stacked windows)."""
 import html
 import re
 
-ICON_FILES = {
-    "Python": ("icons/python.svg", "#3776AB"),
-    "TypeScript": ("icons/typescript.svg", "#3178C6"),
-    "React": ("icons/reactjs.svg", "#61DAFB"),
-    "PostgreSQL": ("icons/postgresql.svg", "#4169E1"),
-    "Azure": ("icons/azure.svg", "#0078D4"),
-}
+import dot_portrait
+
+ICON_DIR = "icons"
+BADGE_ICON_DIR = "badge-icons"
 _ID_RE = re.compile(r'id="([^"]+)"')
+_VIEWBOX_RE = re.compile(r'viewBox="([-\d.]+)\s+([-\d.]+)\s+([\d.]+)\s+([\d.]+)"')
 
 
 def esc(s: str) -> str:
     return html.escape(s, quote=True)
 
 
-def load_icon_inner(name: str, path: str) -> str:
+def load_icon(name: str, path: str) -> tuple[str, float, float, float, float]:
+    """Returns (inner_markup, min_x, min_y, width, height) from the icon's own
+    viewBox — source icons use wildly different viewBoxes (24x24, 100x100,
+    228x120, ...), so callers must scale/center against the icon's own
+    dimensions rather than assuming a fixed square."""
     with open(path) as f:
         svg = f.read()
+    m = _VIEWBOX_RE.search(svg)
+    vx, vy, vw, vh = (float(g) for g in m.groups()) if m else (0.0, 0.0, 100.0, 100.0)
     inner = re.sub(r"^<svg[^>]*>|</svg>\s*$", "", svg.strip())
     for old_id in set(_ID_RE.findall(inner)):
-        new_id = f"ic_{name.lower()}_{old_id}"
+        new_id = f"ic_{name}_{old_id}"
         inner = inner.replace(f'id="{old_id}"', f'id="{new_id}"')
         inner = inner.replace(f"url(#{old_id})", f"url(#{new_id})")
-    return inner
+    return inner, vx, vy, vw, vh
 
 
-def stack_chip(x, y, w, name, box, text_c) -> str:
-    path, brand = ICON_FILES[name]
+def icon_group(path: str, key: str, box_x: float, box_y: float, size: float) -> str:
+    """Places an icon's own artwork, scaled to fit `size` and centered in a
+    `size`x`size` box at (box_x, box_y), regardless of its native viewBox."""
+    inner, vx, vy, vw, vh = load_icon(key, path)
+    scale = size / max(vw, vh)
+    ox = box_x + (size - vw * scale) / 2 - vx * scale
+    oy = box_y + (size - vh * scale) / 2 - vy * scale
+    return f'<g transform="translate({ox:.2f},{oy:.2f}) scale({scale:.4f})">{inner}</g>'
+
+
+def stack_chip(x, y, w, name, icon_path, brand, box, text_c) -> str:
     h, icon = 36, 18
-    inner = load_icon_inner(name, path)
+    key = re.sub(r"[^a-z0-9]+", "", name.lower())
+    icon_svg = icon_group(icon_path, key, x + 12, y + (h - icon) / 2, icon)
     return (
         f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h}" rx="10" '
         f'fill="{box}" stroke="{brand}" stroke-opacity="0.55" stroke-width="1.5"/>\n'
-        f'<g transform="translate({x + 12:.1f},{y + (h - icon) / 2:.1f}) scale({icon / 100:.4f})">{inner}</g>\n'
+        f'{icon_svg}\n'
         f'<text x="{x + 38:.1f}" y="{y + h / 2 + 5:.1f}" font-size="13" font-weight="600" fill="{text_c}">{esc(name)}</text>'
     )
 
 
-def pill(x, y, w, label, fill, text_c) -> str:
+def credential_pill(x, y, w, label, icon_path, box, border, text_c) -> str:
+    h, icon = 30, 16
+    key = re.sub(r"[^a-z0-9]+", "", label.lower())
+    icon_svg = icon_group(icon_path, key, x + 11, y + (h - icon) / 2, icon)
     return (
-        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="28" rx="14" fill="{fill}"/>'
-        f'<text x="{x + w / 2:.1f}" y="{y + 18:.1f}" text-anchor="middle" font-size="11" '
-        f'font-weight="600" fill="{text_c}">{esc(label)}</text>'
+        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h}" rx="15" '
+        f'fill="{box}" stroke="{border}" stroke-width="1"/>\n'
+        f'{icon_svg}\n'
+        f'<text x="{x + 33:.1f}" y="{y + h / 2 + 4.5:.1f}" font-size="11.5" font-weight="600" fill="{text_c}">{esc(label)}</text>'
     )
 
 
@@ -60,29 +84,63 @@ def build(theme: str) -> str:
     chip = "#1A2336" if dark else "#FFFFFF"
     pill_bg = "#243049" if dark else "#FFE8D6"
     pill_tx = "#FDE68A" if dark else "#9A3412"
+    cred_bg = "rgba(254,112,45,0.14)" if dark else "rgba(234,88,12,0.10)"
+    cred_stroke = "rgba(254,112,45,0.45)" if dark else "rgba(234,88,12,0.35)"
 
-    widths = {"Python": 102, "TypeScript": 130, "React": 96, "PostgreSQL": 138, "Azure": 98}
+    # CORE STACK — real languages/frameworks + the automation layer (n8n),
+    # which used to live in a separate, now-retired "Focus Stack" card.
+    stack_items = [
+        ("Python", f"{ICON_DIR}/python.svg", "#3776AB", 102),
+        ("TypeScript", f"{ICON_DIR}/typescript.svg", "#3178C6", 130),
+        ("React", f"{ICON_DIR}/reactjs.svg", "#61DAFB", 96),
+        ("PostgreSQL", f"{ICON_DIR}/postgresql.svg", "#4169E1", 138),
+        ("Azure", f"{ICON_DIR}/azure.svg", "#0078D4", 98),
+        ("n8n", f"{BADGE_ICON_DIR}/n8n.svg", "#EA4B71", 72),
+    ]
     x, chips = 56.0, []
-    for name, w in widths.items():
-        chips.append(stack_chip(x, 248, w, name, chip, heading))
+    for name, path, brand, w in stack_items:
+        chips.append(stack_chip(x, 248, w, name, path, brand, chip, heading))
         x += w + 12
     stack = "\n".join(chips)
 
-    metrics = [
-        "100+ Badges & Certs",
-        "MS Learn Lv.15",
-        "19 Claude Academy",
-        "11 Google",
-        "Fortinet NSE 3",
-        "OCI Foundations",
+    # CREDENTIALS — real icon pills (previously the separate
+    # insignia-credentials-*.svg card); same content, one less window.
+    cred_items = [
+        ("100+ Badges", f"{BADGE_ICON_DIR}/github-dark.svg", 118),
+        ("MS Learn Lv.15", f"{BADGE_ICON_DIR}/microsoft.svg", 138),
+        ("Claude Academy 19", f"{BADGE_ICON_DIR}/claude-ai.svg", 158),
+        ("Google Skillshop 11", f"{BADGE_ICON_DIR}/google.svg", 168),
+        ("Fortinet NSE 3", f"{BADGE_ICON_DIR}/fortinet.svg", 140),
+        ("OCI Foundations", f"{BADGE_ICON_DIR}/oracle.svg", 148),
     ]
-    metric_svg, mx = [], 56.0
-    for label in metrics:
-        w = 18 + len(label) * 7.0
-        metric_svg.append(pill(mx, 308, w, label, pill_bg, pill_tx))
-        mx += w + 10
+    cx, cy, cred_svg = 56.0, 308.0, []
+    for label, path, w in cred_items:
+        if cx + w > 850:
+            cx = 56.0
+            cy += 40
+        cred_svg.append(credential_pill(cx, cy, w, label, path, cred_bg, cred_stroke, pill_tx if dark else "#9A3412"))
+        cx += w + 10
+    credentials = "\n".join(cred_svg)
+    cred_rows = 2 if cy > 308 else 1
+    footer_y = cy + 50
 
-    H = 380
+    # Portrait: right-aligned column (x=900..1124) spanning most of the card
+    # height, clear of every other element (stack/credential rows end around
+    # x=850) — a stippled dot cloud with a staggered reveal animation,
+    # matching arifhaxn's VISUAL.MAP technique (confirmed by inspecting his
+    # live profile's rendered SVG directly).
+    PX, PY, PW = 900.0, 50.0, 224.0
+    PH = footer_y - PY - 18
+    portrait_dots = dot_portrait.build("avatar.png", accent, PW, PH)
+    portrait = f'''<clipPath id="pf{s}"><rect x="{PX}" y="{PY}" width="{PW}" height="{PH:.1f}" rx="14"/></clipPath>
+<rect x="{PX}" y="{PY}" width="{PW}" height="{PH:.1f}" rx="14" fill="{'#0A1020' if dark else '#F8FAFC'}" stroke="{accent}" stroke-opacity="0.35"/>
+<g clip-path="url(#pf{s})">
+<g transform="translate({PX},{PY})">
+{portrait_dots}
+</g>
+</g>'''
+
+    H = int(footer_y + 30)
     line1 = esc("AI Development Technician · Full Stack · Founder of Ulamander")
     line2 = esc("I turn complex processes into intelligent AI-driven systems · Turin, Italy")
     footer = esc("Real production systems · Web · App · Neural · CRM · Automation · Security-first")
@@ -92,6 +150,13 @@ def build(theme: str) -> str:
     # secondary rows (terminal bar, stack chips, credential pills, footer) instead of
     # just shrinking them illegibly, and enlarges + recenters the core identity text
     # (name, role, tagline, availability badge) in the freed vertical space.
+    # NOTE: this @media rule only reaches elements when the SVG is rendered as its
+    # own document/inline (e.g. opened directly) — most browsers do NOT evaluate it
+    # against the display size when the SVG is loaded via <img>, which is how GitHub
+    # embeds it. The README's actual mobile fix is a separate, smaller hero-mobile.svg
+    # selected via a width-based <picture><source media> at the markdown level (see
+    # build_hero_mobile() below) — this in-SVG rule is kept only as a harmless no-op
+    # fallback for contexts that do honor it (e.g. the raw file opened directly).
     style = f'''<style>
   .m-hide {{ }}
   .m-shift {{ }}
@@ -153,9 +218,75 @@ def build(theme: str) -> str:
 <text x="56" y="232" font-size="11" letter-spacing="2.5" font-weight="700" fill="{accent}">CORE STACK</text>
 {stack}
 <text x="56" y="300" font-size="11" letter-spacing="2.5" font-weight="700" fill="{accent}">CREDENTIALS</text>
-{chr(10).join(metric_svg)}
-<text x="56" y="360" font-size="12" fill="{muted}">{footer}</text>
+{credentials}
+<text x="56" y="{footer_y:.1f}" font-size="12" fill="{muted}">{footer}</text>
+{portrait}
 </g>
+</g>
+</svg>
+'''
+
+
+def build_mobile(theme: str) -> str:
+    """Compact vertical card for narrow viewports. The desktop build()'s
+    internal @media rule doesn't reliably fire once the SVG is embedded via
+    <img> in the README (confirmed on the live GitHub page: content was
+    overflowing/cut off on an actual phone-width load) — <picture><source
+    media> at the README/markdown level is what browsers DO honor
+    reliably, so this is a genuinely separate, smaller rendering instead of
+    a CSS-hidden subset of the desktop one."""
+    dark = theme == "dark"
+    s = "DM" if dark else "LM"
+    accent, soft = "#fe702d", "#fbbf24"
+    outer = "#070B14" if dark else "#FFFFFF"
+    panel_a = "#121A2B" if dark else "#FFF8F2"
+    panel_b = "#0B1220" if dark else "#F1F5F9"
+    heading = "#F8FAFC" if dark else "#0F172A"
+    body = "#A8B3C7" if dark else "#475569"
+    muted = "#64748B"
+    pill_bg = "#243049" if dark else "#FFE8D6"
+    pill_tx = "#FDE68A" if dark else "#9A3412"
+
+    W, H = 600, 280
+    line1 = esc("AI Development Technician · Full Stack · Founder of Ulamander")
+    line2 = esc("I turn complex processes into intelligent AI-driven systems · Turin, Italy")
+    creds = esc("100+ badges · 19 Claude Academy · MS Learn Lv.15 · Fortinet NSE 3")
+
+    return f'''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" preserveAspectRatio="xMidYMid meet" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Miguel Granados">
+<defs>
+<linearGradient id="bg{s}" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="{panel_a}"/><stop offset="1" stop-color="{panel_b}"/>
+</linearGradient>
+<linearGradient id="name{s}" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="{heading}"/><stop offset="0.6" stop-color="{heading}"/><stop offset="1" stop-color="{accent}"/>
+</linearGradient>
+<linearGradient id="bar{s}" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="{accent}"/><stop offset="0.5" stop-color="{soft}"/><stop offset="1" stop-color="#38BDF8"/>
+</linearGradient>
+<radialGradient id="glow{s}" cx="85%" cy="15%" r="55%">
+  <stop offset="0" stop-color="{accent}" stop-opacity="0.26"/><stop offset="1" stop-color="{accent}" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="win{s}"><rect x="2" y="2" width="{W - 4}" height="{H - 4}" rx="18"/></clipPath>
+</defs>
+<rect x="2" y="2" width="{W - 4}" height="{H - 4}" rx="18" fill="{outer}"/>
+<g clip-path="url(#win{s})">
+<rect x="2" y="2" width="{W - 4}" height="{H - 4}" fill="url(#bg{s})"/>
+<rect x="2" y="2" width="{W - 4}" height="{H - 4}" fill="url(#glow{s})"/>
+<rect x="2" y="2" width="{W - 4}" height="40" fill="{'#0A1020' if dark else '#EEF2FF'}" fill-opacity="0.85"/>
+<circle cx="24" cy="21" r="5" fill="#FF5F56"/>
+<circle cx="42" cy="21" r="5" fill="#FFBD2E"/>
+<circle cx="60" cy="21" r="5" fill="#27C93F"/>
+<text x="{W / 2:.0f}" y="25" text-anchor="middle" font-size="11" font-family="ui-monospace,Menlo,monospace" fill="{muted}">miguel@ulamander</text>
+<rect x="32" y="64" width="188" height="26" rx="13" fill="{pill_bg}"/>
+<circle cx="50" cy="77" r="5" fill="#22C55E"/>
+<text x="64" y="81" font-size="12" font-weight="600" fill="{pill_tx}">Available for projects</text>
+<text x="32" y="130" font-size="38" font-weight="800" fill="url(#name{s})">Miguel Granados</text>
+<text x="32" y="160" font-size="15" fill="{body}">{line1}</text>
+<text x="32" y="182" font-size="13" fill="{muted}">{line2}</text>
+<rect x="32" y="206" width="{W - 64}" height="2" rx="1" fill="url(#bar{s})"/>
+<text x="32" y="236" font-size="12" fill="{muted}">{creds}</text>
+<text x="32" y="262" font-size="11" fill="{muted}">Real production systems · Web · App · CRM · Automation</text>
 </g>
 </svg>
 '''
@@ -164,7 +295,9 @@ def build(theme: str) -> str:
 if __name__ == "__main__":
     open("dark.svg", "w").write(build("dark"))
     open("light.svg", "w").write(build("light"))
+    open("dark-mobile.svg", "w").write(build_mobile("dark"))
+    open("light-mobile.svg", "w").write(build_mobile("light"))
     from xml.etree import ElementTree as ET
-    ET.parse("dark.svg")
-    ET.parse("light.svg")
-    print("wrote + validated dark.svg and light.svg")
+    for f in ["dark.svg", "light.svg", "dark-mobile.svg", "light-mobile.svg"]:
+        ET.parse(f)
+    print("wrote + validated dark.svg, light.svg, dark-mobile.svg, light-mobile.svg")
