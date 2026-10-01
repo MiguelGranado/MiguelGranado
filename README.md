@@ -26,32 +26,6 @@
   <a href="mailto:info@ulamander.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0d1117" alt="Email"/></a>
 </p>
 
-
-
-
-<!-- ===== FLAGSHIP PROJECT — Real Estate CRM (public showcase) ===== -->
-<p align="center">
-  <a href="https://github.com/MiguelGranado/ulamander-real-estate-crm">
-    <img src="https://img.shields.io/badge/Ulamander_Real_Estate_CRM-AI--native_%C2%B7_live_in_production-fe702d?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="Ulamander Real Estate CRM"/>
-  </a>
-</p>
-
-<!-- ===== ULAMANDER VOICE LAB ===== -->
-<p align="center">
-  <a href="https://github.com/MiguelGranado/ulamander-voice-lab">
-    <img src="https://img.shields.io/badge/Ulamander_Voice_Lab-AI_voice_cloning_stack-fe702d?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="Ulamander Voice Lab"/>
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/MiguelGranado/voicebox"><img src="https://img.shields.io/badge/voicebox-studio-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="voicebox"/></a>
-  &nbsp;
-  <a href="https://github.com/MiguelGranado/OpenVoice"><img src="https://img.shields.io/badge/OpenVoice-clone-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="OpenVoice"/></a>
-  &nbsp;
-  <a href="https://github.com/MiguelGranado/VoiceStudio"><img src="https://img.shields.io/badge/VoiceStudio-local-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="VoiceStudio"/></a>
-  &nbsp;
-  <a href="https://github.com/MiguelGranado/ebook2audiobook"><img src="https://img.shields.io/badge/ebook2audiobook-TTS-0d1117?style=flat-square&logo=github&logoColor=fe702d" alt="ebook2audiobook"/></a>
-</p>
-
 <!-- ===== CONTRIBUTION ACTIVITY (arifhaxn / Platane-style calendar + real totals) ===== -->
 <div align="center">
 <picture>
