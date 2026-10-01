@@ -5,6 +5,7 @@ ONCE, at the very top. Stack and credentials are sections within this same
 card (previously two separate "insignia" SVGs with their own window chrome —
 merged here so the profile reads as one continuous surface instead of
 several stacked windows)."""
+import base64
 import html
 import re
 
@@ -14,6 +15,11 @@ ICON_DIR = "icons"
 BADGE_ICON_DIR = "badge-icons"
 _ID_RE = re.compile(r'id="([^"]+)"')
 _VIEWBOX_RE = re.compile(r'viewBox="([-\d.]+)\s+([-\d.]+)\s+([\d.]+)\s+([\d.]+)"')
+
+
+def ulamander_logo_b64() -> str:
+    with open("ulamander-logo.png", "rb") as f:
+        return base64.b64encode(f.read()).decode()
 
 
 def esc(s: str) -> str:
@@ -141,7 +147,8 @@ def build(theme: str) -> str:
 </g>'''
 
     H = int(footer_y + 30)
-    line1 = esc("AI Development Technician · Full Stack · Founder of Ulamander")
+    logo_b64 = ulamander_logo_b64()
+    line1 = esc("Founder & CEO, Ulamander · AI Development Technician · Full Stack")
     line2 = esc("I turn complex processes into intelligent AI-driven systems · Turin, Italy")
     footer = esc("Real production systems · Web · App · Neural · CRM · Automation · Security-first")
 
@@ -173,7 +180,7 @@ def build(theme: str) -> str:
 </style>'''
 
     return f'''<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 {H}" preserveAspectRatio="xMidYMid meet" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Miguel Granados">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1180 {H}" preserveAspectRatio="xMidYMid meet" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Miguel Granados">
 {style}
 <defs>
 <linearGradient id="bg{s}" x1="0" y1="0" x2="1" y2="1">
@@ -209,6 +216,8 @@ def build(theme: str) -> str:
 <rect class="m-badge-bg" x="56" y="64" width="188" height="26" rx="13" fill="{pill_bg}"/>
 <circle class="m-badge-dot" cx="74" cy="77" r="5" fill="#22C55E"/>
 <text class="m-badge-text" x="88" y="81" font-size="12" font-weight="600" fill="{pill_tx}">Available for projects</text>
+<image href="data:image/png;base64,{logo_b64}" xlink:href="data:image/png;base64,{logo_b64}" x="264" y="65" width="19" height="22"/>
+<text x="291" y="82" font-size="14" font-weight="700" letter-spacing="1.5" fill="{heading}">ULAMANDER</text>
 <text class="m-name" x="56" y="128" font-size="42" font-weight="800" fill="url(#name{s})">Miguel Granados</text>
 <text class="m-line1" x="56" y="160" font-size="16" fill="{body}">{line1}</text>
 <text class="m-line2" x="56" y="184" font-size="14" fill="{muted}">{line2}</text>
@@ -248,7 +257,7 @@ def build_mobile(theme: str) -> str:
     pill_tx = "#FDE68A" if dark else "#9A3412"
 
     W, H = 600, 280
-    line1 = esc("AI Development Technician · Full Stack · Founder of Ulamander")
+    line1 = esc("Founder & CEO, Ulamander · AI Development Technician · Full Stack")
     line2 = esc("I turn complex processes into intelligent AI-driven systems · Turin, Italy")
     creds = esc("100+ badges · 19 Claude Academy · MS Learn Lv.15 · Fortinet NSE 3")
 
