@@ -1,0 +1,24 @@
+name: Check generated assets
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate assets/ from the generators
+        run: python3 scripts/build_all.py
+
+      - name: Fail if committed SVGs differ from the generators
+        run: git diff --exit-code --stat -- assets/
+
+      - name: Build the projects panel (validation only)
+        run: |
+          python3 .github/scripts/fetch_data.py
+          python3 .github/scripts/generate_projects.py merged.json /tmp/projects
