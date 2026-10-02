@@ -6,11 +6,15 @@ on:
     paths:
       - "projects.json"
       - "logos/**"
+      - "scripts/hero/design.py"
       - ".github/scripts/generate_projects.py"
       - ".github/scripts/fetch_data.py"
-  schedule:
-    - cron: "0 */6 * * *"
+      - ".github/workflows/projects.yml"
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -22,15 +26,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch live repo data
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Language data is real byte counts already stored in projects.json by
+      # .github/scripts/refresh_languages.py (private repos are not readable
+      # with this token). This step only validates and copies the file.
+      - name: Validate project data
         run: python3 .github/scripts/fetch_data.py
 
-      - name: Generate projects.svg
-        run: |
-          mkdir -p out
-          python3 .github/scripts/generate_projects.py merged.json out
+      - name: Generate projects panel (desktop + mobile, dark + light)
+        run: python3 .github/scripts/generate_projects.py merged.json out
 
       - name: Push to projects branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
