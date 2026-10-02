@@ -3,6 +3,8 @@ the generic shields.io badges, whose LinkedIn logo stopped rendering after
 simple-icons dropped the brand). Each button is its own small SVG so the
 README can wrap it in <a> — links inside an SVG are not clickable via <img>.
 Glyphs are drawn here (no third-party brand files) in the accent colour."""
+from __future__ import annotations
+
 import os
 
 from design import ACCENT, ASSETS, MONO, esc, palette, write_validated

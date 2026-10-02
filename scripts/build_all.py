@@ -7,6 +7,8 @@ Standard library only — run from anywhere:
 The projects panel is built by CI (.github/workflows/projects.yml) into the
 `projects` branch; its language data comes from .github/scripts/refresh_languages.py.
 """
+from __future__ import annotations
+
 import os
 import runpy
 import sys

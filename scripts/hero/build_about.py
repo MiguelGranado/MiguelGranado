@@ -3,6 +3,8 @@ from miguel.ulamander.com (EN version) so the two never contradict each other.
 Desktop: assets/about-{dark,light}.svg (960 wide, 2x2 card grid).
 Mobile: assets/about-{dark,light}-mobile.svg (480 wide, 1 column,
 larger type — GitHub's mobile app renders it at ~0.75x)."""
+from __future__ import annotations
+
 import os
 
 from design import (ACCENT, DESK_W, DESK_X, MOB_W, MOB_X, SOFT, esc, palette, section_label,

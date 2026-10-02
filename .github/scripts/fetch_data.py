@@ -7,6 +7,8 @@ the Action's GITHUB_TOKEN cannot read. They are real byte counts written into
 projects.json by .github/scripts/refresh_languages.py, run locally by the
 owner. This step only validates that no card carries hand-typed numbers.
 """
+from __future__ import annotations
+
 import json
 import sys
 

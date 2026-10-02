@@ -12,6 +12,8 @@ Rules learned the hard way (see DOCUMENTACION-TECNICA.md):
 - Mobile is a separate, narrower SVG selected by <picture><source media> in the
   README — @media inside an SVG loaded via <img> is not reliable.
 """
+from __future__ import annotations
+
 import base64
 import html
 import os

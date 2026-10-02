@@ -8,9 +8,11 @@ owner (needs the gh CLI authenticated as MiguelGranado):
 Most production code lives in private repos, which the Action's GITHUB_TOKEN
 cannot read — so the byte counts are fetched here and stored in projects.json
 under "languages" (raw bytes from GET /repos/{repo}/languages, summed across
-"lang_repos"). Cards without "lang_repos" never get a donut: no language
+"lang_repos"). Cards without "lang_repos" never get a language bar: no language
 numbers are ever typed by hand.
 """
+from __future__ import annotations
+
 import json
 import subprocess
 import sys
@@ -37,7 +39,7 @@ def main() -> None:
             for lang, n in languages(repo).items():
                 total[lang] = total.get(lang, 0) + n
         if not total:
-            sys.exit(f"{p['name']}: {repos} returned no languages — refusing to write an empty donut")
+            sys.exit(f"{p['name']}: {repos} returned no languages — refusing to write an empty language bar")
         p["languages"] = dict(sorted(total.items(), key=lambda kv: -kv[1]))
         top = next(iter(p["languages"]))
         print(f"{p['name']}: {top} {100 * p['languages'][top] / sum(total.values()):.1f}% ({', '.join(repos)})")
