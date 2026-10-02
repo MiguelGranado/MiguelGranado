@@ -1,4 +1,4 @@
-"""Credentials panel — ONLY items with a public record (see
+"""Credentials panel — ONLY items with a traceable record (see
 datos-fuente/ in the local docs folder for the source of each line):
   Microsoft Learn  -> public profile (level, 59 badges, 8 trophies)
   Claude Academy   -> 19 badges, academy.claude.com/badges/<id> (Aug 2026)
@@ -17,7 +17,7 @@ from design import (ACCENT, DESK_W, DESK_X, MOB_W, MOB_X, MONO, asset, esc, icon
 
 PROVIDERS = [
     ("Microsoft Learn", "badge-icons/microsoft.svg", "Level 15", "59 badges · 8 trophies",
-     ["Introduction to AI in Azure", "AI Concepts for Developers", "Intro to Microsoft Security Solutions",
+     ["Get started with AI in Azure", "AI Concepts for Developers", "Intro to Microsoft Security Solutions",
       "GitHub Fundamentals — Administration", "Modules across security, Entra, Purview & cloud"]),
     ("Claude Academy · Anthropic", "badge-icons/claude-ai.svg", "19", "badges · Aug 2026",
      ["Building with the Claude API", "Claude Code 101 · Claude Code in Action",
@@ -113,13 +113,13 @@ def build(theme: str, mobile: bool = False) -> str:
     W, X, cols, gap = s["W"], s["X"], s["cols"], s["gap"]
     CW = W - 2 * X
     cw = (CW - gap * (cols - 1)) / cols
-    out = [section_label(X, 80 if mobile else 86, "CERTIFICATIONS & TRAINING", p)]
-    head = wrap("Verified credentials, each with a public record", 30 if mobile else 70)
+    out = [section_label(X, 80 if mobile else 86, "CREDENTIALS", p)]
+    head = wrap("Certifications & learning record", 36 if mobile else 70)
     for i, line in enumerate(head):
         out.append(f'<text x="{X}" y="{(112 if mobile else 120) + i * 28}" font-size="{21 if mobile else 24}" '
                    f'font-weight="800" fill="{p["heading"]}">{esc(line)}</text>')
     y = (112 if mobile else 120) + (len(head) - 1) * 28 + 26
-    note = wrap("Microsoft Learn profile · Claude Academy badges · Oracle CertView · LinkedIn — links below.",
+    note = wrap("Public records: Microsoft Learn and Oracle CertView. Claude Academy, Google and Fortinet are listed on LinkedIn.",
                 56 if mobile else 110)
     for i, line in enumerate(note):
         out.append(f'<text x="{X}" y="{y + i * 19}" font-size="13" fill="{p["muted"]}">{esc(line)}</text>')
