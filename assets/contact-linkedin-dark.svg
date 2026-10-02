@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 60" width="268" height="60" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="LinkedIn: in/miguel-granados">
+<defs><linearGradient id="bgDlinkedin" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#121A2B"/><stop offset="1" stop-color="#0B1220"/></linearGradient></defs>
+<rect x="1" y="1" width="266" height="58" rx="14" fill="url(#bgDlinkedin)" stroke="rgba(254,112,45,0.45)"/>
+<circle cx="32" cy="30.0" r="18" fill="rgba(254,112,45,0.14)"/>
+<rect x="22" y="20.0" width="20" height="20" rx="4.5" fill="#fe702d"/><text x="32" y="35.0" text-anchor="middle" font-size="13" font-weight="800" fill="#070B14">in</text>
+<text x="62" y="26" font-size="15" font-weight="700" fill="#F8FAFC">LinkedIn</text>
+<text x="62" y="44" font-size="11.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#A8B3C7">in/miguel-granados</text>
+<path d="M238 25.0 l5 5 l-5 5" fill="none" stroke="#64748B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

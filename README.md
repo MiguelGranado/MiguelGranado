@@ -1,141 +1,67 @@
-<!-- ===== THEME-AWARE HERO (arifhaxn-style), with a portrait (dot-cloud reveal,
-     matching arifhaxn's own VISUAL.MAP technique) and CREDENTIALS merged in —
-     this one card is now the only "window" at the top instead of three
-     separate ones stacked below it.
-     Mobile: a real, separately-rendered compact SVG (dark-mobile/light-mobile),
-     selected via <source media="(max-width:480px)">, not a CSS rule hidden
-     inside the desktop SVG — media queries on <picture><source> are evaluated
-     reliably by the browser; media queries inside an SVG loaded via <img> are
-     not, across browsers. ===== -->
+<!-- Profile README of Miguel Granados. Every block is a generated SVG from one
+     design system (scripts/hero/design.py) — see scripts/README.md.
+     Mobile <source>s use "prefers-color-scheme:dark" WITHOUT a space on purpose:
+     GitHub's theme switcher rewrites sources that contain the spaced form, which
+     would drop the width condition and show the mobile layout on desktop. -->
 <picture>
-  <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark-mobile.svg?v=20261002a">
-  <source media="(max-width: 480px)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light-mobile.svg?v=20261002a">
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20261002a">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20261002a">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20261002a">
+  <source media="(max-width: 1099px) and (prefers-color-scheme:dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/hero-dark-mobile.svg">
+  <source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/hero-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/hero-light.svg">
+  <img width="100%" alt="Miguel Granados — Founder &amp; CEO, Ulamander · AI Development Technician · Full Stack · Turin, Italy" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/hero-dark.svg">
 </picture>
 
-
-
-<!-- ===== SOCIAL ===== -->
 <p align="center">
-  <a href="https://miguel.ulamander.com"><img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=googlechrome&logoColor=fe702d&labelColor=0d1117" alt="Portfolio"/></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/miguel-granados-820b15192/"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=0d1117" alt="LinkedIn"/></a>
-  &nbsp;
-  <a href="mailto:info@ulamander.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0d1117" alt="Email"/></a>
+<a href="https://miguel.ulamander.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/contact-portfolio-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/contact-portfolio-light.svg"><img alt="Portfolio — miguel.ulamander.com" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/contact-portfolio-dark.svg"></picture></a>
+<a href="https://www.linkedin.com/in/miguel-granados-820b15192/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/contact-linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/contact-linkedin-light.svg"><img alt="LinkedIn — Miguel Granados" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/contact-linkedin-dark.svg"></picture></a>
+<a href="mailto:info@ulamander.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/contact-email-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/contact-email-light.svg"><img alt="Email — info@ulamander.com" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/contact-email-dark.svg"></picture></a>
 </p>
 
-<!-- ===== CONTRIBUTION ACTIVITY (arifhaxn / Platane-style calendar + real totals) ===== -->
-<div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-light.svg" />
-  <img width="100%" alt="Contribution activity" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/snake-dark.svg" />
+  <source media="(max-width: 1099px) and (prefers-color-scheme:dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/about-dark-mobile.svg">
+  <source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/about-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/about-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/about-light.svg">
+  <img width="100%" alt="About — IT professional specialised in AI, cloud and cybersecurity; ships real systems end to end" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/about-dark.svg">
 </picture>
-</div>
+
+<br/><br/>
+
+<picture>
+  <source media="(max-width: 1099px) and (prefers-color-scheme:dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects-mobile.svg">
+  <source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects-light.svg">
+  <img width="100%" alt="Selected work — Ulamander Real Estate OS, SaaS for Agencies, Voice Lab, Ulamander.com, Ulamander Neural, Property Valuation Funnel" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg">
+</picture>
+
+<p align="center"><sub>
+<b>Live:</b> <a href="https://inmobiliaria.ulamander.com">inmobiliaria.ulamander.com</a> · <a href="https://app.ulamander.com">app.ulamander.com</a> · <a href="https://ulamander.com">ulamander.com</a> · <a href="https://crm-davidevicenzi.ulamander.com">valuation funnel</a>
+&nbsp;—&nbsp; <b>Public repos:</b> <a href="https://github.com/MiguelGranado/ulamander-real-estate-crm">Real Estate OS (case study)</a> · <a href="https://github.com/MiguelGranado/ulamander-voice-lab">Voice Lab</a>
+</sub></p>
 
 <br/>
 
-<!-- ===== PROJECTS PANEL — single column (one card per row), curated to the 6 strongest
-     projects, CRM first. Fixed width (not 100%): GitHub's own max-width:100% shrinks it
-     correctly on mobile instead of stretching a narrow column to the full README width
-     on desktop. ===== -->
-<div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects-light.svg" />
-  <img width="600" alt="Projects" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg" />
+  <source media="(max-width: 1099px) and (prefers-color-scheme:dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/credentials-dark-mobile.svg">
+  <source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/credentials-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/credentials-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/credentials-light.svg">
+  <img width="100%" alt="Certifications — Microsoft Learn Level 15, Claude Academy 19 badges, Google Skillshop 10 certifications, Fortinet NSE 3, Oracle OCI 2025 Foundations Associate" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/credentials-dark.svg">
 </picture>
-</div>
 
----
+<p align="center"><sub>
+<b>Verify:</b> <a href="https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/">Microsoft Learn profile</a> · <a href="https://academy.claude.com/badges/285490d3-b8ab-4937-aa26-45363f9eddc9">Claude Academy badge</a> · <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7318A8C7D14AFECB4245DD58552CB0966D1C6B5703423F8C00F30003904C7D0B">Oracle CertView</a> · <a href="https://www.linkedin.com/in/miguel-granados-820b15192/details/certifications/">All certifications on LinkedIn</a>
+</sub></p>
 
-<!-- ===== ABOUT ME — same visual language as the hero (colors, fonts, window
-     chrome), generated by scripts/hero/build_about.py, so this reads as part
-     of the same design system instead of a plain markdown block. ===== -->
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/about-dark.svg?v=20261001b">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/about-light.svg?v=20261001b">
-  <img width="100%" alt="About Miguel Granados" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/about-dark.svg?v=20261001b">
-</picture>
-</div>
-
----
-
-## Certifications & training
-
-Aligned with [miguel.ulamander.com](https://miguel.ulamander.com) — **100+ badges & certs**, MS Learn **Level 15**.
+<br/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/100%2B_Badges_%26_Certs-0d1117?style=for-the-badge&logo=github&logoColor=fe702d" alt="100+ badges"/>
-  <img src="https://img.shields.io/badge/MS_Learn-Level_15-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="MS Learn Level 15"/>
-  <img src="https://img.shields.io/badge/Claude_Academy-19_badges-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Academy"/>
-  <img src="https://img.shields.io/badge/Google_Skillshop-11_certs-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Skillshop"/>
-  <img src="https://img.shields.io/badge/Fortinet-NSE_3-EE3124?style=for-the-badge&logo=fortinet&logoColor=white" alt="Fortinet NSE 3"/>
-  <img src="https://img.shields.io/badge/Oracle-OCI_Foundations-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="OCI Foundations"/>
-  <img src="https://img.shields.io/badge/AI--900-SC--900-0d1117?style=for-the-badge&logo=microsoftazure&logoColor=0078D4" alt="AI-900 SC-900"/>
-  <img src="https://img.shields.io/badge/Shopify-Foundations-7AB55C?style=for-the-badge&logo=shopify&logoColor=white" alt="Shopify"/>
-</p>
-
-| Area | Detail |
-|---|---|
-| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/google.svg" width="16" height="16" alt=""/> **Google Skillshop** | 11 certs: Ads Display · Search · Apps · Creative · Measurement · Shopping · Video · AI-Powered Performance Ads · Campaign Manager 360 · Analytics · Grow Offline Sales |
-| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/claude-ai.svg" width="16" height="16" alt=""/> **Claude Academy** | 19 badges (verify on [academy.claude.com](https://academy.claude.com)) |
-| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/microsoft.svg" width="16" height="16" alt=""/> **Microsoft Learn** | Level 15 · AI-900 · SC-900 · security/cloud paths — [transcript](https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/) |
-| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/oracle.svg" width="16" height="16" alt=""/> **Oracle** | OCI 2025 Certified Foundations Associate |
-| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/fortinet.svg" width="16" height="16" alt=""/> **Fortinet** | NSE 3 · Certified Associate Cybersecurity · Certified Fundamentals Cybersecurity |
-| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/shopify.svg" width="16" height="16" alt=""/> **Shopify** | Foundations · E-commerce Fundamentals · Store Setup & Customization |
-| <img src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/icons/aws.svg" width="16" height="16" alt=""/> **AWS** | Cloud Practitioner Essentials · Technical Essentials · Architecting on AWS · Cloud Foundations |
-
-**2026 roadmap:** SC-200 · AZ-500 · AI-102 · Fortinet NSE 4 · GitHub Advanced Security
-
----
-
-## Infra & Security
-
-<!-- Core language/framework stack already shown above in Core Stack / Focus Stack —
-     not repeated here. This row is just the infra/security signal that isn't. -->
-
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Cloudflare Tunnel](https://img.shields.io/badge/-Cloudflare%20Tunnel-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![Sentinel](https://img.shields.io/badge/-Microsoft%20Sentinel-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Defender XDR](https://img.shields.io/badge/-Defender%20XDR-0078D4?style=flat-square&logo=microsoftdefender&logoColor=white)
-![Fortinet](https://img.shields.io/badge/-Fortinet-EE3124?style=flat-square&logo=fortinet&logoColor=white)
-![GDPR](https://img.shields.io/badge/-GDPR-2E7D32?style=flat-square&logo=europeancentralbank&logoColor=white)
-![EU AI Act](https://img.shields.io/badge/-EU%20AI%20Act-2E7D32?style=flat-square&logo=europeanunion&logoColor=white)
-
----
-
-
-<!-- ===== EARNED ACHIEVEMENTS (GitHub — shown before footer, arifhaxn-style) ===== -->
-## Earned achievements
-
-<p align="center">
-  <a href="https://github.com/MiguelGranado" title="Quickdraw">
-    <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="84" height="84" alt="Quickdraw"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/MiguelGranado" title="YOLO">
-    <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="84" height="84" alt="YOLO"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/MiguelGranado" title="Pair Extraordinaire">
-    <img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="84" height="84" alt="Pair Extraordinaire"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/MiguelGranado" title="Pull Shark">
-    <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="84" height="84" alt="Pull Shark"/>
-  </a>
-</p>
-<p align="center">
-  <sub>Quickdraw · YOLO · Pair Extraordinaire · Pull Shark · <a href="https://github.com/MiguelGranado/ulamander-voice-lab">⭐ Voice Lab</a></sub>
+<img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="72" height="72" alt="Quickdraw"/>&nbsp;&nbsp;<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="72" height="72" alt="YOLO"/>&nbsp;&nbsp;<img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="72" height="72" alt="Pair Extraordinaire"/>&nbsp;&nbsp;<img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="72" height="72" alt="Pull Shark"/>
+<br/><sub><a href="https://github.com/MiguelGranado?tab=achievements">GitHub achievements</a>: Quickdraw · YOLO · Pair Extraordinaire ×3 · Pull Shark ×2</sub>
 </p>
 
 <p align="center">
-  <b>Open to consulting and collaborations in AI + security.</b><br/>
-  <b>Miguel Granados</b> · <a href="https://ulamander.com">Ulamander</a> · <a href="https://miguel.ulamander.com">miguel.ulamander.com</a> · <a href="mailto:info@ulamander.com">info@ulamander.com</a>
+<b>Open to consulting and collaborations in AI, automation and security.</b><br/>
+<sub>Miguel Granados · Founder &amp; CEO, <a href="https://ulamander.com">Ulamander</a> · Turin, Italy</sub>
 </p>

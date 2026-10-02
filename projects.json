@@ -1,68 +1,164 @@
 [
   {
-    "name": "Ulamander Real Estate CRM",
-    "subtitle": "public showcase · live in production",
-    "url": "https://github.com/MiguelGranado/ulamander-real-estate-crm",
-    "logo": "typescript.svg",
-    "icon_tags": ["typescript.svg", "react.svg", "nodejs.svg", "postgresql.svg"],
-    "description": "Vertical AI-native CRM for real estate agencies — multi-agent chatbot, multi-tenant",
-    "tags": ["CRM", "AI Agents", "Multi-tenant"],
-    "badge": "Flagship · Public repo",
-    "languages": { "TypeScript": 50, "JavaScript": 30, "CSS": 20 }
+    "name": "Ulamander Real Estate OS",
+    "subtitle": "inmobiliaria.ulamander.com",
+    "url": "https://inmobiliaria.ulamander.com",
+    "status": "LIVE",
+    "logo": "python.svg",
+    "icon_tags": [
+      "python.svg",
+      "fastapi.svg",
+      "react.svg",
+      "postgresql.svg"
+    ],
+    "description": "CRM, rewards and a multi-agent AI chatbot for real estate agencies — multi-tenant, FastAPI + React.",
+    "tags": [
+      "AI Agents",
+      "Multi-tenant"
+    ],
+    "lang_repos": [
+      "MiguelGranado/real-estate-crm"
+    ],
+    "languages": {
+      "Python": 4842129,
+      "TypeScript": 2012344,
+      "CSS": 17553,
+      "HTML": 9165,
+      "JavaScript": 2500,
+      "Batchfile": 1882,
+      "Dockerfile": 746
+    }
   },
   {
-    "name": "ULAMANDER — SaaS Agencies",
+    "name": "Ulamander SaaS for Agencies",
     "subtitle": "app.ulamander.com",
     "url": "https://app.ulamander.com",
-    "logo": "react.svg",
-    "icon_tags": ["react.svg", "vite.svg", "docker.svg", "postgresql.svg"],
-    "description": "Auth, dashboard, projects, billing, NAS sync for agencies",
-    "tags": ["React", "Docker", "Postgres"],
-    "badge": "Product",
-    "languages": { "TypeScript": 55, "CSS": 25, "HTML": 20 }
+    "status": "LIVE",
+    "logo": "typescript.svg",
+    "icon_tags": [
+      "react.svg",
+      "vite.svg",
+      "supabase.svg",
+      "docker.svg"
+    ],
+    "description": "Client platform for agencies: auth, dashboard, projects, billing and NAS sync in one system.",
+    "tags": [
+      "SaaS",
+      "Multi-tenant"
+    ],
+    "lang_repos": [
+      "MiguelGranado/ulamander-app-corp"
+    ],
+    "languages": {
+      "TypeScript": 701806,
+      "PLpgSQL": 36186,
+      "JavaScript": 12993,
+      "HTML": 4694,
+      "CSS": 2964
+    }
   },
   {
     "name": "Ulamander Voice Lab",
-    "subtitle": "voice cloning · TTS · audiobooks",
+    "subtitle": "ulamander-voice-lab",
     "url": "https://github.com/MiguelGranado/ulamander-voice-lab",
-    "logo": "openai.svg",
-    "icon_tags": ["python.svg", "openai.svg", "linux.svg", "docker.svg"],
-    "description": "Curated local AI voice stack: clone, TTS, dubbing, ebook→audiobook",
-    "tags": ["Voice", "TTS", "Open Source"],
-    "badge": "Product",
-    "languages": { "Python": 75, "TypeScript": 15, "Shell": 10 }
+    "status": "OPEN SOURCE",
+    "logo": "python.svg",
+    "icon_tags": [
+      "python.svg",
+      "docker.svg",
+      "linux.svg"
+    ],
+    "description": "Curated local voice-AI stack: cloning, TTS, dubbing and ebook-to-audiobook — upstream licenses kept.",
+    "tags": [
+      "Voice",
+      "TTS"
+    ],
+    "aside": {
+      "big": "4",
+      "label": [
+        "open-source engines",
+        "forked & curated"
+      ]
+    }
   },
   {
     "name": "Ulamander.com",
     "subtitle": "ulamander.com",
     "url": "https://ulamander.com",
+    "status": "LIVE",
     "logo": "cloudflare.svg",
-    "icon_tags": ["react.svg", "cloudflare.svg", "vite.svg"],
-    "description": "Marketing site, CMS, Cloudflare tunnel to NAS",
-    "tags": ["React", "CMS", "Tunnel"],
-    "badge": "Product",
-    "languages": { "TypeScript": 45, "CSS": 35, "HTML": 20 }
+    "icon_tags": [
+      "react.svg",
+      "vite.svg",
+      "cloudflare.svg"
+    ],
+    "description": "Company website with CMS, pricing and branding — self-hosted on a NAS behind Cloudflare Tunnel.",
+    "tags": [
+      "CMS",
+      "Self-hosted"
+    ],
+    "lang_repos": [
+      "MiguelGranado/ULAMANDER-WEB"
+    ],
+    "languages": {
+      "TypeScript": 793140,
+      "PLpgSQL": 56795,
+      "CSS": 3138,
+      "HTML": 1216,
+      "JavaScript": 846
+    }
   },
   {
-    "name": "Ulamander-Neural",
-    "subtitle": "local AI · QLoRA",
-    "url": "https://miguel.ulamander.com/#proyectos",
-    "logo": "python.svg",
-    "icon_tags": ["python.svg", "openai.svg", "anthropic.svg", "linux.svg"],
-    "description": "Local AI chat, fine-tuning & teacher→student distillation",
-    "tags": ["Ollama", "QLoRA", "On-prem"],
-    "badge": "Product",
-    "languages": { "Python": 70, "TypeScript": 20, "Shell": 10 }
+    "name": "Ulamander Neural",
+    "subtitle": "neuronal-ulamander · local AI",
+    "url": "https://miguel.ulamander.com",
+    "status": "PRIVATE R&D",
+    "logo": "ollama-{theme}.svg",
+    "icon_tags": [
+      "typescript.svg",
+      "python.svg",
+      "ollama-{theme}.svg",
+      "docker.svg"
+    ],
+    "description": "Local AI chat running on Ollama — on-prem, no data leaves the server; specialised in Italian real estate.",
+    "tags": [
+      "Ollama",
+      "On-prem"
+    ],
+    "lang_repos": [
+      "MiguelGranado/chat_ulamander_neural",
+      "MiguelGranado/neuronal-ulamander"
+    ],
+    "languages": {
+      "TypeScript": 725756,
+      "HTML": 20352,
+      "Shell": 15777,
+      "Python": 10571,
+      "CSS": 5040,
+      "JavaScript": 846,
+      "Dockerfile": 671
+    }
   },
   {
-    "name": "Business Automations",
-    "subtitle": "n8n · webhooks",
-    "url": "https://miguel.ulamander.com/#proyectos",
-    "logo": "n8n.svg",
-    "icon_tags": ["n8n.svg", "javascript.svg", "nodejs.svg"],
-    "description": "Lead routing, CRM sync, mail and alerts via n8n",
-    "tags": ["n8n", "Webhook", "API"],
-    "badge": "Private client",
-    "languages": { "JavaScript": 60, "TypeScript": 25, "JSON": 15 }
+    "name": "Property Valuation Funnel",
+    "subtitle": "crm-davidevicenzi.ulamander.com",
+    "url": "https://crm-davidevicenzi.ulamander.com",
+    "status": "LIVE",
+    "logo": "ulamander-mark.png",
+    "icon_tags": [
+      "tailwindcss.svg"
+    ],
+    "description": "Tenant-branded valuation funnel for a client agency: psychographic profiling, lead capture and routing into the CRM.",
+    "tags": [
+      "Lead funnel",
+      "Multi-tenant"
+    ],
+    "aside": {
+      "big": "→ CRM",
+      "label": [
+        "leads routed into",
+        "the agency pipeline"
+      ]
+    }
   }
 ]
