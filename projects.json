@@ -61,7 +61,7 @@
     "name": "Ulamander Voice Lab",
     "subtitle": "ulamander-voice-lab",
     "url": "https://github.com/MiguelGranado/ulamander-voice-lab",
-    "status": "OPEN SOURCE",
+    "status": "PUBLIC REPO",
     "logo": "python.svg",
     "icon_tags": [
       "python.svg",
@@ -120,10 +120,10 @@
       "ollama-{theme}.svg",
       "docker.svg"
     ],
-    "description": "Local AI chat running on Ollama — on-prem, no data leaves the server; specialised in Italian real estate.",
+    "description": "Local AI chat on Ollama — inference runs on-prem by default; specialised in Italian real estate.",
     "tags": [
       "Ollama",
-      "On-prem"
+      "Local LLM"
     ],
     "lang_repos": [
       "MiguelGranado/chat_ulamander_neural",

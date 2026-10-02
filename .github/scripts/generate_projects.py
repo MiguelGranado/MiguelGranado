@@ -28,10 +28,10 @@ from design import (ACCENT, DESK_W, DESK_X, GREEN, MOB_W, MOB_X, MONO, SKY, SOFT
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 LANG_COLOURS = [ACCENT, SOFT, SKY, GREEN]
-STATUS_COLOURS = {"LIVE": GREEN, "OPEN SOURCE": SKY}
+STATUS_COLOURS = {"LIVE": GREEN, "PUBLIC REPO": SKY}
 LIGHT_TEXT = {GREEN: "#15803D", SKY: "#0369A1", SOFT: "#B45309"}   # readable on white
 
-HEADLINE = "Systems I've built and run in production"
+HEADLINE = "Systems I've built"
 NOTE = "Language split = real byte counts from each project's GitHub repository (private repos included)."
 
 DESKTOP = dict(W=DESK_W, X=DESK_X, cols=2, gap=20, sub=11.5, name=17, desc=13.5, desc_lh=20, icon=20,
@@ -54,17 +54,23 @@ def img(path: str, x: float, y: float, s: float) -> str:
 
 
 def pct(v: float) -> str:
-    return "<1%" if v < 1 else f"{v:.0f}%"
+    return f"{v:.1f}%"
 
 
 def lang_shares(langs: dict) -> list[tuple[str, float]]:
+    """Top 3 languages (>= 1%) plus "Other", rounded to one decimal with the
+    largest-remainder method so the legend always adds up to exactly 100.0%."""
     total = sum(langs.values()) or 1
-    entries = [(k, 100 * v / total) for k, v in sorted(langs.items(), key=lambda kv: -kv[1])]
-    shown = [e for e in entries[:3] if e[1] >= 1]
-    rest = 100 - sum(v for _, v in shown)
-    if rest >= 1:
+    entries = [(k, 1000 * v / total) for k, v in sorted(langs.items(), key=lambda kv: -kv[1])]
+    shown = [e for e in entries[:3] if e[1] >= 10]
+    rest = 1000 - sum(v for _, v in shown)
+    if rest >= 0.5:
         shown.append(("Other", rest))
-    return shown
+    floors = [int(v) for _, v in shown]
+    short = 1000 - sum(floors)
+    for i in sorted(range(len(shown)), key=lambda i: -(shown[i][1] - floors[i]))[:max(short, 0)]:
+        floors[i] += 1
+    return [(name, f / 10) for (name, _), f in zip(shown, floors) if f > 0]
 
 
 def status_chip(label: str, right: float, y: float, p: dict, size: float) -> str:
