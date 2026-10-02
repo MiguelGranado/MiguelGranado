@@ -8,11 +8,28 @@ from __future__ import annotations
 import os
 
 from design import (ACCENT, DESK_W, DESK_X, MOB_W, MOB_X, SOFT, esc, palette, section_label,
-                    window, wrap, write_validated)
+                    text_w, window, wrap, write_validated)
 
 HEADLINE = "Founder & CEO of Ulamander — AI Development Technician & Full Stack Engineer."
-INTRO = ("IT professional specialised in AI, cloud and cybersecurity — "
-         "from secure infrastructure to AI agents and workflow automation.")
+INTRO = ("I'm Miguel Granados, an IT professional specialised in artificial intelligence, cloud and "
+         "cybersecurity. As founder of Ulamander Corporation, I help companies and professionals turn "
+         "complex processes into concrete digital solutions: from secure cloud infrastructure to AI agents "
+         "and workflow automation.")
+INTRO2 = ("I combine continuously updated technical expertise with a results-driven mindset to build real, "
+          "scalable, production-ready systems — designed to grow your business.")
+COMPETENCIES = ["AI Architecture", "Production Full Stack", "Business automation", "Cloud Computing",
+                "API integrations", "DevOps · Docker · NAS", "Cybersecurity", "GDPR · EU AI Act",
+                "Shopify · WordPress"]
+ROLES = [
+    ("Full Stack & AI Engineer", "Frontend, backend, LLMs, agents and RAG in production"),
+    ("Automation Architect", "n8n workflows, webhooks and integrations"),
+    ("Cloud Specialist", "Azure · Oracle Cloud · Docker"),
+    ("Cybersecurity Mindset", "Sentinel · Defender XDR · Fortinet"),
+    ("GDPR · Privacy & EU AI Act", "Data compliance and EU AI Act readiness"),
+    ("Full Stack · Claude Code & AI", "AI-assisted development, WordPress, Shopify"),
+    ("English · Professional communication", "International clients, multilingual delivery"),
+    ("Founder & CEO — ULAMANDER", "AI-driven solutions and digital products"),
+]
 QUOTE = "I turn complex processes into intelligent AI-driven systems."
 QUOTE_SUB = "I design and ship frontend, backend, cloud, automations and AI systems to production."
 # Countable figures only. (number, desktop label, mobile label)
@@ -36,9 +53,9 @@ FOOTER = "Turin, Italy — remote & on-site · reply within 24 hours"
 
 # Type scale per layout. Mobile is rendered at ~0.75x, so its sizes are larger.
 DESKTOP = dict(W=DESK_W, X=DESK_X, head=24, intro=15.5, quote=17, quote_sub=15, big=26, stat=13,
-               card_title=15, card_body=13.5, card_lh=19, footer=13, cols=2)
+               card_title=15, card_body=13.5, card_lh=19, footer=13, cols=2, chip=12.5, role_step=56)
 MOBILE = dict(W=MOB_W, X=MOB_X, head=21, intro=16, quote=16.5, quote_sub=15, big=22, stat=12.5,
-              card_title=16.5, card_body=15, card_lh=21, footer=13.5, cols=1)
+              card_title=15.5, card_body=13.5, card_lh=20, footer=13.5, cols=1, chip=13, role_step=58)
 
 
 def chars(width: float, size: float, k: float = 0.54) -> int:
@@ -78,6 +95,19 @@ def stats_row(x, y, w, p, s, mobile) -> tuple[str, float]:
     return "\n".join(out), h
 
 
+def chips(x, y, max_w, items, p, size) -> tuple[str, float]:
+    out, cx, cy, h = [], x, y, size + 16
+    for item in items:
+        w = text_w(item, size, bold=True) + 26
+        if cx + w > x + max_w:
+            cx, cy = x, cy + h + 10
+        out.append(f'<rect x="{cx:.1f}" y="{cy}" width="{w:.1f}" height="{h}" rx="{h / 2}" fill="{p["cred_bg"]}" stroke="{p["cred_stroke"]}"/>')
+        out.append(f'<text x="{cx + w / 2:.1f}" y="{cy + h / 2 + size * 0.36:.1f}" text-anchor="middle" font-size="{size}" '
+                   f'font-weight="600" fill="{p["pill_tx"]}">{esc(item)}</text>')
+        cx += w + 10
+    return "\n".join(out), cy + h - y
+
+
 def deliver_card(x, y, w, h, title, lines, p, s) -> str:
     return (f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h}" rx="12" fill="{p["box"]}" stroke="{p["box_stroke"]}" stroke-width="1.2"/>\n'
             f'<rect x="{x + 18:.1f}" y="{y + 20:.1f}" width="8" height="8" rx="2" fill="{ACCENT}" transform="rotate(45 {x + 22:.1f} {y + 24:.1f})"/>\n'
@@ -94,15 +124,21 @@ def build(theme: str, mobile: bool = False) -> str:
     head = wrap(HEADLINE, chars(CW, s["head"], 0.58))
     out.append(text_lines(X, y, head, s["head"], p["heading"], s["head"] + 7, font_weight="800"))
     y += (len(head) - 1) * (s["head"] + 7) + 28
-    intro = wrap(INTRO, chars(CW, s["intro"]))
-    out.append(text_lines(X, y, intro, s["intro"], p["body"], s["intro"] + 7))
-    y += (len(intro) - 1) * (s["intro"] + 7) + 24
+    for para in (INTRO, INTRO2):
+        lines = wrap(para, chars(CW, s["intro"]))
+        out.append(text_lines(X, y, lines, s["intro"], p["body"], s["intro"] + 7))
+        y += len(lines) * (s["intro"] + 7) + 8
+    y += 10
     q, qh = quote_block(X, y, CW, p, s)
     out.append(q)
     y += qh + 16
     st, sh = stats_row(X, y, CW, p, s, mobile)
     out.append(st)
     y += sh + 40
+    out.append(section_label(X, y, "CORE COMPETENCIES", p))
+    ch, chh = chips(X, y + 16, CW, COMPETENCIES, p, s["chip"])
+    out.append(ch)
+    y += 16 + chh + 40
     out.append(section_label(X, y, "HOW I DELIVER", p))
     y += 16
 
@@ -114,7 +150,20 @@ def build(theme: str, mobile: bool = False) -> str:
         col, row = i % cols, i // cols
         out.append(deliver_card(X + col * (cw + gap), y + row * (card_h + gap), cw, card_h, title, lines, p, s))
     rows = -(-len(DELIVER) // cols)
-    y += rows * (card_h + gap) - gap + 38
+    y += rows * (card_h + gap) - gap + 40
+
+    # Professional profile: roles, two columns on desktop.
+    out.append(section_label(X, y, "PROFESSIONAL PROFILE", p))
+    y += 30
+    rw = (CW - gap * (cols - 1)) / cols
+    for i, (role, desc) in enumerate(ROLES):
+        rx, ry = X + (i % cols) * (rw + gap), y + (i // cols) * s["role_step"]
+        out.append(f'<rect x="{rx:.1f}" y="{ry - 13}" width="3" height="{s["role_step"] - 12}" rx="1.5" fill="{ACCENT}"/>')
+        out.append(f'<text x="{rx + 14:.1f}" y="{ry}" font-size="{s["card_title"]}" font-weight="700" fill="{p["heading"]}">{esc(role)}</text>')
+        out.append(f'<text x="{rx + 14:.1f}" y="{ry + s["card_lh"] + 1}" font-size="{s["card_body"]}" fill="{p["body"]}">{esc(desc)}</text>')
+        if 14 + max(text_w(role, s["card_title"], bold=True), text_w(desc, s["card_body"])) > rw:
+            raise SystemExit(f"role '{role}' overflows")
+    y += -(-len(ROLES) // cols) * s["role_step"] + 18
     footer = wrap(FOOTER, chars(CW - 20, s["footer"]))
     out.append(f'<circle cx="{X + 6}" cy="{y - 5}" r="4" fill="{SOFT}"/>')
     out.append(text_lines(X + 20, y, footer, s["footer"], p["muted"], s["footer"] + 6))

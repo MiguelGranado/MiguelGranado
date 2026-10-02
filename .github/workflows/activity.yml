@@ -1,0 +1,40 @@
+name: Generate Contribution Activity
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/hero/build_activity.py"
+      - "scripts/hero/design.py"
+      - ".github/workflows/activity.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      # Real data only: GitHub's own contribution calendar via GraphQL.
+      - name: Build activity panel from the GitHub API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/hero/build_activity.py out
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: out
+          commit_message: "Update contribution activity [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

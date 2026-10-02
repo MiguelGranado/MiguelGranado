@@ -20,6 +20,16 @@
 
 <br/><br/>
 
+<a href="https://miguel.ulamander.com/#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/expertise-dark-mobile.svg"><img width="100%" alt="Expertise — programming, AI and machine learning, automation, server and DevOps, cloud and networks, security and compliance" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/expertise-dark.svg"></picture></a>
+<a href="https://miguel.ulamander.com/#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/expertise-light-mobile.svg"><img width="100%" alt="Expertise — programming, AI and machine learning, automation, server and DevOps, cloud and networks, security and compliance" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/expertise-light.svg"></picture></a>
+
+<br/><br/>
+
+<a href="https://miguel.ulamander.com/#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/services-dark-mobile.svg"><img width="100%" alt="Services and method — software development, business automation, AI implementation, API integration, cloud, consulting, e-commerce, server and NAS, cybersecurity, database, DevOps, GDPR" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/services-dark.svg"></picture></a>
+<a href="https://miguel.ulamander.com/#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/services-light-mobile.svg"><img width="100%" alt="Services and method — software development, business automation, AI implementation, API integration, cloud, consulting, e-commerce, server and NAS, cybersecurity, database, DevOps, GDPR" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/services-light.svg"></picture></a>
+
+<br/><br/>
+
 <a href="https://miguel.ulamander.com/#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects-mobile.svg"><img width="100%" alt="Selected work — Ulamander Real Estate OS, SaaS for Agencies, Voice Lab, Ulamander.com, Ulamander Neural, Property Valuation Funnel" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects.svg"></picture></a>
 <a href="https://miguel.ulamander.com/#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects-light-mobile.svg"><img width="100%" alt="Selected work — Ulamander Real Estate OS, SaaS for Agencies, Voice Lab, Ulamander.com, Ulamander Neural, Property Valuation Funnel" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/projects/projects-light.svg"></picture></a>
 
@@ -27,6 +37,11 @@
 <b>Live:</b> <a href="https://inmobiliaria.ulamander.com">inmobiliaria.ulamander.com</a> · <a href="https://app.ulamander.com">app.ulamander.com</a> · <a href="https://ulamander.com">ulamander.com</a> · <a href="https://crm-davidevicenzi.ulamander.com">valuation funnel</a>
 &nbsp;—&nbsp; <b>Public repos:</b> <a href="https://github.com/MiguelGranado/ulamander-real-estate-crm">Real Estate OS (case study)</a> · <a href="https://github.com/MiguelGranado/ulamander-voice-lab">Voice Lab</a>
 </sub></p>
+
+<br/>
+
+<a href="https://github.com/MiguelGranado#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-dark-mobile.svg"><img width="100%" alt="Contribution activity from the GitHub API, with a snake that eats each contribution day" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-dark.svg"></picture></a>
+<a href="https://github.com/MiguelGranado#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-light-mobile.svg"><img width="100%" alt="Contribution activity from the GitHub API, with a snake that eats each contribution day" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-light.svg"></picture></a>
 
 <br/>
 
