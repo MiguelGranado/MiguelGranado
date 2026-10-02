@@ -119,7 +119,7 @@ def build(theme: str, mobile: bool = False) -> str:
         out.append(f'<text x="{X}" y="{(112 if mobile else 120) + i * 28}" font-size="{21 if mobile else 24}" '
                    f'font-weight="800" fill="{p["heading"]}">{esc(line)}</text>')
     y = (112 if mobile else 120) + (len(head) - 1) * 28 + 26
-    note = wrap("Public records: Microsoft Learn and Oracle CertView. Claude Academy, Google and Fortinet are listed on LinkedIn.",
+    note = wrap("Public records: Microsoft Learn, Claude Academy (verify links) and Oracle CertView. Google and Fortinet are listed on LinkedIn.",
                 56 if mobile else 110)
     for i, line in enumerate(note):
         out.append(f'<text x="{X}" y="{y + i * 19}" font-size="13" fill="{p["muted"]}">{esc(line)}</text>')

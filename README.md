@@ -49,7 +49,7 @@
 <a href="https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/credentials-light-mobile.svg"><img width="100%" alt="Certifications — Microsoft Learn Level 15, Claude Academy 19 badges, Google Skillshop 10 certifications, Fortinet NSE 3, Oracle OCI 2025 Foundations Associate" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/credentials-light.svg"></picture></a>
 
 <p align="center"><sub>
-<b>Public records:</b> <a href="https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/">Microsoft Learn profile</a> · <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7318A8C7D14AFECB4245DD58552CB0966D1C6B5703423F8C00F30003904C7D0B">Oracle CertView</a> &nbsp;—&nbsp; <b>Full list:</b> <a href="https://www.linkedin.com/in/miguel-granados-820b15192/details/certifications/">LinkedIn certifications</a>
+<b>Public records:</b> <a href="https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/">Microsoft Learn profile</a> · <a href="https://academy.claude.com/verify/720e90321823e97031c8832dc9cb016e">Claude Academy badge</a> · <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7318A8C7D14AFECB4245DD58552CB0966D1C6B5703423F8C00F30003904C7D0B">Oracle CertView</a> &nbsp;—&nbsp; <b>Full list:</b> <a href="https://www.linkedin.com/in/miguel-granados-820b15192/details/certifications/">LinkedIn certifications</a>
 </sub></p>
 
 <br/>
