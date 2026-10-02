@@ -8,11 +8,11 @@
      reliably by the browser; media queries inside an SVG loaded via <img> are
      not, across browsers. ===== -->
 <picture>
-  <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark-mobile.svg?v=20261001a">
-  <source media="(max-width: 480px)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light-mobile.svg?v=20261001a">
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20261001a">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20261001a">
-  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20261001a">
+  <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark-mobile.svg?v=20261002a">
+  <source media="(max-width: 480px)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light-mobile.svg?v=20261002a">
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20261002a">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/light.svg?v=20261002a">
+  <img alt="Miguel Granados" width="100%" src="https://cdn.jsdelivr.net/gh/MiguelGranado/MiguelGranado@main/dark.svg?v=20261002a">
 </picture>
 
 
