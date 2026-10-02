@@ -9,8 +9,6 @@ import base64
 import html
 import re
 
-import dot_portrait
-
 ICON_DIR = "icons"
 BADGE_ICON_DIR = "badge-icons"
 _ID_RE = re.compile(r'id="([^"]+)"')
@@ -121,30 +119,18 @@ def build(theme: str) -> str:
     ]
     cx, cy, cred_svg = 56.0, 308.0, []
     for label, path, w in cred_items:
-        if cx + w > 850:
+        if cx + w > 1124:
             cx = 56.0
             cy += 40
         cred_svg.append(credential_pill(cx, cy, w, label, path, cred_bg, cred_stroke, pill_tx if dark else "#9A3412"))
         cx += w + 10
     credentials = "\n".join(cred_svg)
-    cred_rows = 2 if cy > 308 else 1
     footer_y = cy + 50
 
-    # Portrait: right-aligned column (x=900..1124) spanning most of the card
-    # height, clear of every other element (stack/credential rows end around
-    # x=850) — a stippled dot cloud with a staggered reveal animation,
-    # matching arifhaxn's VISUAL.MAP technique (confirmed by inspecting his
-    # live profile's rendered SVG directly).
-    PX, PY, PW = 900.0, 50.0, 224.0
-    PH = footer_y - PY - 18
-    portrait_dots = dot_portrait.build("avatar.png", accent, PW, PH)
-    portrait = f'''<clipPath id="pf{s}"><rect x="{PX}" y="{PY}" width="{PW}" height="{PH:.1f}" rx="14"/></clipPath>
-<rect x="{PX}" y="{PY}" width="{PW}" height="{PH:.1f}" rx="14" fill="{'#0A1020' if dark else '#F8FAFC'}" stroke="{accent}" stroke-opacity="0.35"/>
-<g clip-path="url(#pf{s})">
-<g transform="translate({PX},{PY})">
-{portrait_dots}
-</g>
-</g>'''
+    # No portrait: removed per explicit request (the card is text/credentials
+    # only now) — CREDENTIALS uses the full card width above instead of
+    # stopping at x=850 to leave room for a right-column image.
+    portrait = ""
 
     H = int(footer_y + 30)
     logo_b64 = ulamander_logo_b64()
