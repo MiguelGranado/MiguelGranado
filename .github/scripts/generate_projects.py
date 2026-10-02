@@ -16,6 +16,8 @@ Everything is static on purpose: an animation that starts from an empty state
 renders EMPTY wherever the SMIL/CSS timeline is paused (off-screen images,
 link previews, some apps). The blinking cursor starts visible, so it is safe.
 """
+from __future__ import annotations
+
 import json
 import os
 import sys

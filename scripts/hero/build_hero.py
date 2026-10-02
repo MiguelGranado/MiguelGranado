@@ -3,6 +3,8 @@
 Desktop: assets/hero-{dark,light}.svg (960 wide). Mobile:
 assets/hero-{dark,light}-mobile.svg (480 wide), selected in the README by <picture><source media>.
 All tokens/helpers come from design.py so this matches every other panel."""
+from __future__ import annotations
+
 from design import (ACCENT, DESK_W, DESK_X, MOB_W, MOB_X, esc, icon, image, asset, palette,
                     section_label, text_w, window, rule_id, write_validated)
 

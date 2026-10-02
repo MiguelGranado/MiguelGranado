@@ -8,6 +8,8 @@ datos-fuente/ in the local docs folder for the source of each line):
 Anything without a record (AI-900/SC-900 exams, AWS, Shopify...) stays out,
 or goes in the roadmap card, clearly marked as not yet earned.
 Desktop: assets/credentials-{dark,light}.svg (960). Mobile: assets/credentials-{dark,light}-mobile.svg (480)."""
+from __future__ import annotations
+
 import os
 
 from design import (ACCENT, DESK_W, DESK_X, MOB_W, MOB_X, MONO, asset, esc, icon, palette,
