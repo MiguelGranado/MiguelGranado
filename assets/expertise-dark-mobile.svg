@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 1362" width="480" height="1362" preserveAspectRatio="xMidYMid meet" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Expertise">
+<defs>
+<linearGradient id="bgD480" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#121A2B"/><stop offset="1" stop-color="#0B1220"/>
+</linearGradient>
+<radialGradient id="glowD480" cx="12%" cy="6%" r="50%">
+  <stop offset="0" stop-color="#fe702d" stop-opacity="0.22"/><stop offset="1" stop-color="#fe702d" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="ruleD480" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#fe702d"/><stop offset="0.6" stop-color="#fbbf24"/><stop offset="1" stop-color="#fbbf24" stop-opacity="0.15"/>
+</linearGradient>
+<clipPath id="winD480"><rect x="2" y="2" width="476" height="1358" rx="18"/></clipPath>
+</defs>
+<rect x="2" y="2" width="476" height="1358" rx="18" fill="#070B14"/>
+<g clip-path="url(#winD480)">
+<rect x="2" y="2" width="476" height="1358" fill="url(#bgD480)"/>
+<rect x="2" y="2" width="476" height="1358" fill="url(#glowD480)"/>
+<rect x="2" y="2" width="476" height="42" fill="#0A1020" fill-opacity="0.85"/>
+<circle cx="28" cy="23" r="5" fill="#FF5F56"/>
+<circle cx="48" cy="23" r="5" fill="#FFBD2E"/>
+<circle cx="68" cy="23" r="5" fill="#27C93F"/>
+<text x="240" y="27" text-anchor="middle" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#64748B">expertise.sh</text>
+<text x="24" y="80" font-size="11" letter-spacing="2.5" font-weight="700" fill="#fe702d">EXPERTISE</text>
+<text x="24" y="110" font-size="21" font-weight="800" fill="#F8FAFC">A stack that connects AI,</text>
+<text x="24" y="138" font-size="21" font-weight="800" fill="#F8FAFC">cloud and code</text>
+<text x="24" y="164" font-size="14" fill="#A8B3C7">End-to-end IT profile: development, server configuration,</text>
+<text x="24" y="184" font-size="14" fill="#A8B3C7">cloud, security and AI agents — ready for real production.</text>
+<rect x="24.0" y="216.0" width="432.0" height="176" rx="14" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
+<text x="42.0" y="246" font-size="12" font-weight="700" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#fe702d">01</text>
+<text x="68.0" y="247" font-size="16.5" font-weight="700" fill="#F8FAFC">Programming</text>
+<line x1="42.0" y1="262" x2="438.0" y2="262" stroke="rgba(254,112,45,0.30)"/>
+<circle cx="45.0" cy="281.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="286" font-size="14.5" fill="#A8B3C7">Python · JavaScript · TypeScript</text>
+<circle cx="45.0" cy="303.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="308" font-size="14.5" fill="#A8B3C7">React / Vite · Node.js / Fastify</text>
+<circle cx="45.0" cy="325.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="330" font-size="14.5" fill="#A8B3C7">PHP · WordPress</text>
+<circle cx="45.0" cy="347.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="352" font-size="14.5" fill="#A8B3C7">SQL · PostgreSQL</text>
+<circle cx="45.0" cy="369.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="374" font-size="14.5" fill="#A8B3C7">HTML · CSS · API design</text>
+<rect x="24.0" y="404.0" width="432.0" height="176" rx="14" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
+<text x="42.0" y="434" font-size="12" font-weight="700" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#fe702d">02</text>
+<text x="68.0" y="435" font-size="16.5" font-weight="700" fill="#F8FAFC">AI &amp; Machine Learning</text>
+<line x1="42.0" y1="450" x2="438.0" y2="450" stroke="rgba(254,112,45,0.30)"/>
+<circle cx="45.0" cy="469.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="474" font-size="14.5" fill="#A8B3C7">OpenAI / Claude · LLMs</text>
+<circle cx="45.0" cy="491.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="496" font-size="14.5" fill="#A8B3C7">Prompting · RAG · embeddings</text>
+<circle cx="45.0" cy="513.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="518" font-size="14.5" fill="#A8B3C7">AI agents · tool calling · MCP</text>
+<circle cx="45.0" cy="535.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="540" font-size="14.5" fill="#A8B3C7">Claude API · Bedrock · Vertex AI</text>
+<circle cx="45.0" cy="557.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="562" font-size="14.5" fill="#A8B3C7">Gemini · chatbots · AI SDKs</text>
+<rect x="24.0" y="592.0" width="432.0" height="176" rx="14" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
+<text x="42.0" y="622" font-size="12" font-weight="700" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#fe702d">03</text>
+<text x="68.0" y="623" font-size="16.5" font-weight="700" fill="#F8FAFC">Automation</text>
+<line x1="42.0" y1="638" x2="438.0" y2="638" stroke="rgba(254,112,45,0.30)"/>
+<circle cx="45.0" cy="657.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="662" font-size="14.5" fill="#A8B3C7">n8n workflows</text>
+<circle cx="45.0" cy="679.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="684" font-size="14.5" fill="#A8B3C7">Webhooks · cron · code</text>
+<circle cx="45.0" cy="701.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="706" font-size="14.5" fill="#A8B3C7">REST API · GraphQL</text>
+<circle cx="45.0" cy="723.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="728" font-size="14.5" fill="#A8B3C7">CRM / ERP integrations</text>
+<circle cx="45.0" cy="745.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="750" font-size="14.5" fill="#A8B3C7">Email · SMTP · notifications</text>
+<rect x="24.0" y="780.0" width="432.0" height="176" rx="14" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
+<text x="42.0" y="810" font-size="12" font-weight="700" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#fe702d">04</text>
+<text x="68.0" y="811" font-size="16.5" font-weight="700" fill="#F8FAFC">Server &amp; DevOps</text>
+<line x1="42.0" y1="826" x2="438.0" y2="826" stroke="rgba(254,112,45,0.30)"/>
+<circle cx="45.0" cy="845.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="850" font-size="14.5" fill="#A8B3C7">Linux · Docker · Compose</text>
+<circle cx="45.0" cy="867.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="872" font-size="14.5" fill="#A8B3C7">VPS · NAS (UGREEN) setup</text>
+<circle cx="45.0" cy="889.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="894" font-size="14.5" fill="#A8B3C7">Nginx · reverse proxy · SSL/TLS</text>
+<circle cx="45.0" cy="911.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="916" font-size="14.5" fill="#A8B3C7">Cloudflare Tunnel · DNS · CDN</text>
+<circle cx="45.0" cy="933.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="938" font-size="14.5" fill="#A8B3C7">Deploy · backup · monitoring</text>
+<rect x="24.0" y="968.0" width="432.0" height="176" rx="14" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
+<text x="42.0" y="998" font-size="12" font-weight="700" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#fe702d">05</text>
+<text x="68.0" y="999" font-size="16.5" font-weight="700" fill="#F8FAFC">Cloud &amp; Networks</text>
+<line x1="42.0" y1="1014" x2="438.0" y2="1014" stroke="rgba(254,112,45,0.30)"/>
+<circle cx="45.0" cy="1033.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1038" font-size="14.5" fill="#A8B3C7">Microsoft Azure</text>
+<circle cx="45.0" cy="1055.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1060" font-size="14.5" fill="#A8B3C7">Oracle Cloud · AWS</text>
+<circle cx="45.0" cy="1077.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1082" font-size="14.5" fill="#A8B3C7">Networking · firewall · VPN</text>
+<circle cx="45.0" cy="1099.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1104" font-size="14.5" fill="#A8B3C7">SMTP · SPF · DKIM · DMARC</text>
+<circle cx="45.0" cy="1121.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1126" font-size="14.5" fill="#A8B3C7">Multi-tenant architectures</text>
+<rect x="24.0" y="1156.0" width="432.0" height="176" rx="14" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
+<text x="42.0" y="1186" font-size="12" font-weight="700" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" fill="#fe702d">06</text>
+<text x="68.0" y="1187" font-size="16.5" font-weight="700" fill="#F8FAFC">Security &amp; Compliance</text>
+<line x1="42.0" y1="1202" x2="438.0" y2="1202" stroke="rgba(254,112,45,0.30)"/>
+<circle cx="45.0" cy="1221.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1226" font-size="14.5" fill="#A8B3C7">Fortinet NSE 3</text>
+<circle cx="45.0" cy="1243.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1248" font-size="14.5" fill="#A8B3C7">Microsoft Sentinel · Defender XDR</text>
+<circle cx="45.0" cy="1265.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1270" font-size="14.5" fill="#A8B3C7">GDPR · EU AI Act</text>
+<circle cx="45.0" cy="1287.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1292" font-size="14.5" fill="#A8B3C7">Privacy by design · hardening</text>
+<circle cx="45.0" cy="1309.2" r="2.6" fill="#fe702d"/>
+<text x="56.0" y="1314" font-size="14.5" fill="#A8B3C7">Audit · backup · RLS · encryption</text>
+</g>
+<rect x="2.5" y="2.5" width="475" height="1357" rx="17.5" fill="none" stroke="rgba(254,112,45,0.30)" stroke-opacity="0.6"/>
+</svg>
