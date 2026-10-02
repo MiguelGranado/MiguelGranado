@@ -11,7 +11,7 @@ from design import (ACCENT, DESK_W, DESK_X, MOB_W, MOB_X, esc, icon, image, asse
 NAME = "Miguel Granados"
 ROLE = "Founder & CEO, Ulamander · AI Development Technician · Full Stack"
 TAGLINE = "I turn complex processes into intelligent AI-driven systems · Turin, Italy"
-FOOTER = "Real production systems · Web · App · Neural · CRM · Automation · Security-first"
+FOOTER = "Live in production: company website · SaaS app · real estate CRM · lead funnel · security-first"
 
 # Real languages/frameworks + the automation layer. (name, icon, brand colour)
 STACK = [

@@ -35,16 +35,16 @@
 <text x="64.0" y="377.5" font-size="13" fill="#A8B3C7">Microsoft Learn level</text>
 <rect x="340.7" y="319.5" width="278.7" height="72" rx="12" fill="#1A2336" stroke="rgba(254,112,45,0.30)"/>
 <text x="356.7" y="357.5" font-size="26" font-weight="800" fill="#fe702d">99</text>
-<text x="356.7" y="377.5" font-size="13" fill="#A8B3C7">verified badges &amp; certifications</text>
+<text x="356.7" y="377.5" font-size="13" fill="#A8B3C7">badges &amp; certifications</text>
 <rect x="633.3" y="319.5" width="278.7" height="72" rx="12" fill="#1A2336" stroke="rgba(254,112,45,0.30)"/>
 <text x="649.3" y="357.5" font-size="26" font-weight="800" fill="#fe702d">4</text>
-<text x="649.3" y="377.5" font-size="13" fill="#A8B3C7">products live in production</text>
+<text x="649.3" y="377.5" font-size="13" fill="#A8B3C7">live products &amp; sites</text>
 <text x="48" y="431.5" font-size="11" letter-spacing="2.5" font-weight="700" fill="#fe702d">HOW I DELIVER</text>
 <rect x="48.0" y="447.5" width="422.0" height="88" rx="12" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
 <rect x="66.0" y="467.5" width="8" height="8" rx="2" fill="#fe702d" transform="rotate(45 70.0 471.5)"/>
 <text x="84.0" y="476.5" font-size="15" font-weight="700" fill="#F8FAFC">I ship real systems</text>
-<text x="66.0" y="501.5" font-size="13.5" fill="#A8B3C7">Not just prototypes: Web, App, Neural, CRM and</text>
-<text x="66.0" y="520.5" font-size="13.5" fill="#A8B3C7">corporate mail already in production.</text>
+<text x="66.0" y="501.5" font-size="13.5" fill="#A8B3C7">Not just prototypes: website, SaaS app, real estate</text>
+<text x="66.0" y="520.5" font-size="13.5" fill="#A8B3C7">CRM and corporate mail running live.</text>
 <rect x="490.0" y="447.5" width="422.0" height="88" rx="12" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
 <rect x="508.0" y="467.5" width="8" height="8" rx="2" fill="#fe702d" transform="rotate(45 512.0 471.5)"/>
 <text x="526.0" y="476.5" font-size="15" font-weight="700" fill="#F8FAFC">Full Stack + AI</text>

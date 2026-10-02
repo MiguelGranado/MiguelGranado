@@ -112,12 +112,19 @@ def load_icon(name: str, path: str):
         svg = f.read()
     m = _VIEWBOX_RE.search(svg)
     vx, vy, vw, vh = (float(g) for g in m.groups()) if m else (0.0, 0.0, 100.0, 100.0)
+    root = re.match(r"\s*<svg[^>]*>", svg)
+    # Root presentation attributes (e.g. fill="none") must survive inlining,
+    # or stroke-only paths fall back to a solid black fill.
+    root_attrs = " ".join(re.findall(r'(?:fill|stroke|stroke-width|stroke-linecap|stroke-linejoin)="[^"]*"',
+                                     root.group(0))) if root else ""
     inner = re.sub(r"^<svg[^>]*>|</svg>\s*$", "", svg.strip())
     inner = re.sub(r"<title>.*?</title>", "", inner)
     for old_id in set(_ID_RE.findall(inner)):
         new_id = f"ic_{name}_{old_id}"
         inner = inner.replace(f'id="{old_id}"', f'id="{new_id}"')
         inner = inner.replace(f"url(#{old_id})", f"url(#{new_id})")
+    if root_attrs:
+        inner = f"<g {root_attrs}>{inner}</g>"
     return inner, vx, vy, vw, vh
 
 

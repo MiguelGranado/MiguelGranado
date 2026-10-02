@@ -15,17 +15,19 @@ INTRO = ("IT professional specialised in AI, cloud and cybersecurity — "
          "from secure infrastructure to AI agents and workflow automation.")
 QUOTE = "I turn complex processes into intelligent AI-driven systems."
 QUOTE_SUB = "I design and ship frontend, backend, cloud, automations and AI systems to production."
-# Verifiable figures only. (number, desktop label, mobile label)
+# Countable figures only. (number, desktop label, mobile label)
 #  15 = Microsoft Learn public profile level
-#  99 = 67 MS Learn (59 badges + 8 trophies) + 19 Claude Academy + 10 Google
-#       Skillshop + 2 Fortinet + 1 Oracle — each with a public record
+#  99 = 67 MS Learn achievements (59 module badges + 8 trophies) + 19 Claude
+#       Academy badges + 10 Google Skillshop + 2 Fortinet + 1 Oracle.
+#       Not labelled "verified": MS Learn flags 9 of its module badges as
+#       unverified, and Claude/Google/Fortinet records need a sign-in to view.
 #   4 = app.ulamander.com, ulamander.com, inmobiliaria.ulamander.com,
 #       crm-davidevicenzi.ulamander.com (all answering HTTP 200)
 STATS = [("15", "Microsoft Learn level", "MS Learn level"),
-         ("99", "verified badges & certifications", "verified credentials"),
-         ("4", "products live in production", "live products")]
+         ("99", "badges & certifications", "badges & certs"),
+         ("4", "live products & sites", "live products")]
 DELIVER = [
-    ("I ship real systems", "Not just prototypes: Web, App, Neural, CRM and corporate mail already in production."),
+    ("I ship real systems", "Not just prototypes: website, SaaS app, real estate CRM and corporate mail running live."),
     ("Full Stack + AI", "React/TypeScript, Node, Postgres, local LLMs (Ollama) and n8n agents in one delivery flow."),
     ("Security-first mindset", "Azure/Sentinel, Fortinet, DNS/SPF/DKIM and operational hardening on the stack."),
     ("One end-to-end owner", "From idea to deploy (UI, API, cloud, mail, tunnel) without splitting the project."),
