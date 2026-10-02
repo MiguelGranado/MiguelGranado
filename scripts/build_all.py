@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Regenerate every SVG in assets/ (hero, contact buttons, about, credentials).
+"""Regenerate every SVG in assets/ (hero, contact, about, expertise, services, credentials).
 Standard library only — run from anywhere:
 
     python3 scripts/build_all.py
 
-The projects panel is built by CI (.github/workflows/projects.yml) into the
-`projects` branch; its language data comes from .github/scripts/refresh_languages.py.
+Built by CI instead: the projects panel (projects.yml -> `projects` branch, language data
+from .github/scripts/refresh_languages.py) and the activity panel (activity.yml ->
+`output` branch, live GitHub data).
 """
 from __future__ import annotations
 
@@ -15,5 +16,6 @@ import sys
 
 HERE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hero")
 sys.path.insert(0, HERE)
-for name in ("build_hero", "build_contact", "build_about", "build_credentials"):
+for name in ("build_hero", "build_contact", "build_about", "build_expertise", "build_services",
+             "build_credentials"):
     runpy.run_path(os.path.join(HERE, f"{name}.py"), run_name="__main__")
