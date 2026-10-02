@@ -57,7 +57,7 @@
 <br/>
 
 <p align="center">
-<img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="72" height="72" alt="Quickdraw"/>&nbsp;&nbsp;<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="72" height="72" alt="YOLO"/>&nbsp;&nbsp;<img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="72" height="72" alt="Pair Extraordinaire"/>&nbsp;&nbsp;<img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="72" height="72" alt="Pull Shark"/>
+<img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="64" height="64" alt="Quickdraw"/>&nbsp;<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="64" height="64" alt="YOLO"/>&nbsp;<img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="64" height="64" alt="Pair Extraordinaire"/>&nbsp;<img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="64" height="64" alt="Pull Shark"/>
 <br/><sub><a href="https://github.com/MiguelGranado?tab=achievements">GitHub achievements</a>: Quickdraw · YOLO · Pair Extraordinaire ×3 · Pull Shark ×2</sub>
 </p>
 
