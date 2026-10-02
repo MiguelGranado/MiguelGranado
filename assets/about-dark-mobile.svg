@@ -39,7 +39,7 @@
 <text x="40.0" y="459.0" font-size="12.5" fill="#A8B3C7">MS Learn level</text>
 <rect x="172.7" y="405.0" width="134.7" height="68" rx="12" fill="#1A2336" stroke="rgba(254,112,45,0.30)"/>
 <text x="188.7" y="439.0" font-size="22" font-weight="800" fill="#fe702d">99</text>
-<text x="188.7" y="459.0" font-size="12.5" fill="#A8B3C7">verified credentials</text>
+<text x="188.7" y="459.0" font-size="12.5" fill="#A8B3C7">badges &amp; certs</text>
 <rect x="321.3" y="405.0" width="134.7" height="68" rx="12" fill="#1A2336" stroke="rgba(254,112,45,0.30)"/>
 <text x="337.3" y="439.0" font-size="22" font-weight="800" fill="#fe702d">4</text>
 <text x="337.3" y="459.0" font-size="12.5" fill="#A8B3C7">live products</text>
@@ -47,8 +47,8 @@
 <rect x="24.0" y="529.0" width="432.0" height="92" rx="12" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
 <rect x="42.0" y="549.0" width="8" height="8" rx="2" fill="#fe702d" transform="rotate(45 46.0 553.0)"/>
 <text x="60.0" y="558.0" font-size="16.5" font-weight="700" fill="#F8FAFC">I ship real systems</text>
-<text x="42.0" y="583.0" font-size="15" fill="#A8B3C7">Not just prototypes: Web, App, Neural, CRM and</text>
-<text x="42.0" y="604.0" font-size="15" fill="#A8B3C7">corporate mail already in production.</text>
+<text x="42.0" y="583.0" font-size="15" fill="#A8B3C7">Not just prototypes: website, SaaS app, real</text>
+<text x="42.0" y="604.0" font-size="15" fill="#A8B3C7">estate CRM and corporate mail running live.</text>
 <rect x="24.0" y="633.0" width="432.0" height="92" rx="12" fill="#1A2336" stroke="rgba(254,112,45,0.30)" stroke-width="1.2"/>
 <rect x="42.0" y="653.0" width="8" height="8" rx="2" fill="#fe702d" transform="rotate(45 46.0 657.0)"/>
 <text x="60.0" y="662.0" font-size="16.5" font-weight="700" fill="#F8FAFC">Full Stack + AI</text>

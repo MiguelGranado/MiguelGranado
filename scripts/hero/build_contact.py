@@ -13,7 +13,7 @@ W, H = 268, 60
 
 BUTTONS = [
     ("portfolio", "Portfolio", "miguel.ulamander.com"),
-    ("linkedin", "LinkedIn", "in/miguel-granados"),
+    ("linkedin", "LinkedIn", "Miguel Granados"),
     ("email", "Email", "info@ulamander.com"),
 ]
 
