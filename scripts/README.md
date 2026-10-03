@@ -13,6 +13,7 @@ system (`scripts/hero/design.py`: palette, fonts, window chrome, helpers).
 | Credentials | `scripts/hero/build_credentials.py` | `assets/credentials-{dark,light}[-mobile].svg` |
 | Projects | `.github/scripts/generate_projects.py` (CI) | `projects` branch: `projects[-light][-mobile].svg` |
 | Contribution activity + snake | `scripts/hero/build_activity.py` (CI, daily, GitHub GraphQL) | `output` branch: `activity-{dark,light}[-mobile].svg` |
+| GitHub achievements (with tiers) | `scripts/hero/build_achievements.py` (CI, daily, read from the profile) | `output` branch: `achievements-{dark,light}[-mobile].svg` |
 
 ```bash
 python3 scripts/build_all.py                      # hero, contact, about, expertise, services, credentials

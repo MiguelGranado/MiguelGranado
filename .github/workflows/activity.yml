@@ -1,4 +1,4 @@
-name: Generate Contribution Activity
+name: Generate Contribution Activity and Achievements
 
 on:
   schedule:
@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - "scripts/hero/build_activity.py"
+      - "scripts/hero/build_achievements.py"
       - "scripts/hero/design.py"
       - ".github/workflows/activity.yml"
   workflow_dispatch:
@@ -29,6 +30,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/hero/build_activity.py out
+
+      # Achievements exactly as GitHub shows them (tier images + x2/x3); a newly
+      # awarded achievement appears on the next daily run.
+      - name: Build achievements panel from the GitHub profile
+        run: python3 scripts/hero/build_achievements.py out
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
