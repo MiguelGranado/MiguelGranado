@@ -53,7 +53,18 @@ def fetch() -> list[dict]:
     return out
 
 
-def tile(x, y, w, h, a, p, img_size) -> str:
+def name_size(badges: list[dict], w: float) -> float:
+    """One font size for every name, shrunk until the longest (e.g. Pair
+    Extraordinaire) fits its tile, so the row stays even."""
+    fs = 15.0
+    while max(text_w(a["name"], fs, bold=True) for a in badges) > w - 12:
+        fs -= 0.5
+        if fs < 11:
+            sys.exit(f"achievement names do not fit a {w:.0f}px tile")
+    return fs
+
+
+def tile(x, y, w, h, a, p, img_size, fs) -> str:
     cx = x + w / 2
     ix, iy = cx - img_size / 2, y + 18
     parts = [f'<rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="{h}" rx="14" fill="{p["box"]}" stroke="{p["box_stroke"]}" stroke-width="1.2"/>',
@@ -66,7 +77,7 @@ def tile(x, y, w, h, a, p, img_size) -> str:
                      f'fill="{col}" stroke="{p["outer"]}" stroke-width="2"/>')
         parts.append(f'<text x="{ix + img_size - cw / 2 + 6:.1f}" y="{iy + img_size - 7.5}" text-anchor="middle" font-size="13" '
                      f'font-weight="800" fill="#24292F">{esc(label)}</text>')
-    parts.append(f'<text x="{cx:.1f}" y="{iy + img_size + 28}" text-anchor="middle" font-size="15" font-weight="700" '
+    parts.append(f'<text x="{cx:.1f}" y="{iy + img_size + 28}" text-anchor="middle" font-size="{fs:g}" font-weight="700" '
                  f'fill="{p["heading"]}">{esc(a["name"])}</text>')
     sub = f'{a["tier"].capitalize()} tier · {a["count"].replace("x", "×")}' if a["count"] else "Earned"
     parts.append(f'<text x="{cx:.1f}" y="{iy + img_size + 48}" text-anchor="middle" font-size="12" font-family="{MONO}" '
@@ -82,6 +93,7 @@ def build(badges: list[dict], theme: str, mobile: bool = False) -> str:
     gap, img = (12, 96) if mobile else (16, 108)
     tw = (CW - gap * (cols - 1)) / cols
     th = img + 82
+    fs = name_size(badges, tw)
     out = [section_label(X, 80 if mobile else 86, "GITHUB ACHIEVEMENTS", p),
            f'<text x="{X}" y="{112 if mobile else 120}" font-size="{21 if mobile else 24}" font-weight="800" fill="{p["heading"]}">Earned on GitHub</text>',
            f'<text x="{X}" y="{136 if mobile else 146}" font-size="13" fill="{p["muted"]}">'
@@ -92,7 +104,7 @@ def build(badges: list[dict], theme: str, mobile: bool = False) -> str:
         r, c = divmod(i, cols)
         in_row = min(cols, len(badges) - r * cols)
         offset = (CW - (in_row * tw + (in_row - 1) * gap)) / 2      # centre a short last row
-        out.append(tile(X + offset + c * (tw + gap), y0 + r * (th + gap), tw, th, a, p, img))
+        out.append(tile(X + offset + c * (tw + gap), y0 + r * (th + gap), tw, th, a, p, img, fs))
     H = y0 + rows * (th + gap) - gap + 30
     title = "achievements.sh" if mobile else "miguel@ulamander — achievements.sh"
     return window(W, int(H), p, title, "\n".join(out), glow=("50%", "0%"), label="GitHub achievements")
