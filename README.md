@@ -54,10 +54,8 @@
 
 <br/>
 
-<p align="center">
-<img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="64" alt="Quickdraw"/>&nbsp;<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="64" alt="YOLO"/>&nbsp;<img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="64" alt="Pair Extraordinaire"/>&nbsp;<img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="64" alt="Pull Shark"/>
-<br/><sub><a href="https://github.com/MiguelGranado?tab=achievements">GitHub achievements</a>: Quickdraw · YOLO · Pair Extraordinaire ×3 · Pull Shark ×2</sub>
-</p>
+<a href="https://github.com/MiguelGranado?tab=achievements#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-dark-mobile.svg"><img width="100%" alt="GitHub achievements — Pair Extraordinaire x3, Pull Shark x2, Quickdraw, YOLO" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-dark.svg"></picture></a>
+<a href="https://github.com/MiguelGranado?tab=achievements#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-light-mobile.svg"><img width="100%" alt="GitHub achievements — Pair Extraordinaire x3, Pull Shark x2, Quickdraw, YOLO" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-light.svg"></picture></a>
 
 <p align="center">
 <b>Open to consulting and collaborations in AI, automation and security.</b><br/>
