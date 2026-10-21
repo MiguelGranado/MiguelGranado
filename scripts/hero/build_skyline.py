@@ -17,16 +17,21 @@ use a log scale so one huge day can't flatten the rest; the busiest day is
 always the tallest. Rebuilt by .github/workflows/activity.yml into `output`.
 
     GITHUB_TOKEN=... python3 scripts/hero/build_skyline.py <outdir>
+
+Also writes contributions.json (every day of the calendar: date, count and
+GitHub's level 0-4) for the interactive skyline on miguel.ulamander.com, which
+fetches it from raw.githubusercontent.com (CORS *) — same data, same hour.
 """
 from __future__ import annotations
 
+import json
 import math
 import os
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build_activity import LEVELS, MONTHS, cell_colours, fetch  # noqa: E402
+from build_activity import LEVELS, LOGIN, MONTHS, cell_colours, fetch  # noqa: E402
 from design import (DESK_W, DESK_X, MOB_W, MOB_X, MONO, esc, palette,  # noqa: E402
                     section_label, text_w, window, write_validated)
 
@@ -300,4 +305,10 @@ if __name__ == "__main__":
     for theme in ("dark", "light"):
         write_validated(os.path.join(outdir, f"skyline-{theme}.svg"), build(cal, theme))
         write_validated(os.path.join(outdir, f"skyline-{theme}-mobile.svg"), build(cal, theme, mobile=True))
-    print(f"wrote skyline SVGs: {cal['totalContributions']} contributions (GitHub API)")
+    days = [{"date": d["date"], "count": d["contributionCount"], "level": LEVELS.index(d["contributionLevel"])}
+            for w in cal["weeks"] for d in w["contributionDays"]]
+    with open(os.path.join(outdir, "contributions.json"), "w") as f:
+        json.dump({"login": LOGIN, "total": cal["totalContributions"],
+                   "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"), "days": days},
+                  f, separators=(",", ":"))
+    print(f"wrote skyline SVGs + contributions.json: {cal['totalContributions']} contributions (GitHub API)")
