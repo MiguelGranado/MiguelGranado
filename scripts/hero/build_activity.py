@@ -4,7 +4,7 @@
 Fetches the contribution calendar from GitHub's GraphQL API
 (user.contributionsCollection.contributionCalendar). The headline total is
 GitHub's own `totalContributions`; cell colours come from GitHub's own
-`contributionLevel`. Nothing is edited, boosted or invented. Rebuilt daily by
+`contributionLevel`. Nothing is edited, boosted or invented. Rebuilt hourly by
 .github/workflows/activity.yml into the `output` branch.
 
 The snake walks the grid one cell at a time (Manhattan path) and eats every
@@ -166,7 +166,7 @@ def build(cal: dict, theme: str, mobile: bool = False) -> str:
             f'<text x="{X}" y="{112 if mobile else 120}" font-size="{21 if mobile else 24}" font-weight="800" '
             f'fill="{p["heading"]}">{esc(total)} contributions in the last year</text>',
             f'<text x="{X}" y="{136 if mobile else 146}" font-size="13" fill="{p["muted"]}">'
-            f'{esc("Live from the GitHub API, refreshed daily" + (" · last 26 weeks shown" if mobile else ""))}</text>']
+            f'{esc("Live from the GitHub API, refreshed every hour" + (" · last 26 weeks shown" if mobile else ""))}</text>']
     # real stats chips
     sx, sy = X, (152 if mobile else 164)
     for num, label in stats(cal):

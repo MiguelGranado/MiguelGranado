@@ -43,6 +43,11 @@
 <a href="https://github.com/MiguelGranado#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-dark-mobile.svg"><img width="100%" alt="Contribution activity from the GitHub API, with a snake that eats each contribution day" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-dark.svg"></picture></a>
 <a href="https://github.com/MiguelGranado#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-light-mobile.svg"><img width="100%" alt="Contribution activity from the GitHub API, with a snake that eats each contribution day" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-light.svg"></picture></a>
 
+<br/><br/>
+
+<a href="https://github.com/MiguelGranado#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/skyline-dark-mobile.svg"><img width="100%" alt="The last year of contributions as a heat map that rises into a 3D skyline, live from the GitHub API" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/skyline-dark.svg"></picture></a>
+<a href="https://github.com/MiguelGranado#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/skyline-light-mobile.svg"><img width="100%" alt="The last year of contributions as a heat map that rises into a 3D skyline, live from the GitHub API" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/skyline-light.svg"></picture></a>
+
 <br/>
 
 <a href="https://learn.microsoft.com/en-us/users/miguelvictorgranadosmasias-2225/#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/credentials-dark-mobile.svg"><img width="100%" alt="Certifications — Microsoft Learn Level 15, Claude Academy 19 badges, Google Skillshop 10 certifications, Fortinet NSE 3, Oracle OCI 2025 Foundations Associate" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/main/assets/credentials-dark.svg"></picture></a>
@@ -54,8 +59,8 @@
 
 <br/>
 
-<a href="https://github.com/MiguelGranado?tab=achievements#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-dark-mobile.svg"><img width="100%" alt="GitHub achievements — Pair Extraordinaire x3, Pull Shark x2, Quickdraw, YOLO" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-dark.svg"></picture></a>
-<a href="https://github.com/MiguelGranado?tab=achievements#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-light-mobile.svg"><img width="100%" alt="GitHub achievements — Pair Extraordinaire x3, Pull Shark x2, Quickdraw, YOLO" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-light.svg"></picture></a>
+<a href="https://github.com/MiguelGranado?tab=achievements#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-dark-mobile.svg"><img width="100%" alt="GitHub achievements with their tiers, read every hour from the GitHub profile" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-dark.svg"></picture></a>
+<a href="https://github.com/MiguelGranado?tab=achievements#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-light-mobile.svg"><img width="100%" alt="GitHub achievements with their tiers, read every hour from the GitHub profile" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/achievements-light.svg"></picture></a>
 
 <p align="center">
 <b>Open to consulting and collaborations in AI, automation and security.</b><br/>

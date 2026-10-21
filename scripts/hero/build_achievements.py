@@ -5,7 +5,7 @@ Parses the achievements that GitHub itself shows on
 https://github.com/MiguelGranado (sidebar: badge image, name, tier label such
 as x2 / x3). GitHub serves a different image per tier (e.g.
 pair-extraordinaire-silver, pull-shark-bronze), so the panel shows exactly
-what GitHub awarded. Runs daily in .github/workflows/activity.yml: a newly
+what GitHub awarded. Runs hourly in .github/workflows/activity.yml: a newly
 awarded achievement (e.g. Galaxy Brain) appears automatically, and nothing
 that GitHub has not awarded can ever be shown.
 
@@ -97,7 +97,7 @@ def build(badges: list[dict], theme: str, mobile: bool = False) -> str:
     out = [section_label(X, 80 if mobile else 86, "GITHUB ACHIEVEMENTS", p),
            f'<text x="{X}" y="{112 if mobile else 120}" font-size="{21 if mobile else 24}" font-weight="800" fill="{p["heading"]}">Earned on GitHub</text>',
            f'<text x="{X}" y="{136 if mobile else 146}" font-size="13" fill="{p["muted"]}">'
-           f'{esc("Read daily from the GitHub profile — tiers included" if not mobile else "Read daily from GitHub — tiers included")}</text>']
+           f'{esc("Read every hour from the GitHub profile — tiers included" if not mobile else "Read hourly from GitHub — tiers included")}</text>']
     y0 = 162 if mobile else 172
     rows = -(-len(badges) // cols)
     for i, a in enumerate(badges):
