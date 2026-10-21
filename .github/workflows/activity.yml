@@ -1,12 +1,13 @@
-name: Generate Contribution Activity and Achievements
+name: Generate Contribution Activity, Skyline and Achievements
 
 on:
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "17 * * * *"          # hourly: contributions show up within the hour
   push:
     branches: [main]
     paths:
       - "scripts/hero/build_activity.py"
+      - "scripts/hero/build_skyline.py"
       - "scripts/hero/build_achievements.py"
       - "scripts/hero/design.py"
       - ".github/workflows/activity.yml"
@@ -32,8 +33,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/hero/build_activity.py out
 
+      # The same real calendar as a heat map that folds into a 3D skyline.
+      - name: Build skyline panel from the GitHub API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/hero/build_skyline.py out
+
       # Achievements exactly as GitHub shows them (tier images + x2/x3); a newly
-      # awarded achievement appears on the next daily run.
+      # awarded achievement appears on the next hourly run.
       - name: Build achievements panel from the GitHub profile
         run: python3 scripts/hero/build_achievements.py out
 
