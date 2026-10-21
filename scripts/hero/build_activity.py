@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Contribution activity panel with a Platane-style snake — REAL data only.
 
+Not in the README since PR #82 (the contribution skyline replaced it), and no
+longer run by CI. Kept because build_skyline.py imports fetch(), LEVELS,
+MONTHS, LOGIN and cell_colours() from here; still runs standalone.
+
 Fetches the contribution calendar from GitHub's GraphQL API
 (user.contributionsCollection.contributionCalendar). The headline total is
 GitHub's own `totalContributions`; cell colours come from GitHub's own

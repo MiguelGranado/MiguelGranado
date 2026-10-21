@@ -9,7 +9,8 @@ done with CSS animations that GitHub does play inside <img>:
   1. flat heat map (GitHub's own calendar and contribution levels)
   2. the whole grid tilts into an isometric floor (one shared transform)
   3. each day rises into a bar, in a wave from the oldest week to the newest
-  4. hold, then the bars settle and the floor tilts back flat — and loop.
+  4. hold, then the bars settle and the floor tilts back flat — and loop
+     (10 s; quick eased moves and a small spring on the rise).
 
 Safe-animation rule: every element's base style is the flat heat map, so a
 paused or unsupported animation still shows the true calendar. Bar heights
@@ -41,15 +42,16 @@ CS, SN, SE, CE = math.cos(YAW), math.sin(YAW), math.sin(ELEV), math.cos(ELEV)
 MAX_BAR = 5.6                   # tallest bar, in cell units
 
 # Timeline (ms). One loop: flat → tilt → rise → hold → settle → untilt → flat.
-LOOP = 15000
-TILT0, TILT1 = 1800, 3100
-RISE0, RISE, WAVE, DAY_WAVE = 3100, 700, 1400, 150
-SETTLE0, SETTLE = 9600, 500
+# Short holds and quick, eased moves so it reads as one fluid motion.
+LOOP = 10000
+TILT0, TILT1 = 900, 1700
+RISE0, RISE, WAVE, DAY_WAVE = 1600, 600, 900, 100
+SETTLE0, SETTLE = 6100, 420
 UNTILT0 = SETTLE0 + WAVE + DAY_WAVE + SETTLE
-UNTILT1 = UNTILT0 + 1300
+UNTILT1 = UNTILT0 + 800
 IN_OUT = "cubic-bezier(.65,0,.35,1)"
-OUT = "cubic-bezier(.33,1,.68,1)"
-IN = "cubic-bezier(.32,0,.67,0)"
+OUT = "cubic-bezier(.34,1.4,.64,1)"       # a small overshoot: bars spring up
+IN = "cubic-bezier(.5,0,.75,0)"
 
 
 def pct(ms: float) -> str:
@@ -133,7 +135,7 @@ def stat_block(x: float, y: float, s: tuple, p: dict, big: int, anchor: str = "s
             f'fill="{p["muted"]}">{esc(sub)}</text>')
 
 
-def fade(name: str, visible: list[tuple[float, float]], dur: int = 450) -> str:
+def fade(name: str, visible: list[tuple[float, float]], dur: int = 320) -> str:
     """Opacity keyframes: 1 inside each (from, to) window (ms), 0 outside, with
     `dur` ms fades. A window that starts at 0 and/or ends at LOOP wraps."""
     frames = []
@@ -204,8 +206,8 @@ def build(cal: dict, theme: str, mobile: bool = False) -> str:
            f"{pct(UNTILT1)},100%{{transform:{flat_tf}}}}}",
            f".t{{transform-box:view-box;transform-origin:0 0;animation:tilt {LOOP}ms infinite}}",
            f".g{{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(0)}}",
-           fade("flat", [(0, TILT0), (UNTILT1 - 200, LOOP)]),
-           fade("isol", [(TILT1 - 300, UNTILT0 + 300)]),
+           fade("flat", [(0, TILT0), (UNTILT1 - 150, LOOP)]),
+           fade("isol", [(TILT1 - 250, UNTILT0 + 250)]),
            f".fl{{animation:flat {LOOP}ms infinite}}.il{{opacity:0;animation:isol {LOOP}ms infinite}}"]
 
     # ---- labels: months + weekdays on the flat map, months along the front edge in 3D
@@ -276,7 +278,7 @@ def build(cal: dict, theme: str, mobile: bool = False) -> str:
     else:
         sy = flat_bottom + 44
         row = "".join(stat_block(X + j * (CW / 4), sy, s, p, 26) for j, s in enumerate(st))
-        css.append(fade("crn", [(RISE0 + RISE + 900, SETTLE0 - 150)]))
+        css.append(fade("crn", [(RISE0 + RISE + 500, SETTLE0 - 100)]))
         css.append(f".cr{{opacity:0;animation:crn {LOOP}ms infinite}}")
         right = X + CW
         corner_tr = (stat_block(right - 250, Y0 + 6, st[1], p, 30, "end")
