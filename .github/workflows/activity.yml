@@ -1,4 +1,4 @@
-name: Generate Contribution Activity, Skyline and Achievements
+name: Generate Contribution Skyline and Achievements
 
 on:
   schedule:
@@ -27,13 +27,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Real data only: GitHub's own contribution calendar via GraphQL.
-      - name: Build activity panel from the GitHub API
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/hero/build_activity.py out
-
-      # The same real calendar as a heat map that folds into a 3D skyline.
+      # Real data only: GitHub's own contribution calendar via GraphQL, as a
+      # heat map that folds into a 3D skyline (+ contributions.json for the site).
       - name: Build skyline panel from the GitHub API
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
