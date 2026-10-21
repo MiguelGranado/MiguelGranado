@@ -12,7 +12,7 @@ system (`scripts/hero/design.py`: palette, fonts, window chrome, helpers).
 | Services + method | `scripts/hero/build_services.py` | `assets/services-{dark,light}[-mobile].svg` |
 | Credentials | `scripts/hero/build_credentials.py` | `assets/credentials-{dark,light}[-mobile].svg` |
 | Projects | `.github/scripts/generate_projects.py` (CI) | `projects` branch: `projects[-light][-mobile].svg` |
-| Contribution activity + snake | `scripts/hero/build_activity.py` (CI, hourly, GitHub GraphQL) | `output` branch: `activity-{dark,light}[-mobile].svg` |
+| Contribution activity + snake (retired from the README in #82) | `scripts/hero/build_activity.py` (not run by CI; provides `fetch()` to the skyline) | — |
 | Contribution skyline (heat map → 3D) | `scripts/hero/build_skyline.py` (CI, hourly, GitHub GraphQL) | `output` branch: `skyline-{dark,light}[-mobile].svg` |
 | GitHub achievements (with tiers) | `scripts/hero/build_achievements.py` (CI, hourly, read from the profile) | `output` branch: `achievements-{dark,light}[-mobile].svg` |
 

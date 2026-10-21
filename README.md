@@ -40,11 +40,6 @@
 
 <br/>
 
-<a href="https://github.com/MiguelGranado#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-dark-mobile.svg"><img width="100%" alt="Contribution activity from the GitHub API, with a snake that eats each contribution day" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-dark.svg"></picture></a>
-<a href="https://github.com/MiguelGranado#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-light-mobile.svg"><img width="100%" alt="Contribution activity from the GitHub API, with a snake that eats each contribution day" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/activity-light.svg"></picture></a>
-
-<br/><br/>
-
 <a href="https://github.com/MiguelGranado#gh-dark-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/skyline-dark-mobile.svg"><img width="100%" alt="The last year of contributions as a heat map that rises into a 3D skyline, live from the GitHub API" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/skyline-dark.svg"></picture></a>
 <a href="https://github.com/MiguelGranado#gh-light-mode-only"><picture><source media="(max-width: 1099px)" srcset="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/skyline-light-mobile.svg"><img width="100%" alt="The last year of contributions as a heat map that rises into a 3D skyline, live from the GitHub API" src="https://raw.githubusercontent.com/MiguelGranado/MiguelGranado/output/skyline-light.svg"></picture></a>
 
